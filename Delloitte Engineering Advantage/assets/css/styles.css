@@ -766,11 +766,30 @@ li {
     animation: spin 30s linear 0s infinite;  
     position: absolute;
 }
-
+/* 
 @keyframes spin {
     from {transform:rotate(0deg);}
     to {transform:rotate(360deg);}
-}
+} */
+@-webkit-keyframes bowspin {
+    0% {
+      transform: rotate(0deg);
+      transform-origin: center;
+      transform-box: fill-box;
+    }
+    100% {
+      transform: rotate(360deg);
+      transform-origin: center;
+      transform-box: fill-box;
+    }
+  }
+
+.bow {
+    -webkit-animation: bowspin 1.3s infinite;
+    transform-origin: bottom center;
+    animation: bowspin 10s infinite;
+    -webkit-animation-timing-function: linear;
+  }
 
 .transform-next-sect {
     height: 221px;
