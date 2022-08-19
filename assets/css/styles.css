@@ -959,7 +959,7 @@ li {
 }
 
 .build-the-future-sect {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
 .the-future-cont__wrapper h5 {
@@ -1219,7 +1219,7 @@ li {
 
 .transform-next-sect {
     height: 221px;
-    display: flex;
+    display: none;
     align-items: center;
     background-image: url(../media/images/transform.png);
     background-size: cover;
