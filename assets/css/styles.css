@@ -1017,6 +1017,10 @@ li {
       background-size: cover;
       background-attachment: fixed;
   }
+
+  .flex-posabs {
+    position: absolute;
+  }
   
   .panels-title {
     font-family: 'Open Sans-Bold';
