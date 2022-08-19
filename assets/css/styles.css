@@ -81,7 +81,7 @@ body * {
 }
 
 .container.fade {
-    max-width: 1600px;
+    max-width: 1070px;
     width: 100%;
     top:50%;
 }
@@ -99,6 +99,10 @@ body * {
 .container-fixed-obs {
     position: fixed;
     width: 100%;
+}
+
+.container-fixed-abs--non-fixed {
+    position: static;
 }
 
 body {
@@ -167,7 +171,7 @@ li {
 }
 
 .fixed-top-sect {
-    height: 46px;
+    height: 50px;
     top: 0;
     width: 100%;
     position: fixed;
