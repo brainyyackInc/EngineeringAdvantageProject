@@ -83,12 +83,32 @@ body * {
 .container.fade {
     max-width: 1600px;
     width: 100%;
+    top:50%;
+}
+
+.container.fade .row {
+    display: flex;
+    align-items: center;
+}
+
+.container-obs {
+    height: 300vh;
+
+}
+
+.container-fixed-obs {
+    position: fixed;
+    width: 100%;
 }
 
 body {
     background-image: url(../media/images/engereing-bg.png);
     background-size: cover;
     background-attachment: fixed;
+}
+
+.clearHeader {
+    position: absolute!important;
 }
 
 
@@ -160,6 +180,14 @@ li {
     
 }
 
+.hiden-elem {
+    transition: .4s;;
+}
+
+.fixed-top-sect-f {
+    position: static
+}
+
 .fixed-top-sect--left {
     font-family: 'Open Sans-Bold';
     font-size: 16px;
@@ -226,11 +254,21 @@ li {
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+    transition: .5s;
+    opacity: 1;
+    visibility: visible;
+    z-index: 22;
+}
+
+
+.banner-sect-hide {
+    opacity: 0;
+    visibility: hidden;
 }
 
 .banner-sect-content h1 {
     font-family: 'Open Sans-Bold';
-    font-size: 42px;
+    font-size: 3vh;
     color: #fff;
     line-height: 50px;
     text-align: center;
@@ -239,7 +277,7 @@ li {
 
 .banner-sect-content p {
     color: #fff;
-    font-size: 28px;
+    font-size: 2vh;
     line-height: 32px;
     margin-bottom: 120px;
 }
@@ -332,7 +370,6 @@ li {
 }
 
 .icon-cont-abs {
-    position: absolute;
     right: 0;
     top: 0;
     width: 100%;
@@ -342,19 +379,27 @@ li {
 .icon-wrapper {
     position: relative;
     height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-.icon-wrapper img, .icon-wrapper svg {
+.icon-wrapper img {
     position: absolute; 
     top: 50%;
     transform: translate(-50%, -50%);
     left: 50%;
-    width: 100%;
+    max-height: 80vh;
+    height: 100%;
+}
+
+.icon-wrapper svg {
+    max-height: 80vh;
+    height: 100%;
 }
 
 .main-subtitle {
     color: #fff;
-    font-size: 42px;
+    font-size: 3vh;
     font-family: 'Open Sans-Bold';
     line-height: 48px;
     margin-bottom: 20px;
@@ -391,7 +436,7 @@ li {
 .engenering-section h2 {
     color: #fff;
     font-family: 'Open Sans-Bold';
-    font-size: 30px;
+    font-size: 2vh;
     line-height: 30px;
     margin-bottom: 10px;
 }
@@ -416,8 +461,8 @@ li {
 }
 
 .main-p {
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 1.3vh;
+    line-height:1.7vh;
     color: #fff;
     margin-bottom: 20px;
 }
@@ -989,6 +1034,7 @@ li {
       font-size: 16px;
       max-width: 413px;
       line-height: 24px;
+      transition: .2s;
   }
 
   .panel {
@@ -1796,6 +1842,21 @@ li {
     background-color: transparent;
     top: 0;
     background-size: cover;
+  }
+
+  #line-svg {
+    top: 0%;
+    
+    left: 0%;
+  }
+
+  .b-hsect-abs-svg {
+    max-width: 1600px;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%)
   }
 
   .video-wrapper {
