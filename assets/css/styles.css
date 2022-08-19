@@ -184,8 +184,20 @@ li {
     
 }
 
+.container.hiden-elem .row {
+    display: flex;
+    align-items: center;
+}
+
+.icon-wrapper .connecting-line {
+    position: absolute;
+    max-height: unset;
+    height: unset;
+}
+
 .hiden-elem {
-    transition: .4s;;
+    transition: .4s;
+    opacity: 0;
 }
 
 .fixed-top-sect-f {
