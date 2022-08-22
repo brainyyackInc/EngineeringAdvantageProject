@@ -1224,36 +1224,52 @@ moveBackground();
     $(document).ready(function(){
 
         $(window).scroll(function(){
+            console.log("scrolltop",$(window).scrollTop());
+            console.log("window height",$(window).height())
+            const hero = document.querySelector('.img-bg-abs');
+            const bannerImage = document.querySelector('.img-bg-bottom-abs')
+            const hero1 = document.querySelector('.hero');
+            const hero2 = document.querySelector('.build-it-section--container');
+            const iconHero1 = document.querySelector('.build-it-section--abs');
+            
+            const threshold = window.innerHeight;
     
-            if ($(window).scrollTop() > $(window).height()) {
-                const hero = document.querySelector('.img-bg-abs');
-
-                const bannerImage = document.querySelector('.img-bg-bottom-abs')
-            
-                const hero1 = document.querySelector('.hero');
-            
-                const hero2 = document.querySelector('.build-it-section--container');
+            if ($(window).scrollTop() > 0.4 * threshold) {
             
                 // Y value at which trailer switches to absolute positioning and scrolls up
-                const threshold = window.innerHeight;
                 
                 window.addEventListener('scroll', function() {
                   // scale up hero section until scale is 20x
                   // and fade out hero title
-                  let scale = 1 + window.scrollY / 100;
-                  let bottomG = 1 - (window.scrollY * 100);
-                  let opacity = 100 - (window.scrollY * 0.2);
-                  if (scale < 20) {
-                    hero.style.transform = `scale(${scale})`;
-                    hero.style.opacity = opacity * .02;
+                  let scale = 1 + ( ( window.scrollY / threshold ) * 0.2 );
+                  let bottomG = 1 - ( ( window.scrollY / threshold ) * 10000 );
+                  let opacity = 1 - ( ( window.scrollY / threshold ) * 0.6 );
+                  let opacity2 = 1 - ( ( window.scrollY / threshold ) * 1);
+
+                  if (window.scrollY > 2 * threshold) { 
+                    bannerImage.style.display = 'none'; 
+                    iconHero1.style.display = 'none';
+                  } 
+                  else if (window.scrollY > 0.4 * threshold) {
+                    hero.style.opacity = opacity * 2.3;
+                    hero.style.transform = `scale(${scale**4})`;
                     hero1.style.position = 'fixed';
+                    
+                    bannerImage.style.display = 'block'; 
                     bannerImage.style.bottom = bottomG * .02 + 'px';
+                    iconHero1.style.display = 'block';
+                    iconHero1.style.opacity = opacity * 2.3;
+                  } 
+                  else {
+                    hero.style.transform = `scale(1)`;
+                    bannerImage.style.bottom = '-25px';
+                    iconHero1.style.opacity = '1';
+                    
                   }
-            
-            
-                  let opacity3 = 100 - (window.scrollY * 10);
-                  if (scale < 100) {
-                    hero2.style.opacity =  opacity3 * 1;
+                  if (window.scrollY > 0.8 * threshold) {
+                    hero2.style.opacity =  opacity2;
+                  } else {
+                    hero2.style.opacity = '1';
                   }
                   
             
@@ -1266,7 +1282,6 @@ moveBackground();
             }
         
             else {
-   
             }
         });
     });
@@ -1313,15 +1328,15 @@ var topofDiv = $(".banner-sect").offset().top;
 var heightDiv = $(".banner-sect").outerHeight();
 
 $(window).scroll(function() {
-  if ($(window).scrollTop() > (topofDiv + heightDiv /4)) {
+  if ($(window).scrollTop() > (topofDiv + heightDiv /4.5)) {
     $(".banner-sect").addClass("banner-sect-hide");
  
   } else {
     $(".banner-sect").removeClass("banner-sect-hide");
   
   }
-console.log(topofDiv);
-console.log(heightDiv)
+// console.log(topofDiv);
+// console.log(heightDiv)
 });
 
 jQuery(document).scroll(function(){
@@ -1339,18 +1354,6 @@ jQuery(document).scroll(function(){
     });
 });
 
-// $(function(){
-//     $(document).scroll(function(){
-//         if($(this).scrollTop() >= $('.hiden-elem').offset().top - 550) {
-//             $(".hiden-elem").css("opacity","1");
-//         }
-//         else if ($(this).scrollTop() <= $('.hiden-elem').offset().top + 550) {
-//             $(".hiden-elem").css("opacity","0");
-//         } else {
-//             $(".hiden-elem").css("opacity","0");
-//         }
-//     });
-// });
 
 
 </script>
@@ -1358,12 +1361,9 @@ jQuery(document).scroll(function(){
 <script>
 
 
-// Jake Archibald says so
 // https://jakearchibald.com/2013/animated-line-drawing-svg/
 function lineDrawingOnScroll(svgPathID, panelID, viewportMultipler) {
-    // Get a reference to the <path>
     var path = document.querySelector(svgPathID);
-    // Get length of path
     var pathLength = path.getTotalLength();
     var panel1Container = document.querySelector(panelID);
     var panel1ContainerPosition = panel1Container.getBoundingClientRect();
@@ -1372,14 +1372,11 @@ function lineDrawingOnScroll(svgPathID, panelID, viewportMultipler) {
     // When the page scrolls...
     window.addEventListener("scroll", function(e) {
         var panel1TopPixels = document.documentElement.scrollTop - ( panel1ContainerPosition.top * viewportMultipler );
-        console.log(svgPathID, panel1TopPixels);
-    // Draw in reverse
         if ( panel1TopPixels > 0) {
             path.style.strokeDashoffset = pathLength - panel1TopPixels;
         } else {
             path.style.strokeDashoffset = pathLength;
         }
-    // When complete, remove the dash array, otherwise shape isn't quite sharp
         if ( pathLength < panel1TopPixels) {
             path.style.strokeDasharray = "none";
         } else {
@@ -1402,8 +1399,8 @@ document.addEventListener("DOMContentLoaded", function(){
     lineDrawingOnScroll('#line10-icon5', '#panel-5', 3);
     lineDrawingOnScroll('#line11-icon6', '#panel-6', 3.7);
     lineDrawingOnScroll('#line12-icon6', '#panel-6', 3.7);
-    // lineDrawingOnScroll('#line13-icon7', '#panel-7', 4.4);
-    // lineDrawingOnScroll('#line14-icon8', '#panel-7', 4.4);
+    lineDrawingOnScroll('#line13-icon7', '#panel-7', 4.4);
+    lineDrawingOnScroll('#line14-icon7', '#panel-7', 4.4);
 
     lineDrawingOnScroll('#star-path', '#panel-1', 1);
     lineDrawingOnScroll('#star-path2', '#panel-2', 1.5);
