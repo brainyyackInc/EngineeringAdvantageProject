@@ -760,6 +760,15 @@ li {
     margin-bottom: 35px;
 }
 
+.animation-styling {
+    opacity: 1;
+    transition: .3s linear;
+}
+
+.animation-styling.animation-styling--hide {
+    opacity: 0;
+}
+
 .modal-case-studies__bl--txt span {
     font-family: 'Open Sans-Bold';
 }
