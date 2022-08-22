@@ -1247,8 +1247,9 @@ li {
   }
 
   .position-longline {
-    top: 55%;
-    left: 87%;
+    top: 30vh;
+    left: 54vh;
+    transform: rotate(-45deg) translate(100vh, -5vh);
   }
   
   .bowspin-class {
