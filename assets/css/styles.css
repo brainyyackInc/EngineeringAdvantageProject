@@ -1275,7 +1275,7 @@ body.advantage-class * {
     right: 2rem;
   }
 
-  .position-longline {
+  .position-longline, .position-longline2, .position-longline3, .position-longline4, .position-longline5, .position-longline6 {
     top: 42%;
     left: 70%;
     transform: rotate(-30deg) translate(61%, 0%);
