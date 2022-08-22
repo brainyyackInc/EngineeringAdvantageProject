@@ -180,7 +180,7 @@ body.advantage-class * {
 }
 
 .advantage-class .fade {
-    transition: opacity 0.3s ease-in;
+    transition: opacity 0.5s ease-in;
   }
   
 .advantage-class .fadeOut { 
@@ -191,16 +191,26 @@ body.advantage-class * {
     opacity: 1; 
 }
 
+.icon-wrapper .scale {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
 .advantage-class .scale {
-    transition: scale 0.5s ease-in;
+    /* transition: scale 1s linear; */
+    transition: 1s linear;
 }
   
 .advantage-class .scaleOut { 
-    transform: scale(.9); 
+    transform: scale(.7);
+    opacity: 0;    
 }
 
 .advantage-class .scaleIn { 
-    transform: scale(1); 
+
+    transform: scale(1);
+    opacity: 1;  
 }
 
   .advantage-class .bh-section__item {
