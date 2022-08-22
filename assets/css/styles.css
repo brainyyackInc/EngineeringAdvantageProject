@@ -67,6 +67,118 @@ body * {
     display: flex;
 }
 
+.bigIcon-frst-line {
+    position: absolute;
+    height: 1px!important;
+    bottom: 36px;
+    transform: rotate(20deg);
+    right: -902px;
+}
+
+.bigIcon-scnd-line {
+    position: absolute;
+    height: 1px!important;
+    transform: rotate(61deg);
+    bottom: -349px;
+    left: 100px;
+}
+
+.bigIcon-2-frst-line {
+    position: absolute;
+    height: 1px!important;
+    transform: rotate(-45deg);
+    top: -242px;
+    left: 266px;
+}
+
+.bigIcon-2-scnd-line {
+    position: absolute;
+    height: 1px!important;
+    transform: rotate(-9deg);
+    left: 493px;
+    top: 200px;
+}
+
+.bigIcon-3-frst-line {
+    position: absolute;
+    height: 1px!important;
+    transform: rotate(118deg);
+    bottom: -330px;
+    right: 181px;
+}
+
+.bigIcon-3-scnd-line {
+    position: absolute;
+    height: 1px!important;
+    transform: rotate(61deg);
+    bottom: -359px;
+    left: 153px;
+}
+
+.bigIcon-4-frst-line {
+    position: absolute;
+    height: 1px!important;
+    transform: rotate(248deg);
+    top: -377px;
+    right: 13px;
+}
+
+.bigIcon-4-scnd-line {
+    position: absolute;
+    height: 1px!important;
+    transform: rotate(293deg);
+    top: -333px;
+    left: 88px;
+}
+
+.bigIcon-6-frst-line {
+    position: absolute;
+    height: 1px!important;
+    transform: rotate(-149deg);
+    right: 390px;
+    top: -71px;
+}
+
+.bigIcon-6-scnd-line {
+    position: absolute;
+    height: 1px!important;
+    transform: rotate(-199deg);
+    bottom: 4px;
+    right: 452px;
+}
+
+.bigIcon-5-frst-line {
+    position: absolute;
+    height: 1px!important;
+    transform: rotate(-122deg);
+    right: 111px;
+    top: -360px;
+}
+
+.bigIcon-5-scnd-line {
+    position: absolute;
+    height: 1px!important;
+    transform: rotate(-157deg);
+    bottom: 566px;
+    right: 440px;
+}
+
+.bigIcon-7-frst-line {
+    position: absolute;
+    height: 1px!important;
+    transform: rotate(112deg);
+    bottom: -398px;
+    right: 81px;
+}
+
+.bigIcon-7-scnd-line {
+    position: absolute;
+    height: 1px!important;
+    transform: rotate(135deg);
+    bottom: -174px;
+    right: 355px;
+}
+
 .fade {
     transition: opacity 0.3s ease-in;
   }
