@@ -662,6 +662,7 @@ li {
     max-width: 617px;
     position: relative;
     margin-bottom: 80px;
+    cursor: pointer;
     width: 100%;
 }
 
@@ -1247,9 +1248,9 @@ li {
   }
 
   .position-longline {
-    top: 30vh;
-    left: 54vh;
-    transform: rotate(-45deg) translate(100vh, -5vh);
+    top: 42%;
+    left: 70%;
+    transform: rotate(-30deg) translate(61%, 0%);
   }
   
   .bowspin-class {
