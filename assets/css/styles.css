@@ -167,6 +167,49 @@ body.advantage-class * {
     right: 440px;
 }
 
+.advantage-class .animated-long-line {
+    position: absolute;
+    height: 1px;
+    left: 92%;
+    top: 61%;
+}
+
+.advantage-class .animated-long-line-2 {
+    position: absolute;
+    height: 1px;
+    transform: rotate(-2deg);
+    top: 45%;
+    left: 92%;
+}
+
+.advantage-class .animated-long-line-3 {
+    position: absolute;
+    height: 1px;
+    top: 70%;
+    left: 91%;
+}
+
+.advantage-class .animated-long-line-4 {
+    position: absolute;
+    height: 1px;
+    top: 70%;
+    left: 91%;
+}
+
+.advantage-class .animated-long-line-5 {
+    position: absolute;
+    height: 1px;
+    top: 33%;
+    left: 87%;
+}
+
+.advantage-class .animated-long-line-6 {
+    position: absolute;
+    height: 1px;
+    top: 70%;
+    left: 91%;
+}
+
 .advantage-class .bigIcon-7-frst-line {
     position: absolute;
     height: 1px!important;
