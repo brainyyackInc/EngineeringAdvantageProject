@@ -18,6 +18,10 @@
     src: url(../media/fonts/OpenSans-Semibold.ttf);
 }
 
+.d-none {
+    display: none;
+}
+
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
