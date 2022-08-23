@@ -442,7 +442,8 @@ body.advantage-class * {
 
 .advantage-class .banner-sect {
     height: calc(100vh - 54px);
-    position: relative;
+    position: absolute;
+    width: 100%;
     background-color: #000;
     padding-left: 30px;
     padding-right: 30px;
@@ -450,17 +451,16 @@ body.advantage-class * {
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-    transition: .5s;
+    transition: 2s linear;
     opacity: 1;
     visibility: visible;
     z-index: 22;
+    top: 0px;
 }
 
 
 .advantage-class .banner-sect-hide {
-    opacity: 0;
-    visibility: hidden;
-    z-index: -1;
+   top:-100%;
 }
 
 .advantage-class .banner-sect-content h1 {
@@ -536,7 +536,7 @@ body.advantage-class * {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: -100vh;
+    top: 0vh;
     left: 0;
     max-height: 100vh;
     z-index: 2;
@@ -1924,7 +1924,7 @@ body.advantage-class * {
   opacity: 1;
 }
 
-.trailer {
+.advantage-class .trailer {
   position: fixed;
   height: 100vh;
   width: 100%;
@@ -2077,8 +2077,8 @@ body.advantage-class * {
     opacity: 1;
   }
   
-  .trailer {
-    position: sticky!important;
+  .advantage-class .trailer {
+    position: fixed!important;
     top: 0;
     height: 100vh;
     width: 100%;
@@ -2086,6 +2086,16 @@ body.advantage-class * {
     background-color: transparent;
     top: 0;
     background-size: cover;
+    opacity: 0;
+    visibility: visible;
+    z-index: 1;
+    transition: .2s;
+  }
+
+  .advantage-class .trailer-hide {
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
   }
 
   #line-svg {

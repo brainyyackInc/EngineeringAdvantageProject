@@ -1187,6 +1187,7 @@ moveBackground();
             const hero1 = document.querySelector('.hero');
             const hero2 = document.querySelector('.build-it-section--container');
             const iconHero1 = document.querySelector('.build-it-section--abs');
+            const trailer = document.querySelector('.trailer');
             
             const threshold = window.innerHeight;
     
@@ -1222,10 +1223,21 @@ moveBackground();
                     iconHero1.style.opacity = '1';
                     
                   }
-                  if (window.scrollY > 0.8 * threshold) {
+                  if (window.scrollY > 0.6 * threshold) {
                     hero2.style.opacity =  opacity2;
                   } else {
                     hero2.style.opacity = '1';
+                  }
+
+                  if (window.scrollY > 2.5 * threshold) { 
+                    trailer.style.opacity = opacity * 2.3; 
+                  } 
+                  else if (window.scrollY > 1.8 * threshold) {
+                    trailer.style.opacity = "1";
+                  } 
+                  else {
+                    trailer.style.opacity = opacity * 0;
+                    
                   }
                   
             
