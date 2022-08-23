@@ -126,9 +126,9 @@ body.advantage-class * {
 .advantage-class .bigIcon-4-scnd-line {
     position: absolute;
     height: 1px!important;
-    transform: rotate(293deg);
-    top: -63%;
-    left: 15%;
+    transform: rotate(289deg);
+    top: -66%;
+    left: 1%;
 }
 
 .advantage-class .bigIcon-6-frst-line {
@@ -181,7 +181,7 @@ body.advantage-class * {
 
 .advantage-class .fade {
     transition: opacity 0.5s ease-in;
-  }
+}
   
 .advantage-class .fadeOut { 
     opacity: 0; 
@@ -641,8 +641,8 @@ body.advantage-class * {
 
 .advantage-class .build-it-section--abs {
     position: absolute;
-    right: -81px;
-    top: -219px;
+    right: -297px;
+    top: -270px!important
 }
 
 .advantage-class .case-study-section--green-title {
@@ -1280,6 +1280,28 @@ body.advantage-class * {
     top: 42%;
     left: 70%;
     transform: rotate(-30deg) translate(61%, 0%);
+  }
+
+  .position-longline2 {
+    left: 75%;
+    transform: rotate(-4deg) translate(14%, 4%)
+  }
+
+  .position-longline4 {
+    top: 4%;
+    left: 57%;
+  }
+
+  .position-longline5 {
+    transform: rotate(-16deg) translate(36%, 1%)
+  }
+
+  .position-longline6 {
+    transform: rotate(-55deg) translate(99%, -9%);
+  }
+
+  .position-longline3 {
+    transform: rotate(-71deg) translate(145%, 8%);
   }
   
   .bowspin-class {
@@ -2099,78 +2121,4 @@ body.advantage-class * {
     .hero h1 {
       font-size: 40px;
     }
-  }
-
-
-  section.horizontal {
-    overflow-x: hidden;
-  }
-  
-  section.horizontal .pin-wrap,
-  section.horizontal .animation-wrap {
-      display: flex;
-      position: relative;
-      z-index: 1;  
-      height: 100vh;
-  }
-  
-  
-  section.horizontal .item {
-      position: relative;
-      padding: 150px 80px;
-      flex: 0 0 500px;
-      height: calc(100vh - 300px);
-      display: flex;
-      align-items: center;
-      line-height: 1.7;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      border-right: 1px solid rgba(0, 0, 0, 0.06);
-      background-color: transparent;
-  }
-  
-  section.horizontal .item:before {
-      position: absolute;
-      font-size: 100px;
-      opacity: .13;
-      font-weight: bold;    
-      z-index: -1;
-      -webkit-transform: translate(-30px, -50px);
-      transform: translate(-30px, -50px);
-      line-height: 1;
-  }
-  
-  
-  
-  
-  section.horizontal .animation-wrap.to-right {
-      counter-reset: item;
-      float: left;
-  }
-  
-  section.horizontal .animation-wrap.to-left {
-      counter-reset: item 11;
-      float: right; 
-  }
-  
-  section.horizontal .animation-wrap.to-right .item:before {
-      counter-increment: item;
-      content: counter(item);
-  }
-  
-  section.horizontal .animation-wrap.to-left .item:before {
-      counter-increment: item -1;
-      content: counter(item);
-  }
-  
-  
-  
-  section.horizontal .animation-wrap .item:nth-child(2n+2) {
-      align-items: flex-start;
-  }
-  
-  section.horizontal .animation-wrap .item:nth-child(4n+4) {
-      align-items: flex-end;
   }
