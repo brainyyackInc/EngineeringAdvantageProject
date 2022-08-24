@@ -143,6 +143,11 @@ body.advantage-class * {
     top: -14%;
 }
 
+.advantage-class .engen-icon-markets {
+    top: -80%;
+    left: 83%;
+}
+
 .advantage-class .bigIcon-6-scnd-line {
     position: absolute;
     height: 1px!important;
@@ -440,8 +445,15 @@ body.advantage-class * {
     margin-left: 22px;
 }
 
+.advantage-class .panels-bg-f {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #00000045;
+}
+
 .advantage-class .banner-sect {
-    height: calc(100vh - 54px);
+    height: calc(90vh - 54px);
     position: absolute;
     width: 100%;
     background-color: #000;
@@ -451,7 +463,7 @@ body.advantage-class * {
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-    transition: 2s linear;
+    transition: 1.5s linear;
     opacity: 1;
     visibility: visible;
     z-index: 22;
@@ -476,7 +488,6 @@ body.advantage-class * {
     color: #fff;
     font-size: 2vh;
     line-height: 32px;
-    margin-bottom: 120px;
 }
 
 .advantage-class .banner-sect-content a {
@@ -647,14 +658,11 @@ body.advantage-class * {
 
 .advantage-class .engenering-section--container {
     max-width: 527px;
+    position: relative;
 }
 
 .advantage-class .engenering-section p:last-child {
     margin-bottom: 0;
-}
-
-.advantage-class .engenering-section--container {
-    position: relative;
 }
 
 .advantage-class .main-p {
@@ -927,11 +935,22 @@ body.advantage-class * {
 
 .advantage-class .advantage-tabs__cont {
     position: relative;
+    overflow: hidden;
 }
 
 .advantage-class .advantage-tabs__cont img {
     width: 100%;
+    transition: .5s;
+    transform: scale(1)
 }
+
+.advantage-class .carousel-indicators {
+    bottom: -45px;
+}
+
+.advantage-class .advantage-tabs__cont:hover img {
+    transform: scale(1.2)
+} 
 
 .advantage-class .advantage-tabs__cont p {
     position: absolute;
@@ -1959,6 +1978,92 @@ body.advantage-class * {
 .past-threshold .trailer {
   position: absolute;
   height: 200vh;
+  z-index: 2;
+}
+
+.engen-icon {
+    position: absolute;
+    width: 100%;
+    max-width: 320px;
+}
+
+.engen-icon svg circle {
+    transition: .2s;
+}
+
+.engen-icon p {
+    text-transform: uppercase;
+    font-size: 14px!important;
+    line-height: 20px!important;
+    position: relative;
+    transition: .2s;
+    text-align: center;
+}
+
+.engen-icon:hover p {
+    color: #87BA34
+}
+
+.engen-icon svg path, .engen-icon svg polyline, .engen-icon svg line, .engen-icon svg polygon {
+    transition: .2s;
+}
+
+.engen-icon:hover svg path, .engen-icon:hover svg polyline, .engen-icon:hover svg line {
+    stroke: #87BA34
+}
+
+.engen-icon:hover svg path, .engen-icon:hover svg polygon {
+    fill: #87BA34
+}
+
+.engen-icon-platforms {
+    top: -97%;
+}
+
+.engen-icon-innovation {
+    left: -63%;
+    top: -75%;
+}
+
+.engen-icon-platforms p, .advantage-class .engen-icon-markets p {
+    top: 100px;
+}
+
+.engen-icon-innovation p {
+    top: 125px;
+}
+
+.engen-icon-gen {
+    left: -100%;
+    top: 27%;
+}
+
+.engen-icon-gen p, .engen-icon-data p, .engen-icon-talent p, .engen-icon-tech p {
+    max-width: 100px;
+    margin: 0 auto;
+    top: -104px;
+}
+
+.engen-icon-tech p, .engen-icon-talent p {
+    max-width: 100%;
+}
+
+.engen-icon-data {
+    left: -18%;
+    top: 82%;
+}
+
+.engen-icon-data p {
+    max-width: 245px;
+}
+
+.engen-icon-tech {
+    top: 87%;
+    left: 81%;
+}
+
+.engen-icon-talent {
+    left: 121%;
 }
 
 .content {
@@ -2088,7 +2193,7 @@ body.advantage-class * {
     background-size: cover;
     opacity: 0;
     visibility: visible;
-    z-index: 1;
+    z-index: 2;
     transition: .2s;
   }
 
