@@ -635,9 +635,22 @@ body.advantage-class * {
 
 .eco-hide-scroll-img {
     opacity: 0;
-    transition: .5s;
+    transition: .5s linear!important;
     position: relative;
     left: 0;
+    transform: scale(1);
+    top: 14%;
+}
+
+.eco-hide-scroll-img.eco-hide-scroll-img__scroll {
+    left: 470px;
+    transform: scale(1.9);
+    opacity: 1;
+}
+
+.eco-hide-scroll-img__scroll-stt {
+    left: 470px;
+    opacity: 0;
 }
 
 .eco-hide-scroll {
@@ -688,7 +701,7 @@ body.advantage-class * {
     max-width: 527px;
     position: relative;
     opacity: 0;
-    transition: .2s;
+    transition: 1s;
 }
 
 .advantage-class .engenering-section p:last-child {
@@ -879,6 +892,10 @@ body.advantage-class * {
 
 .advantage-class .animation-styling.animation-styling--hide {
     opacity: 0;
+}
+
+.advantage-class .trailer-hidden {
+    opacity: 1;
 }
 
 .advantage-class .modal-case-studies__bl--txt span {
