@@ -191,8 +191,9 @@ body.advantage-class * {
 .advantage-class .animated-long-line-3 {
     position: absolute;
     height: 1px;
-    top: 70%;
-    left: 91%;
+    top: 107%;
+    left: 65%;
+    transform: rotate(35deg);
 }
 
 .advantage-class .animated-long-line-4 {
@@ -207,6 +208,8 @@ body.advantage-class * {
     height: 1px;
     top: 33%;
     left: 87%;
+    transform: rotate(180deg);
+    display: none;
 }
 
 .advantage-class .animated-long-line-6 {
@@ -586,11 +589,14 @@ body.advantage-class * {
     height: 100%;
 }
 
-.advantage-class #panel-2 .icon-cont-abs {
+.advantage-class #panel-2 .icon-cont-abs, 
+.advantage-class #panel-5 .icon-cont-abs,
+.advantage-class #panel-7 .icon-cont-abs {
     margin-top: -20vh;
 }
 
-.advantage-class #panel-3 .icon-cont-abs {
+.advantage-class #panel-3 .icon-cont-abs,
+.advantage-class #panel-6 .icon-cont-abs {
     margin-top: 20vh;
 }
 
@@ -1361,7 +1367,7 @@ body.advantage-class * {
     background-color: unset;
 }
   
-.advantage-class #panels #panels-container {
+.advantage-class #panels .panels-container {
     height: 100%;
     width: 100%;
     /* display: -webkit-box;
@@ -1371,13 +1377,13 @@ body.advantage-class * {
     flex-wrap: nowrap; */
     position: relative;
     padding: 0;
-    overflow: hidden;
+    overflow: visible;
     background-color: transparent;
 
 }
 
-.advantage-class #panels #panels-container .pin-wrap,
-.advantage-class #panels #panels-container .seven-icons-container {
+.advantage-class #panels .panels-container .pin-wrap,
+.advantage-class #panels .panels-container .seven-icons-container {
     position: relative;
     z-index: 1;  
     height: 100vh;
@@ -1395,7 +1401,7 @@ body.advantage-class * {
     height: 100vh;
 }
 
-.advantage-class #panels #panels-container .panel, .advantage-class #panels1 #panels-container1 .panel {
+.advantage-class #panels .panels-container .panel, .advantage-class #panels1 .panels-container1 .panel {
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -1408,7 +1414,7 @@ body.advantage-class * {
     background-size: cover;
 }
 
-.advantage-class #panels #panels-container .panel img {
+.advantage-class #panels .panels-container .panel img {
     max-width: 100%;
     height: auto;
     width: 100%;
@@ -1419,7 +1425,7 @@ body.advantage-class * {
     padding-left: 20%;
 }
 
-.advantage-class #panels #panels-container .panel .panels-navigation {
+.advantage-class #panels .panels-container .panel .panels-navigation {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1428,13 +1434,13 @@ body.advantage-class * {
     -ms-flex-pack: end;
     justify-content: flex-end;
   }
-  #panels #panels-container .panel .anchor-panel,
-  #panels #panels-container .panel .nav-panel {
+  #panels .panels-container .panel .anchor-panel,
+  #panels .panels-container .panel .nav-panel {
     color: #000;
     text-transform: uppercase;
     margin-right: 2rem;
   }
-  #panels #panels-container .panels-navigation {
+  #panels .panels-container .panels-navigation {
     position: absolute;
     width: 100%;
     bottom: 2rem;
