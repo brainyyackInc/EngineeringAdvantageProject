@@ -556,7 +556,8 @@ body.advantage-class * {
 
 .advantage-class .img-bg-bottom-abs {
     width: calc(100% + 80px);
-    bottom: -25px;
+    bottom: -40vh;
+    transition: bottom 0.3s linear;
     position: absolute;
     left: -40px;
     margin-bottom: -20px;

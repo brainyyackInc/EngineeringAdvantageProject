@@ -3941,10 +3941,10 @@ horizontalSections.forEach(function (sec, i) {
                   let leftG = 1 + ( ( window.scrollY / threshold ) * 10000 );
                   let opacity = 1 - ( ( window.scrollY / threshold ) * 0.6 );
                   let opacity2 = 1 - ( ( window.scrollY / threshold ) * 1);
+
                   if (window.scrollY > 1.8 * threshold) { 
                     bannerImage.style.display = 'none'; 
                     iconHero1.style.display = 'none';
-                    bannerImage
                   } 
                   else if (window.scrollY > 0.4 * threshold) {
                     hero.style.opacity = opacity * 2.3;
@@ -3958,9 +3958,8 @@ horizontalSections.forEach(function (sec, i) {
                   } 
                   else {
                     hero.style.transform = `scale(1)`;
-                    bannerImage.style.bottom = '-25px';
+                    bannerImage.style.bottom = '-40vh';
                     iconHero1.style.opacity = '1';
-                    
                   }
                   if (window.scrollY > 0.6 * threshold) {
                     hero2.style.opacity =  opacity2;
@@ -3968,7 +3967,7 @@ horizontalSections.forEach(function (sec, i) {
                     hero2.style.opacity = '1';
                   }
 
-                  if (window.scrollY > 2 * threshold) { 
+                  if (window.scrollY > 2.4 * threshold) { 
                    
                     $(trailer).removeClass("trailer-hidden");
                     ecotext.style.opacity = opacity * 2.3; 
@@ -3987,12 +3986,12 @@ horizontalSections.forEach(function (sec, i) {
                     staticimg.style.opacity = "0";
                   }
 
-                  if (window.scrollY > 2.3 * threshold) { 
+                  if (window.scrollY > 2.7 * threshold) { 
                     $(ecoImg).removeClass("eco-hide-scroll-img__scroll");
                     $(ecoImg).addClass("eco-hide-scroll-img__scroll-stt");
                   } 
                   
-                  else if (window.scrollY > 2 * threshold) {
+                  else if (window.scrollY > 2.4 * threshold) {
                     $(ecoImg).addClass("eco-hide-scroll-img__scroll");
                     $(ecoImg).removeClass("eco-hide-scroll-img__scroll-stt");
                   } 
