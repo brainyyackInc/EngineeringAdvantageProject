@@ -122,17 +122,17 @@ body.advantage-class * {
 .advantage-class .bigIcon-4-frst-line {
     position: absolute;
     height: 1px!important;
-    transform: rotate(248deg);
-    top: -67%;
-    right: 6%;
+    transform: rotate(100deg);
+    top: 170%;
+    right: -23%;
 }
 
 .advantage-class .bigIcon-4-scnd-line {
     position: absolute;
     height: 1px!important;
-    transform: rotate(289deg);
-    top: -66%;
-    left: 1%;
+    transform: rotate(60deg);
+    top: 150%;
+    right: -105%;
 }
 
 .advantage-class .bigIcon-6-frst-line {
@@ -199,24 +199,26 @@ body.advantage-class * {
 .advantage-class .animated-long-line-4 {
     position: absolute;
     height: 1px;
-    top: 70%;
-    left: 91%;
+    bottom: -50%;
+    right: 35%;
+    transform: scaleX(-1) rotate(55deg);
 }
 
 .advantage-class .animated-long-line-5 {
     position: absolute;
     height: 1px;
-    top: 33%;
-    left: 87%;
-    transform: rotate(180deg);
-    display: none;
+    bottom: 25%;
+    right: 65%;
+    transform: scaleX(-1) rotate(7deg);
+    /* display: none; */
 }
 
 .advantage-class .animated-long-line-6 {
     position: absolute;
     height: 1px;
-    top: 70%;
-    left: 91%;
+    bottom: 55%;
+    right: 65%;
+    transform: scaleX(-1) rotate(-6deg);
 }
 
 .advantage-class .bigIcon-7-frst-line {
@@ -293,7 +295,7 @@ body.advantage-class * {
 }
 
 .advantage-class .container-obs {
-    height: 300vh;
+    height: 350vh;
 
 }
 
@@ -559,8 +561,8 @@ body.advantage-class * {
 
 .advantage-class .img-bg-bottom-abs {
     width: calc(100% + 80px);
-    bottom: -40vh;
-    transition: bottom 0.3s linear;
+    bottom: -50vh;
+    transition: bottom 0.4s linear;
     position: absolute;
     left: -40px;
     margin-bottom: -20px;
@@ -592,12 +594,12 @@ body.advantage-class * {
 .advantage-class #panel-2 .icon-cont-abs, 
 .advantage-class #panel-5 .icon-cont-abs,
 .advantage-class #panel-7 .icon-cont-abs {
-    margin-top: -20vh;
+    margin-top: -15vh;
 }
 
 .advantage-class #panel-3 .icon-cont-abs,
 .advantage-class #panel-6 .icon-cont-abs {
-    margin-top: 20vh;
+    margin-top: 15vh;
 }
 
 .advantage-class .icon-wrapper {
@@ -651,7 +653,7 @@ body.advantage-class * {
 
 .eco-hide-scroll-img {
     opacity: 0;
-    transition: .5s linear!important;
+    transition: 0.8s linear!important;
     position: relative;
     left: 0;
     transform: scale(1);
@@ -659,13 +661,13 @@ body.advantage-class * {
 }
 
 .eco-hide-scroll-img.eco-hide-scroll-img__scroll {
-    left: 470px;
+    left: 43vw;
     transform: scale(1.9);
     opacity: 1;
 }
 
 .eco-hide-scroll-img__scroll-stt {
-    left: 470px;
+    left: 43vw;
     opacity: 0;
 }
 
@@ -1289,6 +1291,10 @@ body.advantage-class * {
     width: 100%;
     height: 100vh;
     overflow: hidden;
+}
+
+.advantage-class .panel.full-screen {
+    overflow: visible;
 }
   
 .advantage-class   #intro {
