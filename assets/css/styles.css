@@ -483,17 +483,17 @@ body.advantage-class * {
 
 .advantage-class .banner-sect-content h1 {
     font-family: 'Open Sans-Bold';
-    font-size: 2vw;
+    font-size: 42px;
     color: #fff;
-    line-height: 2.1vw;
+    line-height: 50px;
     text-align: center;
     margin-bottom: 20px;
 }
 
 .advantage-class .banner-sect-content p {
     color: #fff;
-    font-size: 1vw;
-    line-height: 1.1vw;
+    font-size: 28px;
+    line-height: 32px;
 }
 
 .advantage-class .banner-sect-content a {
@@ -616,6 +616,9 @@ body.advantage-class * {
     left: 50%;
     max-height: 80vh;
     height: 100%;
+    max-width: 570px;
+    width: 100%;
+    max-width: 500px;
 }
 
 .advantage-class .icon-wrapper svg {
@@ -623,11 +626,16 @@ body.advantage-class * {
     height: 100%;
 }
 
+.advantage-class .position_big-image {
+    max-width: 500px;
+    width: 100%;
+}
+
 .advantage-class .main-subtitle {
     color: #fff;
-    font-size: 1.5vw;
+    font-size: 42px;
     font-family: 'Open Sans-Bold';
-    line-height: 1.7vw;
+    line-height: 48px;
     margin-bottom: 1.2vw;
 }
 
@@ -703,7 +711,7 @@ body.advantage-class * {
 .advantage-class .engenering-section h2 {
     color: #fff;
     font-family: 'Open Sans-Bold';
-    font-size: 1.8vw;
+    font-size: 30px;
     line-height: 30px;
     margin-bottom: 10px;
 }
@@ -727,8 +735,8 @@ body.advantage-class * {
 }
 
 .advantage-class .main-p {
-    font-size: .8vw;
-    line-height:1.1vw;
+    font-size: 18px;
+    line-height: 26px;
     color: #fff;
     margin-bottom: 1vw;
 }
@@ -747,7 +755,7 @@ body.advantage-class * {
     max-width: 596px;
 }
 
-.advantage-class .text-link.animate-this {
+.advantage-class .text-link {
     font-family: 'Open Sans-Bold';
     font-size: 18px;
     line-height: 26px;
@@ -1329,8 +1337,8 @@ body.advantage-class * {
   
 .advantage-class  .panels-title {
     font-family: 'Open Sans-Bold';
-    font-size: 1.2vw;
-    line-height: 1.2vw;
+    font-size: 30px;
+    line-height: 34px;
     color: #fff;
     margin-bottom: 15px;
 }
@@ -1363,9 +1371,9 @@ body.advantage-class * {
 
 .advantage-class .panels-txt {
     color: #fff;
-    font-size: .6vw;
+    font-size: 16px;
     max-width: 413px;
-    line-height: .8vw;
+    line-height: 24px;
     transition: .2s;
 }
 
@@ -1573,6 +1581,397 @@ body.advantage-class * {
     background-position: center;
 }
 
+.hero {
+    height: calc(100vh + 2px);
+    width: calc(100% + 2px);
+    position: fixed;
+    z-index: var(--hero-z-index);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero__top {
+    width: 100%;
+    height: 60%;
+    min-height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .hero__bottom {
+    width: 100%;
+    background: #fff;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: center;
+  }
+  .hero__top .filler {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .filler-white {
+    background-color: #fff;
+  }
+  .hero__illustration {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero__illustration .filler:first-child {
+    padding-top: 200px;
+  }
+  .hero-icon {
+    width: 200px;
+    height: 200px;
+    background: transparent;
+    margin: 0 auto;
+    -webkit-clip-path: polygon(0 0, 50% 50%, 100.5% 0, 100.5% 100%, 50% 50%, 0 100%);
+            clip-path: polygon(0 0, 50% 50%, 100.5% 0, 100.5% 100%, 50% 50%, 0 100%);
+  }
+  
+  .hero h1 {
+    font-size: 120px;
+    font-weight: lighter;
+    margin: 0;
+    opacity: 1;
+  }
+  
+  .advantage-class .trailer {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: var(--trailer-z-index);
+    background-color: transparent;
+  }
+  .video-wrapper {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+  }
+  .video {
+    height: 100vh;
+    width: 100%;
+    background: url(http://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif) no-repeat center center;
+    background-size: cover;
+  }
+  
+  .past-threshold .trailer {
+    position: absolute;
+    height: 200vh;
+    z-index: 2;
+  }
+  
+  .engen-icon {
+      position: absolute;
+      width: 100%;
+      max-width: 320px;
+  }
+  
+  .engen-icon svg circle {
+      transition: .2s;
+  }
+  
+  .engen-icon p {
+      text-transform: uppercase;
+      font-size: 14px!important;
+      line-height: 20px!important;
+      position: relative;
+      transition: .2s;
+      text-align: center;
+  }
+  
+  .engen-icon:hover p {
+      color: #87BA34
+  }
+  
+  .engen-icon svg path, .engen-icon svg polyline, .engen-icon svg line, .engen-icon svg polygon {
+      transition: .2s;
+  }
+  
+  .engen-icon:hover svg path, .engen-icon:hover svg polyline, .engen-icon:hover svg line {
+      stroke: #87BA34
+  }
+  
+  .engen-icon:hover svg path, .engen-icon:hover svg polygon {
+      fill: #87BA34
+  }
+  
+  .engen-icon-platforms {
+      top: -97%;
+  }
+  
+  .engen-icon-innovation {
+      left: -63%;
+      top: 20%;
+  }
+  
+  .engen-icon-platforms p, .advantage-class .engen-icon-markets p {
+      top: 100px;
+  }
+  
+  .engen-icon-innovation p {
+      top: 125px;
+  }
+  
+  .engen-icon-gen {
+      left: -100%;
+      top: 27%;
+  }
+  
+  .engen-icon-gen p, .engen-icon-data p, .engen-icon-talent p, .engen-icon-tech p {
+      max-width: 100px;
+      margin: 0 auto;
+      top: -104px;
+  }
+  
+  .engen-icon-tech p, .engen-icon-talent p {
+      max-width: 100%;
+  }
+  
+  .engen-icon-data {
+      left: -18%;
+      top: 82%;
+  }
+  
+  .engen-icon-data p {
+      max-width: 245px;
+  }
+  
+  .engen-icon-tech {
+      top: 87%;
+      left: 81%;
+  }
+  
+  .engen-icon-talent {
+      left: 121%;
+  }
+  
+  .content {
+    /* pushs content below header hero & trailer (should equal trailer height after threshold) */
+    padding-top: 200vh;
+  }
+  .section {
+    height: 75vh;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+  .section:nth-child(2n) {
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+  }
+  .section h2 {
+    font-size: 80px;
+    font-weight: lighter;
+  }
+  
+  :root {
+      /* z-indexes */
+      --hero-z-index: 2;
+      --trailer-z-index: 1;
+    }
+    
+    * {
+      -webkit-box-sizing: inherit;
+              box-sizing: inherit;
+    }
+    
+    body {
+      font-family: "-apple-system", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+    }
+    
+    .hero {
+      height: calc(100vh + 2px);
+      top: 0;
+      width: calc(100% + 2px);
+      position: fixed;
+      z-index: var(--hero-z-index);
+      background-color: transparent;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      transition: .2s;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+  
+    .sticky-sect-cont {
+        position: relative;
+        height: 200vh;
+        width: 100%;
+    }
+    .hero__top {
+      width: 100%;
+      height: 60%;
+      min-height: 400px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+    .hero__bottom {
+      width: 100%;
+      background: #fff;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero__top .filler {
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+    }
+    .filler-white {
+      background-color: #fff;
+    }
+    .hero__illustration {
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+    .hero__illustration .filler:first-child {
+      padding-top: 200px;
+    }
+    .hero-icon {
+      width: 200px;
+      height: 200px;
+      background: transparent;
+      margin: 0 auto;
+      -webkit-clip-path: polygon(0 0, 50% 50%, 100.5% 0, 100.5% 100%, 50% 50%, 0 100%);
+              clip-path: polygon(0 0, 50% 50%, 100.5% 0, 100.5% 100%, 50% 50%, 0 100%);
+    }
+    
+    .hero h1 {
+      font-size: 120px;
+      font-weight: lighter;
+      margin: 0;
+      opacity: 1;
+    }
+    
+    .advantage-class .trailer {
+      position: fixed!important;
+      top: 0;
+      height: 100vh;
+      width: 100%;
+      z-index: var(--trailer-z-index);
+      background-color: transparent;
+      top: 0;
+      background-size: cover;
+      visibility: visible;
+      z-index: 2;
+      transition: .2s;
+    }
+  
+    .advantage-class .trailer-hide {
+      opacity: 0;
+      visibility: hidden;
+      z-index: -1;
+    }
+  
+    #line-svg {
+      top: 0%;
+      
+      left: 0%;
+    }
+  
+    .b-hsect-abs-svg {
+      max-width: 1600px;
+      width: 100%;
+      position: absolute;
+      height: 100%;
+      left: 50%;
+      transform: translateX(-50%)
+    }
+  
+    .video-wrapper {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-transform-origin: center;
+          -ms-transform-origin: center;
+              transform-origin: center;
+    }
+    .video {
+      height: 100vh;
+      width: 100%;
+      background: url(http://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif) no-repeat center center;
+      background-size: cover;
+    }
+    
+    .past-threshold .trailer {
+      position: absolute;
+      height: 100vh;
+    }
+  
+    
+    .content {
+      /* pushs content below header hero & trailer (should equal trailer height after threshold) */
+      padding-top: 200vh;
+    }
+    .section {
+      height: 75vh;
+      display: -ms-grid;
+      display: grid;
+      place-items: center;
+    }
+    .section:nth-child(2n) {
+      background-color: #000;
+      color: #fff;
+      font-weight: bold;
+    }
+    .section h2 {
+      font-size: 80px;
+      font-weight: lighter;
+    }
+
 @media (max-width: 767px) {
     .carousel-inner > .item.next,
     .carousel-inner > .item.active.right {
@@ -1618,6 +2017,229 @@ body.advantage-class * {
     }
     
   }
+
+@media only screen and (max-width: 1400px) {
+
+    .advantage-class .icon-wrapper img {
+        width: 100%!important;
+        max-width: 400px!important;
+    }
+
+    .icon-wrapper>div>svg{
+        max-width: 400px!important;
+        width: 100%!important;
+    }
+
+    .icon-wrapper>div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .advantage-class .banner-sect-content h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    
+    .advantage-class .banner-sect-content p {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .advantage-class .main-subtitle {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .advantage-class .main-p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .advantage-class .text-link {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .advantage-class .build-it-section--abs {
+        right: -157px;
+        top: -333px!important;
+        max-width: 401px;
+    }
+
+    .advantage-class .engenering-section h2 {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 10px;
+    }
+
+    .advantage-class .engenering-section p {
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .engen-icon {
+        max-width: 250px;
+    }
+
+    .engen-icon-platforms {
+        top: -70%;
+    }
+
+    .engen-icon-platforms p, .advantage-class .engen-icon-markets p {
+        top: 87px;
+    }
+
+    .engen-icon-gen {
+        left: -60%;
+        top: 40%;
+    }
+
+    .advantage-class .panels-title {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .advantage-class .bigIcon-2-frst-line {
+        left: 50%;
+        top: -59%;
+    }
+
+    .advantage-class .bigIcon-4-frst-line {
+        top: 212%;
+        right: -22%;
+    }
+
+    .advantage-class .animated-long-line-4 {
+        bottom: -73%;
+    }
+
+    .advantage-class .animated-long-line-5 {
+        right: 78%;
+    }
+
+    .advantage-class .bigIcon-5-frst-line {
+        transform: rotate(-168deg);
+        top: 5%;
+        right: 76%;
+    }
+
+    .advantage-class .bigIcon-5-scnd-line {
+        bottom: 542px;
+        right: 332px;
+    }
+
+    .advantage-class .bigIcon-4-scnd-line {
+        top: 183%;
+        right: -107%;
+    }
+
+    .advantage-class .animated-long-line-3 {
+        top: 135%;
+        left: 60%;
+    }
+
+    .advantage-class .bigIcon-3-scnd-line {
+        bottom: -388px;
+        left: 136px;
+    }
+
+    .advantage-class .bigIcon-3-frst-line {
+        bottom: -111%;
+        right: -2%;
+    }
+
+    .advantage-class .animated-long-line-2 {
+        top: 77%;
+        left: 78%;
+    }
+
+    .advantage-class .bigIcon-2-scnd-line {
+        left: 78%;
+    }
+
+    .advantage-class .panels-txt {
+        font-size: 14px;
+        line-height: 20px;
+        max-width: 350px;
+    }
+
+    .advantage-class .animated-long-line {
+        left: 76%
+    }
+
+    .advantage-class .case-study-section--green-title, .advantage-class .advantage-tabs__cont p {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .advantage-class .case-study__item__img-block p {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .advantage-class .case-study-section__p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .advantage-class .bigIcon-7-scnd-line {
+        bottom: -36%;
+        right: 53%;
+    }
+
+    .advantage-class .case-studies__element {
+        width: 450px;
+        top: 200px;
+    }
+
+    .advantage-class .bigIcon-7-frst-line {
+        bottom: -95%;
+        right: 14%;
+    }
+
+    .advantage-class .animated-long-line-6 {
+        bottom: 63%;
+        right: 75%;
+    }
+
+    .advantage-class .bigIcon-6-frst-line {
+        right: 66%;
+    }
+
+    .advantage-class .bigIcon-scnd-line {
+        bottom: -98%;
+        left: 5%;
+    }
+
+    .advantage-class .bigIcon-6-scnd-line {
+        bottom: -11%;
+        right: 65%;
+    }
+
+    .advantage-class .bigIcon-frst-line {
+        bottom: -70%;
+        right: -117%;
+    }
+
+    .engen-icon-innovation p {
+        top: 102px;
+    }
+
+    .engen-icon-innovation {
+        top: 7%;
+        left: -49%;
+    }
+
+    .engen-icon-gen p, .engen-icon-data p, .engen-icon-talent p, .engen-icon-tech p {
+        top: -85px;
+    }
+
+    .advantage-class .engen-icon-markets {
+        top: -69%;
+    }
+
+}
   
 @media only screen and (max-width: 1200px) {
 
@@ -1988,396 +2610,7 @@ body.advantage-class * {
 
 }
 
-.hero {
-  height: calc(100vh + 2px);
-  width: calc(100% + 2px);
-  position: fixed;
-  z-index: var(--hero-z-index);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.hero__top {
-  width: 100%;
-  height: 60%;
-  min-height: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.hero__bottom {
-  width: 100%;
-  background: #fff;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  text-align: center;
-}
-.hero__top .filler {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-.filler-white {
-  background-color: #fff;
-}
-.hero__illustration {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.hero__illustration .filler:first-child {
-  padding-top: 200px;
-}
-.hero-icon {
-  width: 200px;
-  height: 200px;
-  background: transparent;
-  margin: 0 auto;
-  -webkit-clip-path: polygon(0 0, 50% 50%, 100.5% 0, 100.5% 100%, 50% 50%, 0 100%);
-          clip-path: polygon(0 0, 50% 50%, 100.5% 0, 100.5% 100%, 50% 50%, 0 100%);
-}
 
-.hero h1 {
-  font-size: 120px;
-  font-weight: lighter;
-  margin: 0;
-  opacity: 1;
-}
-
-.advantage-class .trailer {
-  position: fixed;
-  height: 100vh;
-  width: 100%;
-  z-index: var(--trailer-z-index);
-  background-color: transparent;
-}
-.video-wrapper {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transform-origin: center;
-      -ms-transform-origin: center;
-          transform-origin: center;
-}
-.video {
-  height: 100vh;
-  width: 100%;
-  background: url(http://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif) no-repeat center center;
-  background-size: cover;
-}
-
-.past-threshold .trailer {
-  position: absolute;
-  height: 200vh;
-  z-index: 2;
-}
-
-.engen-icon {
-    position: absolute;
-    width: 100%;
-    max-width: 320px;
-}
-
-.engen-icon svg circle {
-    transition: .2s;
-}
-
-.engen-icon p {
-    text-transform: uppercase;
-    font-size: 14px!important;
-    line-height: 20px!important;
-    position: relative;
-    transition: .2s;
-    text-align: center;
-}
-
-.engen-icon:hover p {
-    color: #87BA34
-}
-
-.engen-icon svg path, .engen-icon svg polyline, .engen-icon svg line, .engen-icon svg polygon {
-    transition: .2s;
-}
-
-.engen-icon:hover svg path, .engen-icon:hover svg polyline, .engen-icon:hover svg line {
-    stroke: #87BA34
-}
-
-.engen-icon:hover svg path, .engen-icon:hover svg polygon {
-    fill: #87BA34
-}
-
-.engen-icon-platforms {
-    top: -97%;
-}
-
-.engen-icon-innovation {
-    left: -63%;
-    top: 20%;
-}
-
-.engen-icon-platforms p, .advantage-class .engen-icon-markets p {
-    top: 100px;
-}
-
-.engen-icon-innovation p {
-    top: 125px;
-}
-
-.engen-icon-gen {
-    left: -100%;
-    top: 27%;
-}
-
-.engen-icon-gen p, .engen-icon-data p, .engen-icon-talent p, .engen-icon-tech p {
-    max-width: 100px;
-    margin: 0 auto;
-    top: -104px;
-}
-
-.engen-icon-tech p, .engen-icon-talent p {
-    max-width: 100%;
-}
-
-.engen-icon-data {
-    left: -18%;
-    top: 82%;
-}
-
-.engen-icon-data p {
-    max-width: 245px;
-}
-
-.engen-icon-tech {
-    top: 87%;
-    left: 81%;
-}
-
-.engen-icon-talent {
-    left: 121%;
-}
-
-.content {
-  /* pushs content below header hero & trailer (should equal trailer height after threshold) */
-  padding-top: 200vh;
-}
-.section {
-  height: 75vh;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-}
-.section:nth-child(2n) {
-  background-color: #000;
-  color: #fff;
-  font-weight: bold;
-}
-.section h2 {
-  font-size: 80px;
-  font-weight: lighter;
-}
-
-:root {
-    /* z-indexes */
-    --hero-z-index: 2;
-    --trailer-z-index: 1;
-  }
-  
-  * {
-    -webkit-box-sizing: inherit;
-            box-sizing: inherit;
-  }
-  
-  body {
-    font-family: "-apple-system", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    margin: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  
-  .hero {
-    height: calc(100vh + 2px);
-    top: 0;
-    width: calc(100% + 2px);
-    position: fixed;
-    z-index: var(--hero-z-index);
-    background-color: transparent;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    transition: .2s;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
-  .sticky-sect-cont {
-      position: relative;
-      height: 200vh;
-      width: 100%;
-  }
-  .hero__top {
-    width: 100%;
-    height: 60%;
-    min-height: 400px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .hero__bottom {
-    width: 100%;
-    background: #fff;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .hero__top .filler {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-  }
-  .filler-white {
-    background-color: #fff;
-  }
-  .hero__illustration {
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .hero__illustration .filler:first-child {
-    padding-top: 200px;
-  }
-  .hero-icon {
-    width: 200px;
-    height: 200px;
-    background: transparent;
-    margin: 0 auto;
-    -webkit-clip-path: polygon(0 0, 50% 50%, 100.5% 0, 100.5% 100%, 50% 50%, 0 100%);
-            clip-path: polygon(0 0, 50% 50%, 100.5% 0, 100.5% 100%, 50% 50%, 0 100%);
-  }
-  
-  .hero h1 {
-    font-size: 120px;
-    font-weight: lighter;
-    margin: 0;
-    opacity: 1;
-  }
-  
-  .advantage-class .trailer {
-    position: fixed!important;
-    top: 0;
-    height: 100vh;
-    width: 100%;
-    z-index: var(--trailer-z-index);
-    background-color: transparent;
-    top: 0;
-    background-size: cover;
-    visibility: visible;
-    z-index: 2;
-    transition: .2s;
-  }
-
-  .advantage-class .trailer-hide {
-    opacity: 0;
-    visibility: hidden;
-    z-index: -1;
-  }
-
-  #line-svg {
-    top: 0%;
-    
-    left: 0%;
-  }
-
-  .b-hsect-abs-svg {
-    max-width: 1600px;
-    width: 100%;
-    position: absolute;
-    height: 100%;
-    left: 50%;
-    transform: translateX(-50%)
-  }
-
-  .video-wrapper {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-transform-origin: center;
-        -ms-transform-origin: center;
-            transform-origin: center;
-  }
-  .video {
-    height: 100vh;
-    width: 100%;
-    background: url(http://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif) no-repeat center center;
-    background-size: cover;
-  }
-  
-  .past-threshold .trailer {
-    position: absolute;
-    height: 100vh;
-  }
-
-  
-  .content {
-    /* pushs content below header hero & trailer (should equal trailer height after threshold) */
-    padding-top: 200vh;
-  }
-  .section {
-    height: 75vh;
-    display: -ms-grid;
-    display: grid;
-    place-items: center;
-  }
-  .section:nth-child(2n) {
-    background-color: #000;
-    color: #fff;
-    font-weight: bold;
-  }
-  .section h2 {
-    font-size: 80px;
-    font-weight: lighter;
-  }
   
   @media (max-width: 1000px) {
     .hero h1 {
