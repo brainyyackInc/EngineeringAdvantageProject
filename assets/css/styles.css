@@ -2447,8 +2447,67 @@ body.advantage-class * {
     }
 
     .advantage-tabs__item {
+        width: calc(100% + 60px)!important;
+        margin-left: -30px;
+    }
+
+    .modal-case-studies__text-oriented {
+        display: none;
+    }
+
+    .advantage-class .seven-element-sect__item_txt {
+        margin-top: 20px;
+    }
+
+    .advantage-class .seven-element-sect {
+        display: block;
+    }
+
+    .advantage-class .advantage-tabs__cont p {
+        left: 30px;
+        padding-right: 60px;
+    }
+
+    .news-link-white {
+        padding-left: 20px;
+        padding-right: 48px;
+    }
+
+    .advantage-class .case-study__item__abs {
+        width: 184px;
+        top: 8px;
+    }
+
+    .advantage-class .case-study__item__abs-width-mob {
+        width: 117px;
+        top: 8px;
+    }
+
+    .d-flex.jcsb {
+        flex-wrap: wrap;
+        width: calc(100% + 30px);
+    }
+
+    .advantage-class .carousel-indicators {
+        bottom: -11px;
+    }
+
+    .advantage-class .build-the-future-sect {
+        height: auto;
         width: calc(100% + 60px);
         margin-left: -30px;
+    }
+
+    .advantage-class .advantage-modal__right {
+        width: 100%;
+    }
+
+    .advantage-class .modal-case-studies__wrapper {
+        padding-right: 30px;
+    }
+
+    .advantage-class .advantage-tabs-top .nav-tabs>li {
+        margin-right: 0;
     }
 
     .advantage-tabs__item>a {
@@ -2618,6 +2677,10 @@ body.advantage-class * {
   @media (max-width: 760px) {
     .hero h1 {
       font-size: 60px;
+    }
+
+    #panels {
+        display: none;
     }
   }
   @media (max-width: 510px) {
