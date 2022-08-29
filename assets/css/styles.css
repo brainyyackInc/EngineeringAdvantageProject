@@ -739,6 +739,10 @@ body.advantage-class * {
     margin-bottom: 1vw;
 }
 
+.mobile-sections {
+    display: none;
+}
+
 .advantage-class .build-it-section--container {
     width: 100%;
     margin-left: auto;
@@ -1226,11 +1230,16 @@ body.advantage-class * {
 }
 
 .advantage-class .the-future-cont__title {
-    font: 28px;
+    font-size: 28px;
     font-family: 'Open Sans-Bold';
     line-height: 32px;
     color: #fff;
     margin-bottom: 35px;
+}
+
+.advantage-class .modal-case-studies__ul {
+    padding-left: 35px;
+    padding-right: 0;
 }
 
 .advantage-class .the-future-cont__wrapper {
@@ -1591,6 +1600,7 @@ body.advantage-class * {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    z-index: 21;
   }
   .hero__top {
     width: 100%;
@@ -1811,7 +1821,7 @@ body.advantage-class * {
       top: 0;
       width: calc(100% + 2px);
       position: fixed;
-      z-index: var(--hero-z-index);
+      z-index: 21;
       background-color: transparent;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1969,6 +1979,8 @@ body.advantage-class * {
       font-size: 80px;
       font-weight: lighter;
     }
+    
+
 
 @media (max-width: 767px) {
     .carousel-inner > .item.next,
@@ -2580,6 +2592,96 @@ body.advantage-class * {
     .advantage-modal__right__txt {
         margin-top: 20px;
     }
+
+    .advantage-class .mobile-sections {
+        display: block;
+    }
+
+    .advantage-class .banner-mobile {
+        position: relative;
+        height: 100vh;
+        padding-top: 125px;
+        display: flex;
+        z-index: 2;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .advantage-class .build-it-section--abs {
+        right: -79px;
+        top: -370px!important;
+        max-width: 180px;
+        z-index: 1;
+    }
+
+    .advantage-class .mobile-video-sect {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        object-fit: cover;
+    }
+
+    .advantage-class .banner-mobile h2 {
+        font-family: 'Open Sans-Bold';
+        font-size: 42px;
+        line-height: 50px;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+
+    .advantage-class .banner-mobile p {
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        line-height: 24px;
+    }
+
+    .advantage-class .banner-build-section {
+        min-height: 100vh;
+        width: 100%;
+        background-image: url(../media/images/mobile-2nd-section.png);
+        background-size: cover;
+        position: relative;
+        padding: 75px 40px 108px 40px;
+        overflow: hidden;
+    }
+
+    .advantage-class .banner-build-section h2 {
+        font-size: 22px;
+        line-height: 26px;
+        font-family: 'Open Sans-SemiBold';
+        color: #fff;
+        margin-bottom: 40px;
+    }
+
+    .advantage-class .banner-build-section p {
+        color: #fff;
+        margin-bottom: 30px;
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .advantage-class .col-w-mrg-cstm {
+        margin-top: 50px;
+    }
+
+    .advantage-class .banner-build-section a {
+        color: #fff;
+        margin-bottom: 30px;
+        font-size: 14px;
+        line-height: 26px;
+        font-family: 'Open Sans-SemiBold';
+    }
+
+
 
 }
 
