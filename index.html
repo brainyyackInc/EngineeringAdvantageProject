@@ -4124,7 +4124,12 @@ function lineDrawingOnScroll(svgPathID, panelID, viewportMultipler) {
 
     // When the page scrolls...
     window.addEventListener("scroll", function(e) {
-        var panel1TopPixels = document.documentElement.scrollTop - ( panel1ContainerPosition.top * viewportMultipler * threshold /  1000);
+        var panel1TopPixels = ( document.documentElement.scrollTop - ( panel1ContainerPosition.top * viewportMultipler ) ) * ( ( 0.6 * threshold + 400 ) /  1000 );
+        // console.log("final panel1TopPixels", panel1TopPixels);
+        // console.log("document scroll top", document.documentElement.scrollTop);
+        // console.log("panel1ContainerPosition.top", panel1ContainerPosition.top);
+        // console.log("viewportMultipler", viewportMultipler);
+        // console.log("threshold /  1000", threshold /  1000);
         if ( panel1TopPixels > 0) {
             path.style.strokeDashoffset = pathLength - panel1TopPixels;
         } else {
