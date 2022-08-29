@@ -618,7 +618,6 @@ body.advantage-class * {
     height: 100%;
     max-width: 570px;
     width: 100%;
-    max-width: 500px;
 }
 
 .advantage-class .icon-wrapper svg {
@@ -627,7 +626,6 @@ body.advantage-class * {
 }
 
 .advantage-class .position_big-image {
-    max-width: 500px;
     width: 100%;
 }
 
