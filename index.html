@@ -25,13 +25,13 @@
                 <li class="capabilities-bl">
                     Capabilities
                     <ul>
-                        <li><a href="#panel-1">Ecosystem Innovation ></a></li>
-                        <li><a href="#panel-2" class="anchor">Next-gen Technology ></a></li>
-                        <li><a href="#panel-3">Platforms and Automation ></a></li>
-                        <li><a href="#panel-4">Data, enterprise intelligence, and cyber security ></a></li>
-                        <li><a href="#panel-7">Tech leadership ></a></li>
-                        <li><a href="#panel-6">Tech talent ></a></li>
-                        <li><a href="#panel-7">New markets ></a></li>
+                        <li><a href="#panel-1" class="ecosystem-anchor">Ecosystem Innovation ></a></li>
+                        <li><a href="#panel-2" class="anchor next-gen-anchor">Next-gen Technology ></a></li>
+                        <li><a href="#panel-3" class="platforms-anchor">Platforms and Automation ></a></li>
+                        <li><a href="#panel-4" class="data-anchor">Data, enterprise intelligence, and cyber security ></a></li>
+                        <li><a href="#panel-7" class="leadership-anchor">Tech leadership ></a></li>
+                        <li><a href="#panel-6" class="talent-anchor">Tech talent ></a></li>
+                        <li><a href="#panel-7" class="markets-anchor">New markets ></a></li>
                     </ul>
                 </li>
                 <li>
@@ -3237,7 +3237,11 @@
                 </div>
                 <div class="col-lg-8 d-flex align-items-end flex-column">
                     <div class="case-study__item " data-toggle="modal" data-target="#basicModal2">
-                        <img class="case-study__item__abs" src="assets/media/images/retails-icons.svg" alt="">
+                        <div class="icons-abs-case-studies">
+                          <img src="assets/media/images/Data-enterprise-intelligence-and-cyber-security-WCS.svg" alt="">
+                          <img src="assets/media/images/NewGen-technology-WCS.svg" alt="">
+                          <img src="assets/media/images/Platforms-and-automation-WCS.svg" alt="">
+                        </div>
                         <h4 class="case-study__item__title">
                             Retail | Cloud
                         </h4>
@@ -3250,7 +3254,10 @@
                         </div>
                     </div>
                     <div class="case-study__item case-study__item-mt-0" data-toggle="modal" data-target="#basicModal3">
-                        <img class="case-study__item__abs case-study__item__abs-width-mob" src="assets/media/images/financial-serv.svg" alt="">
+                      <div class="icons-abs-case-studies">
+                        <img src="assets/media/images/Data-enterprise-intelligence-and-cyber-security-WCS.svg" alt="">
+                        <img src="assets/media/images/NewGen-technology-WCS.svg" alt="">
+                      </div>
                         <h4 class="case-study__item__title">
                             Financial Services | AI
                         </h4>
@@ -3570,7 +3577,11 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="assets/media/images/close-svg.svg" alt=""> </button>
                 <img class="modal-case-studies__main-image" src="assets/media/images/RetaiL-storefront_BRGHT.png" alt="">
                 <div class="modal-case-studies__wrapper">
-                    <img class="modal-case-studies__wrapper__abs" src="assets/media/images/retails-icons.svg" alt="">
+                  <div class="icons-abs-case-studies">
+                    <img src="assets/media/images/Data-enterprise-intelligence-and-cyber-security-WCS.svg" alt="">
+                    <img src="assets/media/images/NewGen-technology-WCS.svg" alt="">
+                    <img src="assets/media/images/Platforms-and-automation-WCS.svg" alt="">
+                  </div>
                     <div class="modal-case-studies__bl">
                         <h4 class="modal-case-studies__bl--title">A one-stop destination for data that’s used for multiple functions</h4>
                         <h4 class="modal-case-studies__bl--title--green">The Situation</h4>
@@ -3630,7 +3641,10 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="assets/media/images/close-svg.svg" alt=""> </button>
                 <img class="modal-case-studies__main-image" src="assets/media/images/03B_CS_financialservice_2_OPEN_header.jpg" alt="">
                 <div class="modal-case-studies__wrapper">
-                    <img class="modal-case-studies__wrapper__abs" src="assets/media/images/retails-icons.svg" alt="">
+                  <div class="icons-abs-case-studies">
+                    <img src="assets/media/images/Data-enterprise-intelligence-and-cyber-security-WCS.svg" alt="">
+                    <img src="assets/media/images/NewGen-technology-WCS.svg" alt="">
+                  </div>
                     <div class="modal-case-studies__bl">
                         <h4 class="modal-case-studies__bl--title--green">The Situation</h4>
                         <p class="modal-case-studies__bl--txt">A  financial services company faced increased risk 
@@ -3830,16 +3844,6 @@
     <script src="assets/js/ScrollTrigger.min.js"></script>
     <script src="assets/js/ScrollToPlugin.min.js"></script>
     <script>
-   $().ready(function () {
-        // store the currently selected tab in the hash value
-        $("ul.nav-tabs > li > a").click(function (e) {
-            $(this).tab('show');
-            history.pushState(null, null, $(e.target).attr("href"));
-        });
-
-        // on load of the page: switch to the currently selected tab
-        $('ul.nav-tabs a[href="' + window.location.hash + '"]').tab('show');
-    });
 
     </script>
     <script>
@@ -4051,7 +4055,7 @@ horizontalSections.forEach(function (sec, i) {
                     
                     bannerImage.style.display = 'block'; 
                     bannerImage.style.bottom = bottomG * .02 + 'px';
-                    bannerImage.style.transform = `scale(${scale**2})`;
+                    bannerImage.style.transform = `scale(${scale**.5})`;
                     iconHero1.style.display = 'block';
                     iconHero1.style.opacity = opacity * 1.1;
                   } 

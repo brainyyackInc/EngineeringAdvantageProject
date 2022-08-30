@@ -799,7 +799,13 @@ body.advantage-class * {
     line-height: 20px;
     color: #fff;
     margin-top: 20px;
+    cursor: pointer;
     display: flex;
+    transition: .2s;
+}
+
+.advantage-class .case-study__item .bottom-text:hover {
+    color: #87BA34;
 }
 
 .advantage-class  .modal-case-studies__ul {
@@ -1073,7 +1079,13 @@ body.advantage-class * {
     font-size: 16px;
     line-height: 20px;
     display: flex;
+    transition:.2s;
+    cursor: pointer;
     margin-top: 15px;
+}
+
+.advantage-class .advantage-tabs__item .news-link-white:hover {
+    color: #87BA34;
 }
 
 .advantage-class .advantage-tabs__item--w100 .advantage-tabs__cont p {
@@ -1137,7 +1149,12 @@ body.advantage-class * {
     font-family: 'Open Sans-Bold';
     line-height: 20px;
     color: #fff;
+    transition: .2s;
     margin-top: 20px;
+}
+
+.advantage-class .advantage-modal__right__txt:hover {
+    color: #87BA34
 }
 
 .advantage-class .advantage-modal__left video {
@@ -1229,6 +1246,30 @@ body.advantage-class * {
     margin-right: auto;
 }
 
+.advantage-class .icons-abs-case-studies {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: -11px;
+}
+
+.advantage-class .modal-case-studies__wrapper .icons-abs-case-studies {
+    top: -40px;
+    right: 40px;
+}
+
+.advantage-class .icons-abs-case-studies img {
+    width: 81px;
+    height: 81px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.advantage-class .icons-abs-case-studies img:last-child {
+    margin-right: 0;
+}
+
 .advantage-class .the-future-cont__title {
     font-size: 28px;
     font-family: 'Open Sans-Bold';
@@ -1266,6 +1307,11 @@ body.advantage-class * {
     align-items: center;
     font-size: 16px;
     font-family: 'Open Sans-Bold';
+    transition: .2s;
+}
+
+.advantage-class .the-future-cont__wrapper a:hover {
+    background-color: #69a106;
 }
 
 .advantage-class .case-studies__element {
@@ -2432,6 +2478,20 @@ body.advantage-class * {
         max-width: 300px;
         max-height: 446px;
         overflow-y: hidden;
+    }
+
+    .advantage-class .modal-case-studies__wrapper .icons-abs-case-studies {
+        top: -20px;
+    }
+    
+    .advantage-class .icons-abs-case-studies img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .advantage-class .icons-abs-case-studies {
+        right: -23px;
+        top: 10px;
     }
 
     .seven-element-sect__item {
