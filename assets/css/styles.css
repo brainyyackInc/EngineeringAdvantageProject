@@ -144,8 +144,8 @@ body.advantage-class * {
 }
 
 .advantage-class .engen-icon-markets {
-    top: -80%;
-    left: 83%;
+    bottom: 337px;
+    left: 487px;
 }
 
 .advantage-class .bigIcon-6-scnd-line {
@@ -706,7 +706,7 @@ body.advantage-class * {
     align-items: center;
     justify-content: center;
     position: relative;
-    max-width: 527px;
+    max-width: 690px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -727,7 +727,7 @@ body.advantage-class * {
 }
 
 .advantage-class .engenering-section--container {
-    max-width: 527px;
+    max-width: 690px;
     position: relative;
     opacity: 0;
     transition: 1s;
@@ -1781,12 +1781,12 @@ body.advantage-class * {
   }
   
   .engen-icon-platforms {
-      top: -83%;
+      top: -279px
   }
   
   .engen-icon-innovation {
-      left: -54%;
-      top: 18%;
+      left: -378px;
+      top: -220px;
   }
   
   .engen-icon-platforms p, .advantage-class .engen-icon-markets p {
@@ -1798,8 +1798,8 @@ body.advantage-class * {
   }
   
   .engen-icon-gen {
-      left: -75%;
-      top: 27%;
+      left: -464px;
+      top: 205px;
   }
   
   .engen-icon-gen p, .engen-icon-data p, .engen-icon-talent p, .engen-icon-tech p {
@@ -1813,8 +1813,8 @@ body.advantage-class * {
   }
   
   .engen-icon-data {
-      left: -43%;
-      top: 94%;
+      left: -74px;
+      top: 386px;
   }
   
   .engen-icon-data p {
@@ -1822,13 +1822,13 @@ body.advantage-class * {
   }
   
   .engen-icon-tech {
-      top: 113%;
-      left: 62%;
+      top: 393px;
+      left: 397px;
   }
   
   .engen-icon-talent {
-      left: 117%;
-      top: 14%;
+      right: -345px;
+      top: 47px;
   }
   
   .content {
@@ -2088,14 +2088,6 @@ body.advantage-class * {
         max-width: 350px!important;
     }
     
-    .engenering-section {
-        max-width: 1690px;
-    }
-
-    .advantage-class .engenering-section--container {
-        max-width: 690px;
-    }
-
     .engen-icon-data {
         left: 6%;
         top: 73%;
