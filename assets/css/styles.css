@@ -1711,7 +1711,7 @@ body.advantage-class * {
     position: fixed;
     height: 100vh;
     width: 100%;
-    z-index: var(--trailer-z-index);
+    z-index: 222;
     background-color: transparent;
   }
   .video-wrapper {
@@ -1957,7 +1957,7 @@ body.advantage-class * {
       top: 0;
       background-size: cover;
       visibility: visible;
-      z-index: 2;
+      z-index: 22222;
       transition: .2s;
     }
   
