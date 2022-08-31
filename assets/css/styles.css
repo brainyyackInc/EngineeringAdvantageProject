@@ -2089,18 +2089,18 @@ body.advantage-class * {
     }
     
     .engen-icon-data {
-        left: 6%;
-        top: 73%;
+        left: 46px;
+        top: 139px;
     }
 
     .engen-icon-tech {
-        left: 60%;
-        top: 76%;
+        left: 494px;
+        top: 144px;
     }
 
     .engen-icon-talent {
-        top: 31%;
-        left: 103%;
+        top: -96px;
+        left: 712px;
     }
 
     .icon-wrapper>div>svg{
@@ -2176,7 +2176,8 @@ body.advantage-class * {
     }
 
     .engen-icon-platforms {
-        top: -85%;
+        top: -231px;
+        left: 88px;
     }
 
     .engen-icon-platforms p, .advantage-class .engen-icon-markets p {
@@ -2184,8 +2185,8 @@ body.advantage-class * {
     }
 
     .engen-icon-gen {
-        left: -37%;
-        top: 38%;
+        left: -243px;
+        top: 45px;
     }
 
     .advantage-class .panels-title {
@@ -2337,21 +2338,25 @@ body.advantage-class * {
     }
 
     .engen-icon-innovation p {
-        top: 102px;
+        top: 92px;
     }
 
     .engen-icon-innovation {
-        top: 6%;
-        left: -45%;
+        top: -187px;
+        left: -195px;
     }
 
     .engen-icon-gen p, .engen-icon-data p, .engen-icon-talent p, .engen-icon-tech p {
         top: -85px;
     }
 
+    .engen-icon-platforms p {
+        top: 73px;
+    }
+
     .advantage-class .engen-icon-markets {
-        top: -82%;
-        left: 73%;
+        top: -218px;
+        left: 393px;
     }
 
     .advantage-class .engenering-section {
