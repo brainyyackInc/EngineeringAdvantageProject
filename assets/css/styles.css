@@ -428,6 +428,14 @@ body.advantage-class * {
     transform: translateX(-50%);
 }
 
+.advantage-class .fixed-top-sect--right ul li a {
+    transition:.2s;
+}
+
+.advantage-class .fixed-top-sect--right ul li a:hover {
+    color: #87BA34;
+}
+
 .advantage-class .capabilities-bl:hover ul {
     opacity: 1;
     visibility: visible;
@@ -435,7 +443,7 @@ body.advantage-class * {
 
 .advantage-class .fixed-top-sect--right ul li, .advantage-class .fixed-top-sect--right ul li a {
     font-size: 16px;
-    line-height: 46px;
+    line-height: 26px;
     color: #fff;
     display: flex;
     align-items: center;
@@ -448,6 +456,10 @@ body.advantage-class * {
 
 .advantage-class .capabilities-bl {
     margin-right: 22px;
+}
+
+.capabilities-bl li {
+    margin-bottom: 15px;
 }
 
 .advantage-class .fixed-top-sect--right>ul>li>a.connect {
@@ -971,7 +983,7 @@ body.advantage-class * {
 }
 
 .advantage-class .col-w-mrg-cstm {
-    margin-top: 145px;
+    padding-top: 145px;
 }
 
 .advantage-class .advantage-tabs-top p {
@@ -1119,6 +1131,7 @@ body.advantage-class * {
 
 .advantage-modal__left iframe {
     width: 100%;
+    height: 100%;
 }
 
 .advantage-class .advantage-modal__right {
@@ -1485,6 +1498,11 @@ body.advantage-class * {
     color: #333;
     text-align: left;
     background-size: cover;
+}
+
+.modal-case-studies .close img {
+    width: 19px;
+    height: 19px;
 }
 
 .advantage-class #panels .panels-container .panel img {
