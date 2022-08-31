@@ -611,12 +611,12 @@ body.advantage-class * {
 .advantage-class #panel-2 .icon-cont-abs, 
 .advantage-class #panel-5 .icon-cont-abs,
 .advantage-class #panel-7 .icon-cont-abs {
-    margin-top: -15vh;
+    margin-top: -20vh;
 }
 
 .advantage-class #panel-3 .icon-cont-abs,
 .advantage-class #panel-6 .icon-cont-abs {
-    margin-top: 15vh;
+    margin-top: 20vh;
 }
 
 .advantage-class .icon-wrapper {

@@ -4065,7 +4065,7 @@ horizontalSections.forEach(function (sec, i) {
                     bannerImage.style.bottom = '-50vh';
                     iconHero1.style.opacity = '1';
                   }
-                  if (window.scrollY > 0.6 * threshold) {
+                  if (window.scrollY > 0.7 * threshold) {
                     hero2.style.opacity =  opacity2;
                   } else {
                     hero2.style.opacity = '1';
@@ -4168,8 +4168,6 @@ $(window).scroll(function() {
     $(".banner-sect").removeClass("banner-sect-hide");
   
   }
-// console.log(topofDiv);
-// console.log(heightDiv)
 });
 
 jQuery(document).scroll(function(){
@@ -4214,16 +4212,12 @@ function lineDrawingOnScroll(svgPathID, panelID, viewportMultipler, horizontalOr
     window.addEventListener("scroll", function(e) {
         var panel1TopPixels = ( document.documentElement.scrollTop - ( panel1ContainerPosition.top * viewportMultipler ) ) * ( ( 0.6 * threshold + 400 ) /  1000 );
 
-        var panelNextTopPixels = document.documentElement.scrollTop - ( screenWidth * horizontalOrder ) - panelNextContainerPosition.bottom 
-        console.log("next slide", nextIconID, panelNextTopPixels);
-        // console.log("document scroll top", document.documentElement.scrollTop);
-        // console.log("panel1ContainerPosition.top", panel1ContainerPosition.top);
-        // console.log("viewportMultipler", viewportMultipler);
-        // console.log("threshold /  1000", threshold /  1000);
+        var panelNextTopPixels = document.documentElement.scrollTop - ( screenWidth * horizontalOrder ) - ( panelNextContainerPosition.bottom * 1000 / ( 0.14 * threshold + 860 ) ) 
+
         if ( panel1TopPixels > 0 && panelNextTopPixels < 0) {
             path.style.strokeDashoffset = pathLength - panel1TopPixels;
         } else if ( panel1TopPixels < 0  && panelNextTopPixels < 0) {
-            path.style.strokeDashoffset = pathLength;
+            path.style.strokeDashoffset = pathLength; 
         }
         // if ( pathLength < panel1TopPixels) {
         //     path.style.strokeDasharray = "none";
@@ -4235,27 +4229,27 @@ function lineDrawingOnScroll(svgPathID, panelID, viewportMultipler, horizontalOr
 
 
 document.addEventListener("DOMContentLoaded", function(){
-    lineDrawingOnScroll('#line1-icon1', '#panel-1', 1.05, 0.34,'#panel-2');
-    lineDrawingOnScroll('#line2-icon1', '#panel-1', 1.02, 0.34,'#panel-2');
-    lineDrawingOnScroll('#line3-icon2', '#panel-2', 1.55, 0.88,'#panel-3');
-    lineDrawingOnScroll('#line4-icon2', '#panel-2', 1.52, 0.88,'#panel-3');
-    lineDrawingOnScroll('#line5-icon3', '#panel-3', 1.82, -1.05,'#panel-4');
-    lineDrawingOnScroll('#line6-icon3', '#panel-3', 1.85, -1.05,'#panel-4');
-    lineDrawingOnScroll('#line7-icon4', '#panel-4', 1.01, -0.5,'#panel-5');
-    lineDrawingOnScroll('#line8-icon4', '#panel-4', 1.03, -0.5, '#panel-5');
-    lineDrawingOnScroll('#line9-icon5', '#panel-5', 1.05, 1, '#panel-6');
-    lineDrawingOnScroll('#line10-icon5', '#panel-5', 1.02, 1, '#panel-6');
-    lineDrawingOnScroll('#line11-icon6', '#panel-6', 1.17, 1, '#panel-7');
-    lineDrawingOnScroll('#line12-icon6', '#panel-6', 1.16, 1, '#panel-7');
-    lineDrawingOnScroll('#line13-icon7', '#panel-7', 1.32, 1, '#panel-7');
-    lineDrawingOnScroll('#line14-icon7', '#panel-7', 1.29, 1, '#panel-7');
+    lineDrawingOnScroll('#line1-icon1', '#panel-1', 1.05, 0,'#panel-2');
+    lineDrawingOnScroll('#line2-icon1', '#panel-1', 1.02, 0,'#panel-2');
+    lineDrawingOnScroll('#line3-icon2', '#panel-2', 1.55, 1,'#panel-3');
+    lineDrawingOnScroll('#line4-icon2', '#panel-2', 1.52, 1,'#panel-3');
+    lineDrawingOnScroll('#line5-icon3', '#panel-3', 2.21, -0.87,'#panel-4');
+    lineDrawingOnScroll('#line6-icon3', '#panel-3', 2.23, -0.87,'#panel-4');
+    lineDrawingOnScroll('#line7-icon4', '#panel-4', 1.01, -0.75,'#panel-5');
+    lineDrawingOnScroll('#line8-icon4', '#panel-4', 1.03, -0.75, '#panel-5');
+    lineDrawingOnScroll('#line9-icon5', '#panel-5', 1.05, 0, '#panel-6');
+    lineDrawingOnScroll('#line10-icon5', '#panel-5', 1.02, 0, '#panel-6');
+    lineDrawingOnScroll('#line11-icon6', '#panel-6', 1.17, 1.2, '#panel-7');
+    lineDrawingOnScroll('#line12-icon6', '#panel-6', 1.16, 1.2, '#panel-7');
+    lineDrawingOnScroll('#line13-icon7', '#panel-7', 1.32, 1.5, '#panel-7');
+    lineDrawingOnScroll('#line14-icon7', '#panel-7', 1.29, 1.5, '#panel-7');
 
-    lineDrawingOnScroll('#star-path', '#panel-1', 1, 0.34, '#panel-2');
-    lineDrawingOnScroll('#star-path2', '#panel-2', 1.5, 0.88, '#panel-3');
-    lineDrawingOnScroll('#star-path3', '#panel-3', 1.8, -1.05, '#panel-4');
-    lineDrawingOnScroll('#star-path4', '#panel-4', 1, -0.5, '#panel-5');
-    lineDrawingOnScroll('#star-path5', '#panel-5', 1, 1, '#panel-6');
-    lineDrawingOnScroll('#star-path6', '#panel-6', 1.15, 1, '#panel-7');
+    lineDrawingOnScroll('#star-path', '#panel-1', 1, 0.5, '#panel-2');
+    lineDrawingOnScroll('#star-path2', '#panel-2', 1.5, 0.92, '#panel-3');
+    lineDrawingOnScroll('#star-path3', '#panel-3', 2.2, -0.8, '#panel-4');
+    lineDrawingOnScroll('#star-path4', '#panel-4', 1, -0.75, '#panel-5');
+    lineDrawingOnScroll('#star-path5', '#panel-5', 1, 0, '#panel-6');
+    lineDrawingOnScroll('#star-path6', '#panel-6', 1.15, 1.2, '#panel-7');
 });
 
 
