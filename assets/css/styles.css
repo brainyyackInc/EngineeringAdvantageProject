@@ -74,23 +74,23 @@ body.advantage-class * {
 .advantage-class .bigIcon-frst-line {
     position: absolute;
     height: 1px!important;
-    bottom: -45%;
-    transform: rotate(51deg);
-    right: -123%;
+    bottom: -40%;
+    transform: rotate(49deg);
+    right: -119%;
 }
 
 .advantage-class .bigIcon-scnd-line {
     position: absolute;
     height: 1px!important;
-    transform: rotate(61deg);
-    bottom: -62%;
-    left: 5%;
+    transform: rotate(90deg);
+    bottom: -73%;
+    left: -37%;
 }
 
 .advantage-class .bigIcon-2-frst-line {
     position: absolute;
     height: 1px!important;
-    transform: rotate(-45deg);
+    transform: rotate(-42deg);
     top: -39%;
     left: 57%;
 }
@@ -98,39 +98,39 @@ body.advantage-class * {
 .advantage-class .bigIcon-2-scnd-line {
     position: absolute;
     height: 1px!important;
-    transform: rotate(-9deg);
-    left: 88%;
-    top: 21%;
+    transform: rotate(-18deg);
+    left: 85%;
+    top: 6%;
 }
 
 .advantage-class .bigIcon-3-frst-line {
     position: absolute;
     height: 1px!important;
     transform:rotate(109deg);
-    bottom: -70%;
-    right: -6%;
+    bottom: -75.5%;
+    right: 9%;
 }
 
 .advantage-class .bigIcon-3-scnd-line {
     position: absolute;
     height: 1px!important;
     transform: rotate(61deg);
-    bottom: -359px;
-    left: 153px;
+    bottom: -64%;
+    left: 33%;
 }
 
 .advantage-class .bigIcon-4-frst-line {
     position: absolute;
     height: 1px!important;
-    transform: rotate(100deg);
-    top: 170%;
-    right: -23%;
+    transform: rotate(96deg);
+    top: 177%;
+    right: -25%;
 }
 
 .advantage-class .bigIcon-4-scnd-line {
     position: absolute;
     height: 1px!important;
-    transform: rotate(60deg);
+    transform: rotate(55deg);
     top: 150%;
     right: -105%;
 }
@@ -151,7 +151,7 @@ body.advantage-class * {
 .advantage-class .bigIcon-6-scnd-line {
     position: absolute;
     height: 1px!important;
-    transform: rotate(-199deg);
+    transform: rotate(-203deg);
     bottom: 1%;
     right: 77%;
 }
@@ -175,9 +175,9 @@ body.advantage-class * {
 .advantage-class .animated-long-line {
     position: absolute;
     height: 1px;
-    left: 50%;
-    top: 20%;
-    transform: rotate(-7deg);
+    left: 86.5%;
+    top: 37%;
+    transform: rotate(-5deg);
 }
 
 .advantage-class .animated-long-line-2 {
@@ -192,24 +192,24 @@ body.advantage-class * {
     position: absolute;
     height: 1px;
     top: 107%;
-    left: 65%;
-    transform: rotate(35deg);
+    left: 84%;
+    transform: rotate(25deg);
 }
 
 .advantage-class .animated-long-line-4 {
     position: absolute;
     height: 1px;
-    bottom: -50%;
-    right: 35%;
-    transform: scaleX(-1) rotate(55deg);
+    bottom: -58%;
+    right: 32%;
+    transform: scaleX(-1) rotate(57deg);
 }
 
 .advantage-class .animated-long-line-5 {
     position: absolute;
     height: 1px;
-    bottom: 25%;
-    right: 65%;
-    transform: scaleX(-1) rotate(7deg);
+    bottom: 30%;
+    right: 70%;
+    transform: scaleX(-1) rotate(10deg);
     /* display: none; */
 }
 
@@ -217,8 +217,8 @@ body.advantage-class * {
     position: absolute;
     height: 1px;
     bottom: 55%;
-    right: 65%;
-    transform: scaleX(-1) rotate(-6deg);
+    right: 91%;
+    transform: scaleX(-1) rotate(-4deg);
 }
 
 .advantage-class .bigIcon-7-frst-line {
@@ -619,6 +619,10 @@ body.advantage-class * {
 .advantage-class #panel-3 .icon-cont-abs,
 .advantage-class #panel-6 .icon-cont-abs {
     margin-top: 20vh;
+}
+
+.panel-6-title {
+    margin-bottom: 15vh;
 }
 
 .advantage-class .icon-wrapper {
