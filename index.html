@@ -18,7 +18,7 @@
         <div class="fixed-top-sect--right">
             <ul class="d-flex">
                 <li>
-                    <a href="#banner-sect">
+                    <a href="#top-sect">
                         <img src="assets/media/images/scroll-top-icon.svg" alt="">
                     </a>
                 </li>
@@ -41,7 +41,7 @@
                     <a href="#insights-news">Insights and news</a>
                 </li>
                 <li>
-                    <a href="">Leaders</a>
+                    <a href="#leaders">Leaders</a>
                 </li>
                 <li>
                     <a href="">Talent</a>
@@ -115,9 +115,9 @@
     <section id="panels">
       <div class="panels-bg-f"></div>
 
-        <div class="container-obs">
+        <div class="container-obs" id="top-sect">
             <div class="container-fixed-obs">
-                <div class="banner-sect" id="banner-sect">
+                <div class="banner-sect">
                     <video class="video-sect" playsinline autoplay muted loop>
                         <source src="assets/media/videos/EA.mp4" type="video/webm">
                         Your browser does not support the video tag.
@@ -3284,9 +3284,9 @@
                             <p >Filter by:</p>
                             <ul class="nav nav-tabs" role="tablist">
                                 <li role="presentation" class="active"><a href="#featured" aria-controls="featured" role="tab" data-toggle="tab">Featured</a></li>
-                                <li role="presentation"><a href="#stories" aria-controls="stories" role="tab" data-toggle="tab">Stories</a></li>
-                                <li role="presentation"><a href="#insights" aria-controls="insights" role="tab" data-toggle="tab">Insights</a></li>
-                                <li role="presentation"><a href="#solutions" aria-controls="solutions" role="tab" data-toggle="tab">Solutions</a></li>
+                                <li role="presentation"><a aria-controls="stories" href="#stories" role="tab" data-toggle="tab">Stories</a></li>
+                                <li role="presentation"><a aria-controls="insights" href="#insights" role="tab" data-toggle="tab">Insights</a></li>
+                                <li role="presentation"><a aria-controls="solutions" href="#solutions" role="tab" data-toggle="tab">Solutions</a></li>
                             </ul>
                         </div>
                         <div class="tab-content">
@@ -3395,7 +3395,7 @@
                                           <p>The Deloitte tax experience powered by Intela, a 
                                             leading global platform</p>
                                       </div>
-                                      <div class="news-link-white">Intela's cutting-edge technology, combines with our deep knowledge of tax, to help tax prefessionals uncover new insights and drive strategic value ></div>
+                                      <div class="news-link-white">Intela's cutting-edge technology, combines with our deep knowledge of tax, to help tax professionals uncover new insights and drive strategic value ></div>
                                     </a>
                                   <a target="_blank" href="https://www2.deloitte.com/us/en/pages/audit/solutions/audit-technology-solutions.html" class="advantage-tabs__item">
                                       <div class="advantage-tabs__cont">
@@ -3439,7 +3439,7 @@
             </div>
         </div>
     </div>
-    <div class="human-exploration-sect">
+    <div class="human-exploration-sect" id="leaders">
         <div class="exploration-sect__container">
             <h3 class="case-study-section--green-title">Human exploration meets next-gen technology</h3>
             <p class="exploration-sect__txt">Meet our community of innovators—bringing bold ideas and fresh perspectives from various industries.</p>
@@ -3846,6 +3846,20 @@
     <script src="assets/js/ScrollToPlugin.min.js"></script>
     <script>
 
+// smooth scroll to anchor, with option of hash appearing in url. Thanks:
+// https://paulund.co.uk/smooth-scroll-to-internal-links-with-jquery
+$(document).ready(function(){
+	$('.nav-tabs a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+	    var target = this.hash;
+	    var $target = $(target);
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 100, 'swing', function () {
+	        // window.location.hash = target;
+	    });
+	});
+});
     </script>
     <script>
       $('.carousel').carousel({
