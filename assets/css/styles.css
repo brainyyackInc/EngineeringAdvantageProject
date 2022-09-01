@@ -144,7 +144,7 @@ body.advantage-class * {
 }
 
 .advantage-class .engen-icon-markets {
-    bottom: 337px;
+    bottom: 289px;
     left: 487px;
 }
 
@@ -466,13 +466,15 @@ body.advantage-class * {
     background-color: #87BA34;
     font-family: 'Open Sans-Bold'; 
     margin-left: 22px;
+    display: none;
 }
 
 .advantage-class .panels-bg-f {
     position: fixed;
     width: 100%;
-    height: 100vh;
-    background-color: #00000045;
+    height: 100vh;opacity: 0;
+    background-color: #000;
+    transition: .5s;
 }
 
 .advantage-class .banner-sect {
@@ -1232,8 +1234,8 @@ body.advantage-class * {
 
 .advantage-class .human-exploration-sect {
     background-color: #000;
-    padding-top: 100px;
-    background-image: url(../media/images/background-sect-img.png);  
+    padding-top: 40px;
+    /* background-image: url(../media/images/background-sect-img.png);   */
     background-position: bottom;
     background-size: 100% 100%;
     position: relative;
@@ -1304,7 +1306,7 @@ body.advantage-class * {
 
 .advantage-class .the-future-cont__wrapper {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 }
 
 .advantage-class .the-future-cont__wrapper p {
@@ -1324,6 +1326,7 @@ body.advantage-class * {
     height: 49px;
     align-items: center;
     font-size: 16px;
+    margin-right: 75px;
     font-family: 'Open Sans-Bold';
     transition: .2s;
     margin-top: 20px;
@@ -1399,8 +1402,10 @@ body.advantage-class * {
     position: relative;
     z-index: 2;
     background-image: url(../media/images/engereing-bg.png);
-    background-size: cover;
+    background-size: 100% 100%;
     background-attachment: fixed;
+    background-position: center;
+    transition: 1.5s;
 }
 
 .advantage-class .flex-posabs {
@@ -1729,7 +1734,7 @@ body.advantage-class * {
     position: fixed;
     height: 100vh;
     width: 100%;
-    z-index: 222;
+    z-index: 19;
     background-color: transparent;
   }
   .video-wrapper {
@@ -1816,8 +1821,8 @@ body.advantage-class * {
   }
   
   .engen-icon-gen {
-      left: -464px;
-      top: 205px;
+      left: -460px;
+      top: 176px;
   }
   
   .engen-icon-gen p, .engen-icon-data p, .engen-icon-talent p, .engen-icon-tech p {
@@ -1832,7 +1837,7 @@ body.advantage-class * {
   
   .engen-icon-data {
       left: -74px;
-      top: 386px;
+      top: 360px;
   }
   
   .engen-icon-data p {
@@ -1840,12 +1845,12 @@ body.advantage-class * {
   }
   
   .engen-icon-tech {
-      top: 393px;
+      top: 365px;
       left: 397px;
   }
   
   .engen-icon-talent {
-      right: -345px;
+      right: -319px;
       top: 47px;
   }
   
@@ -1975,7 +1980,7 @@ body.advantage-class * {
       top: 0;
       background-size: cover;
       visibility: visible;
-      z-index: 22222;
+      z-index: 19;
       transition: .2s;
     }
   
