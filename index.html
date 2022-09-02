@@ -1997,10 +1997,16 @@
 
                                 <div class="icon-cont-abs long-line-container  animate-this">
                                     <!-- ANIMATED LONG LINE  -->
-                                    <svg id="longLine1" class="animated-long-line" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2000 1"><defs>
-                                        <style>.longLinePath{fill:none;stroke:url(#longLinegradient);stroke-miterlimit:10;stroke-width:2px;}</style>
-                                        <linearGradient id="longLinegradient" x1="0" y1="1" x2="2000" y2="1" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#78C143"/><stop offset="1" stop-color="#78C143" stop-opacity="0"/></linearGradient></defs>
-                                        <path class="longLinePath" id="star-path" d="M0,1H2000"/>
+                                    <svg id="longLine1" class="animated-long-line" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 1000 1" style="enable-background:new 0 0 1000 1;" xml:space="preserve">
+                                    <style type="text/css">
+                                        .longLinePath{fill:none;stroke:url(#longLinegradient);stroke-miterlimit:10;}
+                                    </style>
+                                    <linearGradient id="longLinegradient" gradientUnits="userSpaceOnUse" x1="0" y1="0.5" x2="1000" y2="0.5">
+                                        <stop  offset="1.260747e-03" style="stop-color:#78C143;stop-opacity:0.8"/>
+                                        <stop  offset="1" style="stop-color:#78C143;stop-opacity:0"/>
+                                    </linearGradient>
+                                    <path class="longLinePath" id="star-path" d="M0,.5H1000"/>
                                     </svg>
                                     <div class="icon-wrapper big-icon-new-1">
                                         <svg class="bigIcon-frst-line" version="1.1" id="line-layer1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -2053,7 +2059,7 @@
                               <div class="col-md-6 animate-this non-pr d-flex flex-column height-aut-100">
                                 <div class="icon-cont-abs animate-this long-line-container">
                                     <!-- ANIMATED LONG LINE  -->
-                                    <svg id="longLine2" class="animated-long-line-2" version="1.1" id="line-layer3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    <svg id="longLine2" class="animated-long-line-2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                             viewBox="0 0 1000 1" style="enable-background:new 0 0 1000 1;" xml:space="preserve">
                                         <style type="text/css">
                                             .longLinePath2{fill:none;stroke:url(#longLinegradient2);stroke-miterlimit:10;stroke-width:2px;}
@@ -2309,10 +2315,16 @@
                             <div class="col-md-6 animate-this non-pr d-flex flex-column height-aut-100">
                                 <div class="icon-cont-abs animate-this long-line-container">
                                     <!-- ANIMATED LONG LINE  -->
-                                    <svg id="longLine6" class="animated-long-line-6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2000 1"><defs>
-                                        <style>.longLinePath6{fill:none;stroke:url(#longLinegradient6);stroke-miterlimit:10;stroke-width:2px;}</style>
-                                        <linearGradient id="longLinegradient6" x1="0" y1="1" x2="2000" y2="1" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#78C143"/><stop offset="1" stop-color="#78C143" stop-opacity="0"/></linearGradient></defs>
-                                        <path class="longLinePath6" id="star-path6" d="M0,1H2000"/>
+                                    <svg id="longLine6" class="animated-long-line-6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 1000 1" style="enable-background:new 0 0 1000 1;" xml:space="preserve">
+                                    <style type="text/css">
+                                        .longLinePath6{fill:none;stroke:url(#longLinegradient6);stroke-miterlimit:10;}
+                                    </style>
+                                    <linearGradient id="longLinegradient6" gradientUnits="userSpaceOnUse" x1="0" y1="0.5" x2="1000" y2="0.5">
+                                        <stop  offset="1.260747e-03" style="stop-color:#78C143;stop-opacity:0.8"/>
+                                        <stop  offset="1" style="stop-color:#78C143;stop-opacity:0"/>
+                                    </linearGradient>
+                                    <path class="longLinePath6" id="star-path6" d="M0,.5H1000"/>
                                     </svg>
                                     
 
@@ -3539,7 +3551,7 @@ jQuery(document).scroll(function(){
 
 
 // https://jakearchibald.com/2013/animated-line-drawing-svg/
-function lineDrawingOnScroll(svgPathID, panelID, viewportMultipler, horizontalOrder, nextIconID) {
+function lineDrawingOnScroll(svgPathID, panelID, viewportMultipler, nextIconID) {
     var path = document.querySelector(svgPathID);
     var pathLength = path.getTotalLength();
     var panel1Container = document.querySelector(panelID);
@@ -3552,21 +3564,18 @@ function lineDrawingOnScroll(svgPathID, panelID, viewportMultipler, horizontalOr
     var panel1ContainerPosition = panel1Container.getBoundingClientRect();
     path.style.strokeDashoffset = 0;
     var threshold = window.innerHeight;
-    var screenWidth = window.innerWidth;
+    // var screenWidth = window.innerWidth;
 
     // When the page scrolls...
     window.addEventListener("scroll", function(e) {
         var panel1TopPixels = ( document.documentElement.scrollTop - ( panel1ContainerPosition.top * viewportMultipler ) ) * ( ( 0.6 * threshold + 400 ) /  1000 );
+        var linetrokeoffset = pathLength - panel1TopPixels;
 
-        var panelNextTopPixels = document.documentElement.scrollTop - ( screenWidth * horizontalOrder ) - ( panelNextContainerPosition.bottom * 1000 / ( 0.14 * threshold + 860 ) ) 
-        console.log("next slide", svgPathID, panelNextTopPixels);
-        // console.log("document scroll top", document.documentElement.scrollTop);
-        // console.log("panel1ContainerPosition.top", panel1ContainerPosition.top);
-        // console.log("viewportMultipler", viewportMultipler);
-        // console.log("threshold /  1000", threshold /  1000);
-        if ( panel1TopPixels > 0 && panelNextTopPixels < 0) {
-            path.style.strokeDashoffset = pathLength - panel1TopPixels;
-        } else if ( panel1TopPixels < 0  && panelNextTopPixels < 0) {
+        // var panelNextTopPixels = document.documentElement.scrollTop - ( screenWidth * horizontalOrder ) - ( panelNextContainerPosition.bottom * 1000 / ( 0.14 * threshold + 860 ) ) 
+        // console.log("next slide", svgPathID, panelNextTopPixels);
+        if ( panel1TopPixels > 0 && linetrokeoffset > 400) {
+            path.style.strokeDashoffset = linetrokeoffset;
+        } else if ( panel1TopPixels < 0  && linetrokeoffset > 400) {
             path.style.strokeDashoffset = pathLength; 
         }
         // if ( pathLength < panel1TopPixels) {
@@ -3579,27 +3588,27 @@ function lineDrawingOnScroll(svgPathID, panelID, viewportMultipler, horizontalOr
 
 
 document.addEventListener("DOMContentLoaded", function(){
-    lineDrawingOnScroll('#line1-icon1', '#panel-1', 1.05, 0,'#panel-2');
-    lineDrawingOnScroll('#line2-icon1', '#panel-1', 1.02, 0,'#panel-2');
-    lineDrawingOnScroll('#line3-icon2', '#panel-2', 1.55, 1,'#panel-3');
-    lineDrawingOnScroll('#line4-icon2', '#panel-2', 1.52, 1,'#panel-3');
-    lineDrawingOnScroll('#line5-icon3', '#panel-3', 2.11, -0.98,'#panel-4');
-    lineDrawingOnScroll('#line6-icon3', '#panel-3', 2.13, -0.97,'#panel-4');
-    lineDrawingOnScroll('#line7-icon4', '#panel-4', 1.01, -0.75,'#panel-5');
-    lineDrawingOnScroll('#line8-icon4', '#panel-4', 1.03, -0.75, '#panel-5');
-    lineDrawingOnScroll('#line9-icon5', '#panel-5', 1.05, 0, '#panel-6');
-    lineDrawingOnScroll('#line10-icon5', '#panel-5', 1.02, 0, '#panel-6');
-    lineDrawingOnScroll('#line11-icon6', '#panel-6', 1.17, 1.2, '#panel-7');
-    lineDrawingOnScroll('#line12-icon6', '#panel-6', 1.16, 1.2, '#panel-7');
-    lineDrawingOnScroll('#line13-icon7', '#panel-7', 1.32, 1.5, '#panel-7');
-    lineDrawingOnScroll('#line14-icon7', '#panel-7', 1.29, 1.5, '#panel-7');
+    lineDrawingOnScroll('#line1-icon1', '#panel-1', 1.05,'#panel-2');
+    lineDrawingOnScroll('#line2-icon1', '#panel-1', 1.02,'#panel-2');
+    lineDrawingOnScroll('#line3-icon2', '#panel-2', 1.55,'#panel-3');
+    lineDrawingOnScroll('#line4-icon2', '#panel-2', 1.52,'#panel-3');
+    lineDrawingOnScroll('#line5-icon3', '#panel-3', 2.11,'#panel-4');
+    lineDrawingOnScroll('#line6-icon3', '#panel-3', 2.13,'#panel-4');
+    lineDrawingOnScroll('#line7-icon4', '#panel-4', 1.01,'#panel-5');
+    lineDrawingOnScroll('#line8-icon4', '#panel-4', 1.03, '#panel-5');
+    lineDrawingOnScroll('#line9-icon5', '#panel-5', 1.05, '#panel-6');
+    lineDrawingOnScroll('#line10-icon5', '#panel-5', 1.02, '#panel-6');
+    lineDrawingOnScroll('#line11-icon6', '#panel-6', 1.17, '#panel-7');
+    lineDrawingOnScroll('#line12-icon6', '#panel-6', 1.16, '#panel-7');
+    lineDrawingOnScroll('#line13-icon7', '#panel-7', 1.32, '#panel-7');
+    lineDrawingOnScroll('#line14-icon7', '#panel-7', 1.29, '#panel-7');
 
-    lineDrawingOnScroll('#star-path', '#panel-1', 1, 0.5, '#panel-2');
-    lineDrawingOnScroll('#star-path2', '#panel-2', 1.5, 0.94, '#panel-3');
-    lineDrawingOnScroll('#star-path3', '#panel-3', 2.1, -0.99, '#panel-4');
-    lineDrawingOnScroll('#star-path4', '#panel-4', 1, -0.75, '#panel-5');
-    lineDrawingOnScroll('#star-path5', '#panel-5', 1, 0, '#panel-6');
-    lineDrawingOnScroll('#star-path6', '#panel-6', 1.15, 1.2, '#panel-7');
+    lineDrawingOnScroll('#star-path', '#panel-1', 1, '#panel-2');
+    lineDrawingOnScroll('#star-path2', '#panel-2', 1.5, '#panel-3');
+    lineDrawingOnScroll('#star-path3', '#panel-3', 2.1, '#panel-4');
+    lineDrawingOnScroll('#star-path4', '#panel-4', 1, '#panel-5');
+    lineDrawingOnScroll('#star-path5', '#panel-5', 1, '#panel-6');
+    lineDrawingOnScroll('#star-path6', '#panel-6', 1.15, '#panel-7');
 });
 
 
