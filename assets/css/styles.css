@@ -144,7 +144,7 @@ body.advantage-class * {
 }
 
 .advantage-class .engen-icon-markets {
-    bottom: 289px;
+    bottom: 249px;
     left: 487px;
 }
 
@@ -513,7 +513,7 @@ body.advantage-class * {
     color: #fff;
     font-size: 28px;
     line-height: 32px;
-    margin-bottom: 120px;
+    margin-bottom: 30px
 }
 
 .advantage-class .banner-sect-content a {
@@ -528,6 +528,8 @@ body.advantage-class * {
     color: #fff;
     transition: .2s;
     border: none;
+    cursor: pointer;
+    margin-bottom: 200px;
 }
 
 .advantage-class .banner-sect-content {
@@ -549,7 +551,7 @@ body.advantage-class * {
     font-size: 39px;
     position: absolute;
     top: 6px;
-    left: 15px;
+    right: 15px;
     z-index: 2;
 }
 
@@ -746,7 +748,7 @@ body.advantage-class * {
     font-size: 16px;
     line-height: 24px;
     color: #fff;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .advantage-class .engenering-section--container {
@@ -1826,12 +1828,12 @@ body.advantage-class * {
   }
   
   .engen-icon-platforms {
-      top: -279px
+      top: -179px
   }
   
   .engen-icon-innovation {
-      left: -378px;
-      top: -220px;
+      left: -272px;
+      top: -80px;
   }
   
   .engen-icon-platforms p, .advantage-class .engen-icon-markets p {
@@ -1843,8 +1845,8 @@ body.advantage-class * {
   }
   
   .engen-icon-gen {
-      left: -475px;
-      top: 130px;
+      left: -378px;
+      top: 154px;
   }
   
   .engen-icon-gen p, .engen-icon-data p, .engen-icon-talent p, .engen-icon-tech p {
@@ -1859,7 +1861,7 @@ body.advantage-class * {
   
   .engen-icon-data {
       left: -74px;
-      top: 360px;
+      top: 300px;
   }
   
   .engen-icon-data p {
@@ -1867,7 +1869,7 @@ body.advantage-class * {
   }
   
   .engen-icon-tech {
-      top: 365px;
+      top: 300px;
       left: 397px;
   }
   
