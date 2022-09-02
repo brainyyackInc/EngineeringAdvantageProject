@@ -758,7 +758,7 @@ body.advantage-class * {
 
 .advantage-class .engenering-section p:last-child {
     margin-bottom: 0;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .advantage-class .main-p {
@@ -1272,6 +1272,7 @@ body.advantage-class * {
     background-image: url(../media/images/build-the-future.png);
     background-size: cover;
     background-position: center;
+    margin-top: 100px;
 }
 
 .advantage-class .the-future-cont {
@@ -1343,7 +1344,7 @@ body.advantage-class * {
     margin-right: 75px;
     font-family: 'Open Sans-Bold';
     transition: .2s;
-    margin-top: 20px;
+    margin-top: -25px;
 }
 
 .advantage-class .the-future-cont__wrapper a:hover {
@@ -2131,6 +2132,10 @@ body.advantage-class * {
         width: 100%!important;
         max-width: 350px!important;
     }
+    
+    .advantage-class .engenering-section {
+        max-width: 520px;
+    }
 
     .engen-icon svg {
         width: 70px;
@@ -2142,13 +2147,13 @@ body.advantage-class * {
     }
 
     .engen-icon-tech {
-        left: 494px;
+        left: 368px;
         top: 238px;
     }
 
     .engen-icon-talent {
-        top: 36px;
-        left: 712px;
+        top: 61px;
+        left: 481px;
     }
 
     .icon-wrapper>div>svg{
