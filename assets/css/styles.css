@@ -249,7 +249,8 @@ body.advantage-class * {
     opacity: 1; 
 }
 
-.icon-wrapper .scale {
+.icon-wrapper .scale,
+.icon-wrapper .scale1 {
     position: relative;
     height: 100%;
     width: 100%;
@@ -259,9 +260,14 @@ body.advantage-class * {
     /* transition: scale 1s linear; */
     transition: 1s linear;
 }
+
+.advantage-class .scale1 {
+    /* transition: scale 1s linear; */
+    transition: 1s linear;
+}
   
 .advantage-class .scaleOut { 
-    transform: scale(.7);
+    transform: scale(.1);
     opacity: 0;    
 }
 
