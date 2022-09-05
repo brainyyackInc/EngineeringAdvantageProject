@@ -2653,8 +2653,8 @@ body.advantage-class * {
     }
 
     .advantage-tabs__item {
-        width: calc(100% + 60px)!important;
-        margin-left: -30px;
+        width:100%!important;
+        margin-left: 0;
     }
 
     .modal-case-studies__text-oriented {
@@ -2691,7 +2691,11 @@ body.advantage-class * {
 
     .d-flex.jcsb {
         flex-wrap: wrap;
-        width: calc(100% + 30px);
+        width: 100%;
+    }
+
+    .advantage-class .advantage-tabs-top p {
+        padding-left: 30px;
     }
 
     .advantage-class .carousel-indicators {
@@ -2880,6 +2884,10 @@ body.advantage-class * {
 }
 
 @media only screen and (max-width: 575px) {
+
+    .case-study-bg-img {
+        max-width: 100%;
+    }
 
     .banner-sect-content p {
         font-size: 20px;
