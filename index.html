@@ -25,13 +25,13 @@
                 <li class="capabilities-bl">
                     Capabilities
                     <ul>
-                        <li><a href="#panel-1" class="capabilities-anchor ecosystem-anchor">Ecosystem Innovation ></a></li>
-                        <li><a href="#panel-2" class="capabilities-anchor anchor next-gen-anchor">Next-gen Technology ></a></li>
-                        <li><a href="#panel-3" class="capabilities-anchor platforms-anchor">Platforms and Automation ></a></li>
-                        <li><a href="#panel-4" class="capabilities-anchor data-anchor">Data, enterprise intelligence, and cyber security ></a></li>
-                        <li><a href="#panel-7" class="capabilities-anchor leadership-anchor">Tech leadership ></a></li>
-                        <li><a href="#panel-6" class="capabilities-anchor talent-anchor">Tech talent ></a></li>
-                        <li><a href="#panel-7" class="capabilities-anchor markets-anchor">New markets ></a></li>
+                        <li><a href="#panel-1" class="anchor ecosystem-anchor" datatween="tween0">Ecosystem Innovation ></a></li>
+                        <li><a href="#panel-2" class="anchor next-gen-anchor" datatween="tween0">Next-gen Technology ></a></li>
+                        <li><a href="#panel-3" class="anchor platforms-anchor" datatween="tween0">Platforms and Automation ></a></li>
+                        <li><a href="#panel-4" class="anchor data-anchor">Data, enterprise intelligence, and cyber security ></a></li>
+                        <li><a href="#panel-5" class="anchor leadership-anchor" datatween="tween1">Tech leadership ></a></li>
+                        <li><a href="#panel-6" class="anchor talent-anchor" datatween="tween1">Tech talent ></a></li>
+                        <li><a href="#panel-7" class="anchor markets-anchor" datatween="tween1">New markets ></a></li>
                     </ul>
                 </li>
                 <li>
@@ -3230,109 +3230,96 @@ moveBackground();
 
     /* Main navigation */
     let panelsSection = document.querySelector("#panels"),
-        panelsContainer = document.querySelector(".panels-container"),
-        tween;
+        panelsContainer = document.querySelector(".seven-icons-container"),
+        tween0,
+        tween1;
     document.querySelectorAll(".anchor").forEach(anchor => {
         anchor.addEventListener("click", function(e) {
             e.preventDefault();
             let targetElem = document.querySelector(e.target.getAttribute("href")),
+                elemTween = e.target.getAttribute("datatween"),
                 y = targetElem;
-            if (targetElem && panelsContainer.isSameNode(targetElem.parentElement)) {
-                let totalScroll = tween.scrollTrigger.end - tween.scrollTrigger.start,
-                    totalMovement = (panels.length - 1) * targetElem.offsetWidth;
-                y = Math.round(tween.scrollTrigger.start + (targetElem.offsetLeft / totalMovement) * totalScroll);
+            if (targetElem && elemTween == "tween0") {
+                let totalScroll = tween0.scrollTrigger.end - tween0.scrollTrigger.start,
+                    totalMovement = (2) * targetElem.offsetWidth;
+                y = Math.round(tween0.scrollTrigger.start + (targetElem.offsetLeft / totalMovement) * totalScroll);
+            } else if (targetElem && elemTween == "tween1" && e.target.getAttribute("href") == '#panel-5') {
+              let totalScroll = tween1.scrollTrigger.end - tween1.scrollTrigger.start,
+                  totalMovement = (2) * targetElem.offsetWidth;
+              y = Math.round(tween1.scrollTrigger.start + (0 / totalMovement) * totalScroll);
+            } else if (targetElem && elemTween == "tween1" && e.target.getAttribute("href") == '#panel-6') { 
+              let totalScroll = tween1.scrollTrigger.end - tween1.scrollTrigger.start,
+                  totalMovement = (2) * targetElem.offsetWidth;
+              y = Math.round(tween1.scrollTrigger.start + (targetElem.offsetLeft / totalMovement) * totalScroll);
+            } else if (targetElem && elemTween == "tween1" && e.target.getAttribute("href") == '#panel-7') { 
+              let totalScroll = tween1.scrollTrigger.end - tween1.scrollTrigger.start,
+                  totalMovement = (2) * targetElem.offsetWidth;
+              y = Math.round(tween1.scrollTrigger.start + (2 * targetElem.offsetWidth / totalMovement) * totalScroll);
             }
             gsap.to(window, {
                 scrollTo: {
                     y: y,
                     autoKill: false
                 },
-                duration: 1
+                duration: 0
             });
         });
     });
+
+  const horizontalSections = gsap.utils.toArray('.panels-container');
+  var tween;
+
+  horizontalSections.forEach(function (sec, i) {	
     
-    /* Panels */
-    // const panels = gsap.utils.toArray("#panels-container .panel");
-    // tween = gsap.to(panels, {
-    //     xPercent: -100 * ( panels.length - 1 ),
-    //     ease: "none",
-    //     scrollTrigger: {
-    //         trigger: "#panels-container",
-    //         pin: true,
-    //         start: "top top",
-    //         scrub: 1,
-    //         /* snap: {
-    //             snapTo: 1 / (panels.length - 1),
-    //             inertia: false,
-    //             duration: {min: 0.1, max: 0.1}
-    //         },*/
-    //         end: () =>  "+=" + (panelsContainer.offsetWidth - innerWidth)
-    //     }
-    // });
+    var thisPinWrap = sec.querySelector('.pin-wrap');
+    var thisAnimWrap = thisPinWrap.querySelector('.seven-icons-container');
+    
+    var getToValue = () => -(thisAnimWrap.scrollWidth - window.innerWidth); 
 
-const horizontalSections = gsap.utils.toArray('.panels-container')
-
-horizontalSections.forEach(function (sec, i) {	
-  
-  var thisPinWrap = sec.querySelector('.pin-wrap');
-  var thisAnimWrap = thisPinWrap.querySelector('.seven-icons-container');
-  
-  var getToValue = () => -(thisAnimWrap.scrollWidth - window.innerWidth); 
-
-  gsap.fromTo(thisAnimWrap, { 
-    x: () => thisAnimWrap.classList.contains('to-right') ? 0 : getToValue() 
-  }, { 
-    x: () => thisAnimWrap.classList.contains('to-right') ? getToValue() : 0, 
-    ease: "none",
-    scrollTrigger: {
-      trigger: sec,		
-      start: "top top",
-      end: () => "+=" + (thisAnimWrap.scrollWidth - window.innerWidth),
-      pin: thisPinWrap,
-      // pinSpacing: true,
-      invalidateOnRefresh: true,
-      // anticipatePin: 1,
-      scrub: true,
-      //markers: true,
-      onComplete: () => {
-      if (sec.scrollTrigger) sec.scrollTrigger.kill(true);
-      sec.progress(1);
+    tween = gsap.fromTo(thisAnimWrap, { 
+      x: () => thisAnimWrap.classList.contains('to-right') ? 0 : getToValue() 
+    }, { 
+      x: () => thisAnimWrap.classList.contains('to-right') ? getToValue() : 0, 
+      ease: "none",
+      scrollTrigger: {
+        trigger: sec,		
+        start: "top top",
+        end: () => "+=" + (thisAnimWrap.scrollWidth - window.innerWidth),
+        pin: thisPinWrap,
+        // pinSpacing: true,
+        invalidateOnRefresh: true,
+        // anticipatePin: 1,
+        scrub: true,
+        //markers: true,
+        onComplete: () => {
+        if (sec.scrollTrigger) sec.scrollTrigger.kill(true);
+        sec.progress(1);
+        }
       }
+    });
+
+    if (tween0) {
+      tween1 = tween;
+    } else {
+      tween0 = tween;
     }
-  });
 
-});	
-   </script>
-
-
-   <script>
+  });	
         
+
+    $.fn.isInViewport = function() {
+      var elementTop = $('.sticky-sect-cont').offset().top;
+      var elementBottom = elementTop + $('.sticky-sect-cont').outerHeight();
     
-
-
-
-
-        $.fn.isInViewport = function() {
-          var elementTop = $('.sticky-sect-cont').offset().top;
-          var elementBottom = elementTop + $('.sticky-sect-cont').outerHeight();
-        
-          var viewportTop = $(window).scrollTop();
-          var viewportBottom = viewportTop + $(window).height();
-        
-          return elementBottom > viewportTop && elementTop < viewportBottom;
-        };
-
-
-
-   </script>
-   <script>
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+    
+      return elementBottom > viewportTop && elementTop < viewportBottom;
+    };
 
     $(document).ready(function(){
 
         $(window).scroll(function(){
-            // console.log("scrolltop",$(window).scrollTop());
-            // console.log("window height",$(window).height())
             const hero = document.querySelector('.img-bg-abs');
             const bannerImage = document.querySelector('.img-bg-bottom-abs')
             const hero1 = document.querySelector('.hero');
@@ -3448,20 +3435,10 @@ horizontalSections.forEach(function (sec, i) {
         });
     });
     
-</script>
-<script>
-  element.onload = function() { 
-    ++i; _step();
-}
-element.onreadystatechange = function() { 
-    if (("loaded" === element.readyState || "complete" === element.readyState)) { ++i; _step(); }
-}
-</script>
-<script>
     const observerOptions = {
         root: null,
         rootMargin: "0px",
-        threshold: 0.4
+        threshold: 0
       };
       function observerCallback(entries, observer) {
         entries.forEach(entry => {
@@ -3517,8 +3494,6 @@ $(window).scroll(function() {
     $(".banner-sect").removeClass("banner-sect-hide");
   
   }
-// console.log(topofDiv);
-// console.log(heightDiv)
 });
 
 jQuery(document).scroll(function(){
@@ -3535,12 +3510,6 @@ jQuery(document).scroll(function(){
         }
     });
 });
-
-
-
-</script>
-
-<script>
 
 
 // https://jakearchibald.com/2013/animated-line-drawing-svg/
@@ -3608,12 +3577,6 @@ document.addEventListener("DOMContentLoaded", function(){
     lineDrawingOnScroll('#star-path6', '#panel-6', 1.15, '#panel-7');
 });
 
-
-document.querySelectorAll(".capabilities-anchor").forEach(function(element) {
-	element.addEventListener('click', function(evt) {
-		evt.preventDefault();
-	});
-});
 
 </script>
 </body>
