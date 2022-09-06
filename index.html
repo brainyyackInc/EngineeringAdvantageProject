@@ -25,13 +25,13 @@
                 <li class="capabilities-bl">
                     Capabilities
                     <ul>
-                        <li><a href="#panel-1" class="capabilities-anchor ecosystem-anchor" onclick="capabilitiesAnchor('#panel-1', '0')">Ecosystem Innovation ></a></li>
-                        <li><a href="#panel-2" class="capabilities-anchor anchor next-gen-anchor" onclick="capabilitiesAnchor('#panel-1', '0')">Next-gen Technology ></a></li>
-                        <li><a href="#panel-3" class="capabilities-anchor platforms-anchor" onclick="capabilitiesAnchor('#panel-1', '0')">Platforms and Automation ></a></li>
-                        <li><a href="#panel-4" class="capabilities-anchor data-anchor" onclick="capabilitiesAnchor('#panel-1', '0')">Data, enterprise intelligence, and cyber security ></a></li>
-                        <li><a href="#panel-7" class="capabilities-anchor leadership-anchor" onclick="capabilitiesAnchor('#panel-1', '0')">Tech leadership ></a></li>
-                        <li><a href="#panel-6" class="capabilities-anchor talent-anchor" onclick="capabilitiesAnchor('#panel-1', '0')">Tech talent ></a></li>
-                        <li><a href="#panel-7" class="capabilities-anchor markets-anchor" onclick="capabilitiesAnchor('#panel-1', '0')">New markets ></a></li>
+                        <li><a href="#panel-1" class="capabilities-anchor ecosystem-anchor">Ecosystem Innovation ></a></li>
+                        <li><a href="#panel-2" class="capabilities-anchor anchor next-gen-anchor">Next-gen Technology ></a></li>
+                        <li><a href="#panel-3" class="capabilities-anchor platforms-anchor">Platforms and Automation ></a></li>
+                        <li><a href="#panel-4" class="capabilities-anchor data-anchor">Data, enterprise intelligence, and cyber security ></a></li>
+                        <li><a href="#panel-7" class="capabilities-anchor leadership-anchor">Tech leadership ></a></li>
+                        <li><a href="#panel-6" class="capabilities-anchor talent-anchor">Tech talent ></a></li>
+                        <li><a href="#panel-7" class="capabilities-anchor markets-anchor">New markets ></a></li>
                     </ul>
                 </li>
                 <li>
@@ -126,7 +126,7 @@
                     <div class="banner-sect-content">
                         <h1>Engineering Advantage</h1>
                         <p>Discover the innovation and technology to transform what’s next into what’s now</p>
-                        <div class="d-flex jcc">
+                        <div class="d-flex jcc d-none">
                           <a data-toggle="modal" data-target="#basicModal">Watch the video</a>
                         </div>
                     </div>
@@ -3609,10 +3609,11 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 
-function capabilitiesAnchor(idPath, scrollHorizontal) {
-  
-}
-
+document.querySelectorAll(".capabilities-anchor").forEach(function(element) {
+	element.addEventListener('click', function(evt) {
+		evt.preventDefault();
+	});
+});
 
 </script>
 </body>
