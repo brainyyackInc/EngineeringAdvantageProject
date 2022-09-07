@@ -113,6 +113,7 @@
         </div>
     </div>
     <section id="panels" class="bg-panels" loading="lazy">
+      <img class="background-nebula" src="assets/media/images/Nebula_03.jpg" alt="">
       <div class="panels-bg-f"></div>
 
         <div class="container-obs" id="top-sect">
@@ -3332,6 +3333,7 @@ moveBackground();
             const ecoImg = document.querySelector('.eco-hide-scroll-img');
             const opacityLayer = document.querySelector('.panels-bg-f');
             const panelsBackground = document.getElementById('panels');
+            const nebulaBG = document.querySelector('.background-nebula');
             
             
             const threshold = window.innerHeight;
@@ -3354,6 +3356,7 @@ moveBackground();
                     bannerImage.style.display = 'none'; 
                     bannerImage.style.opacity = '0'; 
                     iconHero1.style.display = 'none';
+                   
                   } 
                   else if (window.scrollY > 0.4 * threshold) {
                     hero.style.opacity = opacity * 2.3;
@@ -3367,6 +3370,7 @@ moveBackground();
                     bannerImage.style.transform = `scale(${scale**1})`;
                     iconHero1.style.display = 'block';
                     iconHero1.style.opacity = opacity * 1.1;
+                    nebulaBG.style.display = 'block';
                   } 
                   else {
                     hero.style.transform = `scale(1)`;
@@ -3410,15 +3414,15 @@ moveBackground();
                   else if (window.scrollY > 2.8 * threshold) {
                     // $(ecoImg).addClass("eco-hide-scroll-img__scroll");
                     // $(ecoImg).removeClass("eco-hide-scroll-img__scroll-stt");
-                    panelsBackground.style.backgroundSize = "280% 280%"
                     opacityLayer.style.opacity = "0";
+                    nebulaBG.style.transform = `scale(${scale**2})`;
                   } 
 
                   else {
                     
                     $(ecoImg).removeClass("eco-hide-scroll-img__scroll");
                     opacityLayer.style.opacity = "0";
-                    panelsBackground.style.backgroundSize = "100% 100%"
+                    nebulaBG.style.transform = `scale(1)`;
                   }
                   
             
