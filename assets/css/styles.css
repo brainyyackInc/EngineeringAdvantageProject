@@ -540,6 +540,58 @@ body.advantage-class * {
 
 .advantage-class .banner-sect-content {
     position: relative;
+    z-index: 3;
+}
+
+.carousel-control {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    text-shadow: none;
+    box-shadow: none;
+    background-image: none!important;
+    bottom: -41px;
+    top: unset;
+    z-index: 222;
+}
+
+.carousel-control.left {
+    transform: rotate(180deg);
+    left: 430px;
+}
+
+.carousel-control.right {
+    right: 430px;
+}
+
+.carousel-control svg {
+    width: 30px;
+}
+
+.carousel-indicators {
+    transform: translateX(-50%);
+    width: max-content;
+    margin-left: 0;
+}
+
+.carousel-indicators:after {
+    width: 92px;
+    height: 15px;
+    position: absolute;
+    content: "";
+    opacity: 0;
+    z-index: 18;
+    bottom: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.carousel-control svg path {
+    transition: .2s;
+}
+
+.carousel-control:hover svg path {
+    fill: #87BA34
 }
 
 .advantage-class .video-sect {
@@ -1436,6 +1488,35 @@ body.advantage-class * {
     transition: 1s;
     display: none;
 }
+
+
+  /* ControlBar (Inherited by icons in the ControlBar, but NOT the ProgressControl) */
+  .video-js .vjs-control-bar {
+    display: none!important
+  }
+
+  .banner-sect--layout {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .video-sect video {
+    object-fit: cover;
+  }
+  
+  /* PlayToggle */
+  .video-js .vjs-play-control {
+    display:none;
+  }
+  
+  .vjs-dock-text {
+
+    display: none;
+    }
+
 
 .advantage-class .flex-posabs {
     position: absolute;
