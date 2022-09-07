@@ -115,7 +115,7 @@
     </div>
     <section id="panels" class="bg-panels" loading="lazy">
       <img class="background-nebula" src="assets/media/images/Nebula_03.jpg" alt="">
-      <svg class="arrow-banner-sect" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path style="fill:#fff" d="m18.294 16.793-5.293 5.293V1h-1v21.086l-5.295-5.294-.707.707L12.501 24l6.5-6.5-.707-.707z"/></svg>
+      <svg class="arrow-banner-sect" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path style="" d="m18.294 16.793-5.293 5.293V1h-1v21.086l-5.295-5.294-.707.707L12.501 24l6.5-6.5-.707-.707z"/></svg>
     
       <div class="panels-bg-f"></div>
 
@@ -197,7 +197,7 @@
                 </header>
                 <div class="trailer">
                     <div class="engenering-section">
-                      <svg class="seven-icons-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path style="fill:#fff" d="m18.294 16.793-5.293 5.293V1h-1v21.086l-5.295-5.294-.707.707L12.501 24l6.5-6.5-.707-.707z"/></svg>   
+                      <svg class="seven-icons-arrow" data-target_anchor=".panels-container" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path d="m18.294 16.793-5.293 5.293V1h-1v21.086l-5.295-5.294-.707.707L12.501 24l6.5-6.5-.707-.707z"/></svg>   
                     <div class="engenering-section--container  animate-this">
                       <div class="engen-icon engen-icon-innovation animate-this">
                         <p class="eco-hide-scroll">Ecosystem innovation</p>
@@ -3307,9 +3307,37 @@ moveBackground();
               next.children(':first-child').clone().appendTo($(this));
             }
           });
-    </script>
-   <script>
+
+
+
     gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
+
+    /* Banner Arrow and 7 icons section arrow */
+    const bannerArrowClick = document.querySelector('.arrow-banner-sect');
+    bannerArrowClick.addEventListener("click", function(e) {
+      e.preventDefault();
+      gsap.to(window, {
+        scrollTo: {
+            y: 200,
+            autoKill: false
+        },
+        duration: 0
+      });
+    });
+
+    const sevenIconsArrowClick = document.querySelector('.seven-icons-arrow');
+    sevenIconsArrowClick.addEventListener("click", function(e) {
+      e.preventDefault();
+      let targetElem = document.querySelector(e.target.getAttribute("data-target_anchor")),
+          y = targetElem;
+      gsap.to(window, {
+        scrollTo: {
+            y: y,
+            autoKill: false
+        },
+        duration: 0
+      });
+    });
 
     /* Main navigation */
     let panelsSection = document.querySelector("#panels"),

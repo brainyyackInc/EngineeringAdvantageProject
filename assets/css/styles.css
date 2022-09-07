@@ -673,10 +673,11 @@ body.advantage-class * {
 
 .seven-icons-arrow path {
     transition: .2s;
+    fill: #fff;
 }
 
 .seven-icons-arrow:hover path {
-    fill: #87BA34
+    fill: #87BA34;
 }
 
 .vjs-big-play-button {
@@ -696,6 +697,7 @@ body.advantage-class * {
 
 .arrow-banner-sect path {
     transition: .2s;
+    fill: #fff;
 }
 
 .arrow-banner-sect:hover path {
