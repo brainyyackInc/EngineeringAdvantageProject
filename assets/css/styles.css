@@ -1476,6 +1476,7 @@ body.advantage-class * {
 .advantage-class  #panels {
     position: relative;
     z-index: 2;
+    background-color: #071231;
     transition: 1.5s;
 }
 
