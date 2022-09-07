@@ -544,8 +544,8 @@ body.advantage-class * {
 }
 
 .carousel-control {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     opacity: 1;
     text-shadow: none;
     box-shadow: none;
@@ -565,7 +565,7 @@ body.advantage-class * {
 }
 
 .carousel-control svg {
-    width: 30px;
+    width: 20px;
 }
 
 .carousel-indicators {
@@ -1143,7 +1143,7 @@ body.advantage-class * {
 }
 
 .advantage-class .carousel-indicators {
-    bottom: -45px;
+    bottom: -52px;
 }
 
 .advantage-class .advantage-tabs__cont:hover img {
