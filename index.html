@@ -18,7 +18,7 @@
         <div class="fixed-top-sect--right">
             <ul class="d-flex">
                 <li>
-                    <a href="#top-sect">
+                    <a class="scroll-top" href="#top-sect">
                         <img src="assets/media/images/scroll-top-icon.svg" alt="">
                     </a>
                 </li>
@@ -3399,6 +3399,20 @@ moveBackground();
         duration: 3
       });
     });
+    
+    const scrolltopButton = document.querySelector('.scroll-top');
+    scrolltopButton.addEventListener("click", function(e) {
+      e.preventDefault();
+      gsap.to(window, {
+        scrollTo: {
+            y: 0,
+            autoKill: false
+        },
+        duration: 5
+      });
+    });
+
+    
 
 
 
