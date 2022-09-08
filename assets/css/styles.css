@@ -1719,6 +1719,14 @@ body.advantage-class * {
     right: 2rem;
   }
 
+  .navbar-header {
+    display: none!important;
+  }
+
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+
   .position-longline, .position-longline2, .position-longline3, .position-longline4, .position-longline5, .position-longline6 {
     top: 42%;
     left: 70%;
@@ -2933,9 +2941,51 @@ body.advantage-class * {
 
     .seven-element-sect {
         display: block;
-        background-image: url(../media/images/elements-seven-bg.png);
+        background-image: url(../media/images/Nebula_03.jpg);
         padding: 65px 0 135px 0;
         background-size: cover;
+    }
+
+    .navbar-collapse a {
+        color: #fff;
+        font-size: 18px;
+        line-height: 26px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+    }
+
+    .advantage-class .fixed-top-sect {
+        z-index: 44;
+    }
+
+    .navbar-toggle img {
+        width: 30px;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        background: rgb(90, 90, 90);
+        top: 50px;
+        width: 100%;
+        left: 0px;
+        padding-left: 40px;
+    }
+
+    .navbar-header {
+        display: block!important;
+      }
+
+      .navbar-collapse.collapse.in {
+        display: block!important;
+      }
+    
+      .navbar-collapse.collapse {
+        display: none!important;
+      } 
+
+    .fixed-top-sect--right {
+        display: none;
     }
 
     .modal-case-studies__text-oriented {
@@ -3046,6 +3096,10 @@ body.advantage-class * {
         overflow-y: hidden;
     }
 
+    .car-controls {
+        bottom: 3px;
+    }
+
     .advantage-class .modal-case-studies__wrapper .icons-abs-case-studies {
         top: -20px;
     }
@@ -3131,7 +3185,11 @@ body.advantage-class * {
     }
 
     .advantage-class .carousel-indicators {
-        bottom: -11px;
+        bottom: -7px;
+    }
+
+    .advantage-class .slider-main-abs {
+        bottom: 37px;
     }
 
     .advantage-class .build-the-future-sect {
@@ -3300,7 +3358,7 @@ body.advantage-class * {
     }
 
     .advantage-class .col-w-mrg-cstm {
-        margin-top: 50px;
+        padding-top: 50px;
     }
 
     .advantage-class .banner-build-section a {
