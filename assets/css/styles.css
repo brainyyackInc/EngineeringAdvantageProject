@@ -22,14 +22,14 @@
     display: none;
 }
 
-html {
-    scroll-behavior: smooth;
+#engineering-advantage {
+    scroll-behavior: unset;
     overflow-x: hidden;
   }
 
-  .advantage-tabs__item--w100 {
-    cursor: pointer;
-  }
+.advantage-tabs__item--w100 {
+cursor: pointer;
+}
 
 body.advantage-class * {
     font-family: 'Open Sans';

@@ -3367,7 +3367,7 @@ moveBackground();
             y: 200,
             autoKill: false
         },
-        duration: 0
+        duration: 0.5
       });
     });
 
@@ -3375,14 +3375,14 @@ moveBackground();
     buildItArrowClick.addEventListener("click", function(e) {
       e.preventDefault();
       var viewportTop = $(window).scrollTop();
-      let y = 2800 - viewportTop;
+      let y = 2700 - viewportTop;
           console.log("distance top", viewportTop)
       gsap.to(window, {
         scrollTo: {
             y: y,
             autoKill: false
         },
-        duration: 0
+        duration: 3
       });
     });
 
@@ -3396,7 +3396,7 @@ moveBackground();
             y: y,
             autoKill: false
         },
-        duration: 0
+        duration: 3
       });
     });
 
@@ -3435,7 +3435,7 @@ moveBackground();
                     y: y,
                     autoKill: false
                 },
-                duration: 0
+                duration: 3
             });
         });
     });
