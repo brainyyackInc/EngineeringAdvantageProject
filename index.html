@@ -170,7 +170,7 @@
                   </div>
                 <header class="hero" style="transform: scale(1);">
                     <div class="build-it-section">
-                      <svg class="arrow-build-it-section" data-target_anchor=".panels-container" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path d="m18.294 16.793-5.293 5.293V1h-1v21.086l-5.295-5.294-.707.707L12.501 24l6.5-6.5-.707-.707z"/></svg> 
+                      <svg class="arrow-build-it-section" data-target_anchor=".engenering-section" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path d="m18.294 16.793-5.293 5.293V1h-1v21.086l-5.295-5.294-.707.707L12.501 24l6.5-6.5-.707-.707z"/></svg> 
                     <div class="img-bg-bottom-abs"> <img src="assets/media/images/people-bg-img.png" class="animate-this"></div>
                     <div class="case-studies__element animate-this build-it-section--abs" id="hero-ban-img">
                       <svg xmlns="http://www.w3.org/2000/svg" class="" xmlns:xlink="http://www.w3.org/1999/xlink" width="765.322" height="765.322" viewBox="0 0 765.322 765.322">
@@ -3371,6 +3371,21 @@ moveBackground();
       });
     });
 
+    const buildItArrowClick = document.querySelector('.arrow-build-it-section');
+    buildItArrowClick.addEventListener("click", function(e) {
+      e.preventDefault();
+      var viewportTop = $(window).scrollTop();
+      let y = 2800 - viewportTop;
+          console.log("distance top", viewportTop)
+      gsap.to(window, {
+        scrollTo: {
+            y: y,
+            autoKill: false
+        },
+        duration: 0
+      });
+    });
+
     const sevenIconsArrowClick = document.querySelector('.seven-icons-arrow');
     sevenIconsArrowClick.addEventListener("click", function(e) {
       e.preventDefault();
@@ -3385,20 +3400,7 @@ moveBackground();
       });
     });
 
-    const buildItArrowClick = document.querySelector('.arrow-build-it-section');
-    buildItArrowClick.addEventListener("click", function(e) {
-      e.preventDefault();
-      console.log("Clicked")
-      let targetElem = document.querySelector(e.target.getAttribute("data-target_anchor")),
-          y = targetElem;
-      gsap.to(window, {
-        scrollTo: {
-            y: y,
-            autoKill: false
-        },
-        duration: 0
-      });
-    });
+
 
     /* Main navigation */
     let panelsSection = document.querySelector("#panels"),
@@ -3566,7 +3568,7 @@ moveBackground();
 
                   if (window.scrollY > 0.8 * threshold) { 
                     buildItArrow.style.display = 'none';
-                  } else if (window.scrollY > 0.4 * threshold) { 
+                  } else if (window.scrollY > 0.18 * threshold) { 
                     buildItArrow.style.display = 'block';
                   } else {
                     buildItArrow.style.display = 'none';
