@@ -704,7 +704,7 @@ body.advantage-class * {
     display: none;
 }
 
-.arrow-banner-sect {
+.advantage-class .arrow-banner-sect {
     width: 40px;
     position: fixed;
     top: 94vh;
@@ -717,12 +717,34 @@ body.advantage-class * {
     padding: 5px;
 }
 
-.arrow-banner-sect path {
+.advantage-class .arrow-banner-sect path {
     transition: .2s;
     fill: #fff;
 }
 
-.arrow-banner-sect:hover path {
+.advantage-class .arrow-banner-sect:hover path {
+    fill: #87BA34;
+}
+
+.advantage-class .arrow-build-it-section {
+    width: 40px;
+    position: fixed;
+    top: 94vh;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: .3s;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+}
+
+.advantage-class .arrow-build-it-section path {
+    transition: .2s;
+    fill: #fff;
+}
+
+.advantage-class .arrow-build-it-section:hover path {
     fill: #87BA34;
 }
 
