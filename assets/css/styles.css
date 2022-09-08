@@ -699,7 +699,7 @@ body.advantage-class * {
 }
 
 .arrow-banner-sect {
-    width: 30px;
+    width: 40px;
     position: fixed;
     top: 94vh;
     z-index: 2;
@@ -707,6 +707,8 @@ body.advantage-class * {
     transform: translateX(-50%);
     cursor: pointer;
     transition: .3s;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
 }
 
 .arrow-banner-sect path {

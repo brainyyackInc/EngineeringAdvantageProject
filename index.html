@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="engineering-advantage">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +7,9 @@
     <title>Title</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-     <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <link href="https://vjs.zencdn.net/7.20.2/video-js.css" rel="stylesheet" />
 </head>
-<body class="advantage-class">
+<body  class="advantage-class">
 
 
 
@@ -146,13 +146,13 @@
       </div>
       <svg class="arrow-banner-sect" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path style="" d="m18.294 16.793-5.293 5.293V1h-1v21.086l-5.295-5.294-.707.707L12.501 24l6.5-6.5-.707-.707z"/></svg>
     
-      <div class="panels-bg-f"></div>
+      <div id="" class="panels-bg-f"></div>
 
         <div class="container-obs" id="top-sect">
             <div class="container-fixed-obs">
                 <div class="banner-sect">
                   <div class="banner-sect--layout"></div>
-                    <div  class="video-sect" style="width: 100%;"><video class="video-js vjs-fluid" id="myPlayerID" data-account="761709628001" loop data-player="default" data-embed="default" controls="" data-video-id="6311641557112" data-playlist-id="" data-application-id="" width="100%" height="100%" muted autoplay></video></div><script src="https://players.brightcove.net/761709628001/default_default/index.min.js"></script>
+                    <div  class="video-sect" style="width: 100%;"><video class="video-js vjs-fluid" id="myPlayerID" data-account="761709628001" loop data-player="default" data-embed="default" controls="" data-video-id="6311641557112" data-playlist-id="" data-application-id="" width="100%" height="100%" muted autoplay></video></div>
                     <div class="banner-sect-content">
                         <h1>Engineering Advantage</h1>
                         <p>Discover the innovation and technology to transform what’s next into what’s now</p>
@@ -2967,7 +2967,7 @@
         </div>
     </div>
 
-    <div class="modal modal-bannersect fade fadeOut" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <!-- <div class="modal modal-bannersect fade fadeOut" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
 
@@ -2980,7 +2980,7 @@
             </div>
           </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="modal modal-case-studies fade fadeOut" id="basicModal2" tabindex="-1" role="dialog" aria-labelledby="basicModal2" aria-hidden="true">
         <div class="modal-dialog">
@@ -3116,12 +3116,6 @@
             <div class="modal-body">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="assets/media/images/close-svg.svg" alt=""> </button>
                 <div class="advantage-modal d-flex">
-                    <div class="advantage-modal__left">
-                        <video playsinline="" controls="" muted="" loop="">
-                            <source src="assets/media/videos/EA.mp4" type="video/webm">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
                     <div class="advantage-modal__right">
                         <div>
                             <h4 class="advantage-modal__right__title">U.S. Open AR <br>
@@ -3257,6 +3251,9 @@
     <script src="assets/js/Observer.min.js"></script>
     <script src="assets/js/ScrollTrigger.min.js"></script>
     <script src="assets/js/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/ScrollSmoother.min.js"></script>
+    <script src="https://players.brightcove.net/761709628001/default_default/index.min.js"></script>
+    <script src="https://vjs.zencdn.net/7.20.2/video.min.js"></script>
     <script>
 
 // smooth scroll to anchor, with option of hash appearing in url. Thanks:
@@ -3350,7 +3347,14 @@ moveBackground();
 
 
 
-    gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
+    gsap.registerPlugin(ScrollToPlugin, ScrollTrigger, ScrollSmoother);
+
+    /* Sections Smooth scroll */
+    // ScrollSmoother.create({
+    //   smooth: 5,               // how long (in seconds) it takes to "catch up" to the native scroll position
+    //   smoothTouch: 0.1,        // much shorter smoothing time on touch devices (default is NO smoothing on touch devices)
+    // });
+
 
     /* Banner Arrow and 7 icons section arrow */
     const bannerArrowClick = document.querySelector('.arrow-banner-sect');
@@ -3757,10 +3761,6 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 
-</script>
-<script src="https://vjs.zencdn.net/7.20.2/video.min.js"></script>
-<script>
-  jQuery(document).ready(function(){
     videojs.getPlayer('myPlayerID').ready(function() {
       var myPlayer = this;
       // Play here? Two tasks to do
@@ -3770,7 +3770,6 @@ document.addEventListener("DOMContentLoaded", function(){
       });
       console.log(myPlayer.play, "I am here")
     });
-  });
 </script>
 </body>
 </html>
