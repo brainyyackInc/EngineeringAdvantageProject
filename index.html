@@ -141,7 +141,9 @@
         </div>
     </div>
     <section id="panels" class="bg-panels" loading="lazy">
-      <img class="background-nebula" src="assets/media/images/Nebula_03.jpg" alt="">
+      <div class="background-nebula">
+        <img class="animate-this-opposition" src="assets/media/images/Nebula_03.jpg" alt="">
+      </div>
       <svg class="arrow-banner-sect" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path style="" d="m18.294 16.793-5.293 5.293V1h-1v21.086l-5.295-5.294-.707.707L12.501 24l6.5-6.5-.707-.707z"/></svg>
     
       <div class="panels-bg-f"></div>
@@ -2017,7 +2019,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="scale1 scaleOut firstBigIcon">
+                                <div class="firstBigIcon fade1 fadeOut1">
                                     <h2 class="panels-title">Ecosystem innovation</h2>
                                     <p class="panels-txt" id="panels-txt">By aligning your needs and opportunities with our business and technology alliances, our ecosystem brings
                                       technology innovation to life with purpose, speed, and 
@@ -2080,7 +2082,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="scale scaleOut panels-text-1">
+                                <div class=" panels-text-1">
                                     <h2 class="panels-title">Next-gen technology</h2>
                                     <p class="panels-txt">We’re on the cutting-edge of emerging, innovative 
                                       technologies that engineer solutions for your business 
@@ -2188,7 +2190,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 flex-jcfe">
-                                <div class="scale scaleOut">
+                                <div class="">
                                     <h2 class="panels-title">Platforms and automation</h2>
                                     <p class="panels-txt" id="panels-txt">Our full command of cloud-native and autonomous 
                                       platforms can help your business garner speed, security,
@@ -2213,7 +2215,7 @@
                     <div class="container">
                         <div class="row">
                           <div class="col-md-6">
-                            <div class="scale scaleOut">
+                            <div class="">
                                 <h2 class="panels-title">Data, enterprise intelligence, <br> and cyber security</h2>
                                 <p class="panels-txt">We can help you connect technology deployments to 
                                   real business results by leveraging data, cloud, AI, and 
@@ -2285,7 +2287,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="scale scaleOut">
+                                <div class="">
                                     <h2 class="panels-title">New markets</h2>
                                     <p class="panels-txt">We can help identify new markets by analyzing new 
                                       business models, enhancing technology platforms and 
@@ -2336,7 +2338,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="scale scaleOut panel-6-title">
+                                <div class=" panel-6-title">
                                     <h2 class="panels-title">Tech talent</h2>
                                     <p class="panels-txt">We’re attracting and growing the next generation of top 
                                       tech talent to help lead businesses through their 
@@ -2445,7 +2447,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 flex-jcfe">
-                                <div class="scale scaleOut">
+                                <div class="">
                                     <h2 class="panels-title">Tech leadership</h2>
                                     <p class="panels-txt">Our leaders and their deep business insights are core to 
                                       how we help you stay ahead of change and engineer 
@@ -3282,19 +3284,30 @@ $(document).ready(function(){
 		lFollowY = 0,
 		x = 0,
 		y = 0,
+    x1 = 0,
+		y1 = 0,
 		friction = 1 / 30;
 
 function moveBackground() {
 	x += (lFollowX - x) * friction;
 	y += (lFollowY - y) * friction;
+  x1 += -(lFollowX - x) * friction;
+	y1 += -(lFollowY - y) * friction;
 
 	//  translate = 'translateX(' + x + 'px, ' + y + 'px)';
 	translate = 'translateX(' + x + 'px) translateY(' + y +'px)';
+  translateOposition = 'translateX(' + x1 + 'px) translateY(' + y1 +'px)';
 
 	$('.animate-this').css({
 	'-webit-transform': translate,
 	'-moz-transform': translate,
 	'transform': translate
+	});
+
+  $('.animate-this-opposition').css({
+	'-webit-transform': translateOposition,
+	'-moz-transform': translateOposition,
+	'transform': translateOposition
 	});
 
 	window.requestAnimationFrame(moveBackground);
@@ -3581,7 +3594,7 @@ moveBackground();
                     
                     $(ecoImg).removeClass("eco-hide-scroll-img__scroll");
                     opacityLayer.style.opacity = "0";
-                    nebulaBG.style.transform = `scale(1)`;
+                    nebulaBG.style.transform = `scale(1.05)`;
                   }
                   
             
@@ -3629,6 +3642,7 @@ moveBackground();
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             entry.target.classList.replace('scaleOut', 'scaleIn');
+            entry.target.classList.replace('fadeOut1', 'fadeIn1');
             observer.unobserve(entry.target)
           } 
         });
@@ -3637,6 +3651,8 @@ moveBackground();
       
       const scaleElms2 = document.querySelectorAll('.scale1.firstBigIcon');
       scaleElms2.forEach(el => observer2.observe(el));
+      const fadeElements2 = document.querySelectorAll('.fade1.firstBigIcon');
+      fadeElements2.forEach(el => observer2.observe(el));
 
       
 </script>

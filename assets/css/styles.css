@@ -249,6 +249,18 @@ body.advantage-class * {
     opacity: 1; 
 }
 
+.advantage-class .fade1 {
+    transition: opacity 0.3s ease-in;
+}
+  
+.advantage-class .fadeOut1 { 
+    opacity: 0; 
+}
+
+.advantage-class .fadeIn1 { 
+    opacity: 1; 
+}
+
 .icon-wrapper .scale,
 .icon-wrapper .scale1 {
     position: relative;
@@ -662,13 +674,15 @@ body.advantage-class * {
 }
 
 .seven-icons-arrow {
-    width: 30px;
+    width: 40px;
     position: absolute;
     bottom: 50px;
     opacity: 0;
     z-index: -1;
     transition: .5s;
-    cursor: pointer
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
 }
 
 .seven-icons-arrow path {
@@ -1553,6 +1567,14 @@ body.advantage-class * {
     top: 0;
     transition: 1s;
     display: none;
+    transform: scale(1.05);
+
+}
+
+.background-nebula img {
+    width: 100%;
+    height: 100vh;
+    transform: 
 }
 
 
@@ -2580,6 +2602,11 @@ body.advantage-class * {
         width: 100%!important;
         max-width: 350px!important;
     }
+
+    .seven-icons-arrow {
+        margin-left: 50px;
+        bottom: 25px;
+    }
     
     .advantage-class .engenering-section {
         max-width: 520px;
@@ -2590,7 +2617,7 @@ body.advantage-class * {
     }
     
     .engen-icon-data {
-        left: 46px;
+        left: 10px;
         top: 234px;
     }
 
