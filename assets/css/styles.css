@@ -671,6 +671,12 @@ body.advantage-class * {
     left: 0;
     max-height: 100vh;
     z-index: 2;
+    transform: scale(1.05)
+}
+
+.advantage-class .img-bg-abs img {
+    width: 100%;
+    height: 100%;
 }
 
 .seven-icons-arrow {
