@@ -318,7 +318,7 @@ body.advantage-class * {
 }
 
 .advantage-class .container-obs {
-    height: 350vh;
+    height: 420vh;
 
 }
 
@@ -679,7 +679,7 @@ body.advantage-class * {
     height: 100%;
 }
 
-.seven-icons-arrow {
+.advantage-class .seven-icons-arrow {
     width: 40px;
     position: absolute;
     bottom: 50px;
@@ -691,16 +691,16 @@ body.advantage-class * {
     padding: 5px;
 }
 
-.seven-icons-arrow path {
+.advantage-class .seven-icons-arrow path {
     transition: .2s;
     fill: #fff;
 }
 
-.seven-icons-arrow:hover path {
+.advantage-class .seven-icons-arrow:hover path {
     fill: #87BA34;
 }
 
-.vjs-big-play-button {
+.advantage-class .vjs-big-play-button {
     display: none;
 }
 
@@ -2633,9 +2633,13 @@ body.advantage-class * {
         max-width: 350px!important;
     }
 
-    .seven-icons-arrow {
+    .advantage-class .seven-icons-arrow {
         margin-left: 50px;
         bottom: 25px;
+    }
+
+    .advantage-class .arrow-banner-sect, .advantage-class .arrow-build-it-section {
+        bottom: 25px;       
     }
     
     .advantage-class .engenering-section {

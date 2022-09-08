@@ -18,7 +18,7 @@
         <div class="fixed-top-sect--right">
             <ul class="d-flex">
                 <li>
-                    <a class="scroll-top" href="#top-sect">
+                    <a class="scroll-top-anchor" href="#top-sect">
                         <img src="assets/media/images/scroll-top-icon.svg" alt="">
                     </a>
                 </li>
@@ -222,8 +222,8 @@
                               professionals; 100+ alliances; and hundreds of 
                               products, solutions, and tech-enabled consulting 
                               services.</p>
-                            <a href="" class="text-link">Explore what’s possible.
-                            </a>
+                              <p class="main-p">Explore what’s possible.
+                              </p>
                         </div>
                     </div>
                 </div>
@@ -3375,7 +3375,7 @@ moveBackground();
     buildItArrowClick.addEventListener("click", function(e) {
       e.preventDefault();
       var viewportTop = $(window).scrollTop();
-      let y = 2700 - viewportTop;
+      let y = 3200 - viewportTop;
           console.log("distance top", viewportTop)
       gsap.to(window, {
         scrollTo: {
@@ -3400,7 +3400,7 @@ moveBackground();
       });
     });
     
-    const scrolltopButton = document.querySelector('.scroll-top');
+    const scrolltopButton = document.querySelector('.scroll-top-anchor');
     scrolltopButton.addEventListener("click", function(e) {
       e.preventDefault();
       gsap.to(window, {
@@ -3534,53 +3534,50 @@ moveBackground();
                 window.addEventListener('scroll', function() {
                   // scale up hero section until scale is 20x
                   // and fade out hero title
-                  let scale = 1 + ( ( window.scrollY / threshold ) * 0.2 );
+                  let scale = 1 + ( ( window.scrollY / threshold ) * 0.04 );
                   let scaleImg = 1 + ( ( window.scrollY / threshold ) * 0.1 );
                   let bottomG = 1 - ( ( window.scrollY / threshold ) * 10000 );
                   let leftG = 1 + ( ( window.scrollY / threshold ) * 10000 );
-                  let opacity = 1 - ( ( window.scrollY / threshold ) * 0.6 );
-                  let opacity2 = 1 - ( ( window.scrollY / threshold ) * 1);
+                  let opacity = 1 - ( ( window.scrollY / threshold ) * 0.4 );
+                  let opacity2 = 1 - ( ( window.scrollY / threshold ) * 0.6);
+
 
                   if (window.scrollY > 0.1 * threshold) { 
                     bannerArrow.style.opacity = '0';
                     bannerArrow.style.zIndex = "-1";
-                   
-                  } 
-
-                  else {
+                  } else {
                     bannerArrow.style.opacity = '1';
                     bannerArrow.style.zIndex = "22222";
                   }
 
-                  if (window.scrollY > 1.8 * threshold) { 
+                  if (window.scrollY > 2.5 * threshold) { 
                     bannerImage.style.display = 'none'; 
                     bannerImage.style.opacity = '0'; 
                     iconHero1.style.display = 'none';
                    
-                  } 
-                  else if (window.scrollY > 0.4 * threshold) {
-                    hero.style.opacity = opacity * 2.3;
-                    hero.style.transform = `scale(${scale**4})`;
+                  } else if (window.scrollY > 0.4 * threshold) {
+                    hero.style.opacity = opacity;
+                    hero.style.transform = `scale(${scale**8})`;
                     hero1.style.position = 'fixed';
                     iconHero1.style.opacity = opacity * 2.3;
-                    bannerImage.style.opacity = opacity2 * 7; 
+                    bannerImage.style.opacity = opacity2 * 4; 
                     bannerImage.style.display = 'block'; 
                     bannerImage.style.bottom = "0";
                     // bannerImage.style.bottom = bottomG * .02 + "px";
-                    bannerImage.style.transform = `scale(${scale**1})`;
+                    bannerImage.style.transform = `scale(${scale**2})`;
                     iconHero1.style.display = 'block';
                     iconHero1.style.opacity = opacity * 1.1;
                     nebulaBG.style.display = 'block';
                     
-                  } 
-                  else {
+                  } else {
                     hero.style.transform = `scale(1.05)`;
                     bannerImage.style.bottom = '0vh';
+                    bannerImage.style.opacity = '1'; 
                     iconHero1.style.opacity = '1';
                     
                   }
 
-                  if (window.scrollY > 0.8 * threshold) { 
+                  if (window.scrollY > 1.3 * threshold) { 
                     buildItArrow.style.display = 'none';
                   } else if (window.scrollY > 0.18 * threshold) { 
                     buildItArrow.style.display = 'block';
@@ -3588,13 +3585,13 @@ moveBackground();
                     buildItArrow.style.display = 'none';
                   }
 
-                  if (window.scrollY > 0.7 * threshold) {
+                  if (window.scrollY > 1.3 * threshold) {
                     hero2.style.opacity =  opacity2;
                   } else {
                     hero2.style.opacity = '1';
                   }
 
-                  if (window.scrollY > 2.8 * threshold) { 
+                  if (window.scrollY > 3.5 * threshold) { 
                    
                     $(trailer).removeClass("trailer-hidden");
                     ecotext.style.opacity = opacity * 2.3; 
@@ -3602,8 +3599,7 @@ moveBackground();
                     sevenIconsArrow.style.zIndex = "-1";
                     sevenIconsArrow.style.opacity = "0"; 
                    
-                  } 
-                  else if (window.scrollY > 1.8 * threshold) {
+                  } else if (window.scrollY > 2.5 * threshold) {
                     ecotext.style.opacity = "1"; 
                     staticimg.style.opacity = "1"; 
                     $(trailer).addClass("trailer-hidden");
@@ -3611,8 +3607,7 @@ moveBackground();
                     sevenIconsArrow.style.zIndex = "2222";
                     sevenIconsArrow.style.opacity = "1"; 
                    
-                  } 
-                  else {
+                  } else {
                     ecotext.style.opacity = "0";
                     $(trailer).removeClass("trailer-hidden");
                     staticimg.style.opacity = "0";
@@ -3621,21 +3616,17 @@ moveBackground();
                     sevenIconsArrow.style.opacity = "0"; 
                   }
 
-                  if (window.scrollY > 3 * threshold) { 
+                  if (window.scrollY > 3.7 * threshold) { 
                     // $(ecoImg).removeClass("eco-hide-scroll-img__scroll");
                     // $(ecoImg).addClass("eco-hide-scroll-img__scroll-stt");
                     opacityLayer.style.opacity = ".5";
                     
-                  } 
-                  
-                  else if (window.scrollY > 2.8 * threshold) {
+                  } else if (window.scrollY > 3.5 * threshold) {
                     // $(ecoImg).addClass("eco-hide-scroll-img__scroll");
                     // $(ecoImg).removeClass("eco-hide-scroll-img__scroll-stt");
                     opacityLayer.style.opacity = "0";
                     nebulaBG.style.transform = `scale(${scale**2})`;
-                  } 
-
-                  else {
+                  } else {
                     
                     $(ecoImg).removeClass("eco-hide-scroll-img__scroll");
                     opacityLayer.style.opacity = "0";
@@ -3649,9 +3640,6 @@ moveBackground();
                     document.body.classList.remove('past-threshold');
                 }) 
             
-            }
-        
-            else {
             }
         });
     });
