@@ -1036,6 +1036,15 @@ body.advantage-class * {
 
 .advantage-class .case-study__item__img-block {
     position: relative;
+    overflow: hidden;
+}
+
+.advantage-class .case-study__item__img-block img {
+    transition: .2s;
+}
+
+.advantage-class .case-study__item__img-block:hover img {
+    transform: scale(1.2);
 }
 
 .advantage-class .case-study__item__img-block p {
@@ -2639,8 +2648,10 @@ body.advantage-class * {
     }
 
     .advantage-class .arrow-banner-sect, .advantage-class .arrow-build-it-section {
-        bottom: 25px;       
+        bottom: 25px;    
+        top: unset;   
     }
+    
     
     .advantage-class .engenering-section {
         max-width: 520px;
