@@ -3375,7 +3375,7 @@ moveBackground();
     buildItArrowClick.addEventListener("click", function(e) {
       e.preventDefault();
       var viewportTop = $(window).scrollTop();
-      let y = ( window.innerHeight * 2.8 );
+      let y = ( window.innerHeight * 3.4 );
           console.log("distance top", viewportTop)
       gsap.to(window, {
         scrollTo: {
@@ -3526,7 +3526,7 @@ moveBackground();
             const buildItArrow = document.querySelector('.arrow-build-it-section');
             
             const threshold = window.innerHeight;
-    
+
             if ($(window).scrollTop() > 0.1 * threshold) {
             
                 // Y value at which trailer switches to absolute positioning and scrolls up
@@ -3534,13 +3534,16 @@ moveBackground();
                 window.addEventListener('scroll', function() {
                   // scale up hero section until scale is 20x
                   // and fade out hero title
-                  let scale = 1 + ( ( window.scrollY / threshold ) * 0.04 );
+                  let scale = 1 + ( ( window.scrollY / threshold ) * 1 - 1 );
                   let scaleImg = 1 + ( ( window.scrollY / threshold ) * 0.1 );
                   let bottomG = 1 - ( ( window.scrollY / threshold ) * 10000 );
                   let leftG = 1 + ( ( window.scrollY / threshold ) * 10000 );
                   let opacity = 1 - ( ( window.scrollY / threshold ) * 0.4 );
-                  let opacity2 = 1 - ( ( window.scrollY / threshold ) * 0.6);
+                  let opacity2 = 1 - ( ( window.scrollY / threshold ) * 0.4);
 
+                  console.log("scale", scale)
+                  console.log("opacity", opacity)
+                  console.log("opacity2", opacity2)
 
                   if (window.scrollY > 0.1 * threshold) { 
                     bannerArrow.style.opacity = '0';
@@ -3550,21 +3553,21 @@ moveBackground();
                     bannerArrow.style.zIndex = "22222";
                   }
 
-                  if (window.scrollY > 2.5 * threshold) { 
+                  if (window.scrollY > 3.1 * threshold) { 
                     bannerImage.style.display = 'none'; 
                     bannerImage.style.opacity = '0'; 
                     iconHero1.style.display = 'none';
                    
-                  } else if (window.scrollY > 0.4 * threshold) {
+                  } else if (window.scrollY > 1 * threshold) {
                     hero.style.opacity = opacity;
-                    hero.style.transform = `scale(${scale**8})`;
+                    hero.style.transform = `scale(${scale**2})`;
                     hero1.style.position = 'fixed';
                     iconHero1.style.opacity = opacity * 2.3;
                     bannerImage.style.opacity = opacity2 * 4; 
                     bannerImage.style.display = 'block'; 
                     bannerImage.style.bottom = "0";
                     // bannerImage.style.bottom = bottomG * .02 + "px";
-                    bannerImage.style.transform = `scale(${scale**2})`;
+                    bannerImage.style.transform = `scale(${scale**0.5})`;
                     iconHero1.style.display = 'block';
                     iconHero1.style.opacity = opacity * 1.1;
                     nebulaBG.style.display = 'block';
@@ -3577,7 +3580,7 @@ moveBackground();
                     
                   }
 
-                  if (window.scrollY > 1.3 * threshold) { 
+                  if (window.scrollY > 1.5 * threshold) { 
                     buildItArrow.style.display = 'none';
                   } else if (window.scrollY > 0.18 * threshold) { 
                     buildItArrow.style.display = 'block';
@@ -3585,13 +3588,15 @@ moveBackground();
                     buildItArrow.style.display = 'none';
                   }
 
-                  if (window.scrollY > 1.3 * threshold) {
-                    hero2.style.opacity =  opacity2;
+                  if (window.scrollY > 3.1 * threshold) { 
+                    hero2.style.opacity =  '0';
+                  } else if  (window.scrollY > 1.5 * threshold) {
+                    hero2.style.opacity =  opacity2 ** 2;
                   } else {
                     hero2.style.opacity = '1';
                   }
 
-                  if (window.scrollY > 3.5 * threshold) { 
+                  if (window.scrollY > 4.1 * threshold) { 
                    
                     $(trailer).removeClass("trailer-hidden");
                     ecotext.style.opacity = opacity * 2.3; 
@@ -3599,7 +3604,7 @@ moveBackground();
                     sevenIconsArrow.style.zIndex = "-1";
                     sevenIconsArrow.style.opacity = "0"; 
                    
-                  } else if (window.scrollY > 2.5 * threshold) {
+                  } else if (window.scrollY > 3.1 * threshold) {
                     ecotext.style.opacity = "1"; 
                     staticimg.style.opacity = "1"; 
                     $(trailer).addClass("trailer-hidden");
@@ -3616,12 +3621,12 @@ moveBackground();
                     sevenIconsArrow.style.opacity = "0"; 
                   }
 
-                  if (window.scrollY > 3.7 * threshold) { 
+                  if (window.scrollY > 3.8 * threshold) { 
                     // $(ecoImg).removeClass("eco-hide-scroll-img__scroll");
                     // $(ecoImg).addClass("eco-hide-scroll-img__scroll-stt");
                     opacityLayer.style.opacity = ".5";
                     
-                  } else if (window.scrollY > 3.5 * threshold) {
+                  } else if (window.scrollY > 3.6 * threshold) {
                     // $(ecoImg).addClass("eco-hide-scroll-img__scroll");
                     // $(ecoImg).removeClass("eco-hide-scroll-img__scroll-stt");
                     opacityLayer.style.opacity = "0";
