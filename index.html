@@ -3364,7 +3364,7 @@ moveBackground();
       e.preventDefault();
       gsap.to(window, {
         scrollTo: {
-            y: 200,
+            y: window.innerHeight / 5,
             autoKill: false
         },
         duration: 0.5
@@ -3375,7 +3375,7 @@ moveBackground();
     buildItArrowClick.addEventListener("click", function(e) {
       e.preventDefault();
       var viewportTop = $(window).scrollTop();
-      let y = 3200 - viewportTop;
+      let y = ( window.innerHeight * 2.8 );
           console.log("distance top", viewportTop)
       gsap.to(window, {
         scrollTo: {
