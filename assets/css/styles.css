@@ -1397,7 +1397,7 @@ body.advantage-class * {
 }
 
 .advantage-class .slider-main-abs__pos {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 22px;
     color: #fff;
     margin-bottom: 5px;
@@ -1414,7 +1414,7 @@ body.advantage-class * {
     left: 20px;
     background-color: #00000094;
     padding: 25px 20px 20px 20px;
-    min-height: 192px;
+    min-height: 168px;
 }
 
 .advantage-class .slider-main-abs__pos-mt-5 {
