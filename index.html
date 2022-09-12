@@ -2568,16 +2568,16 @@
                 <div class="col-lg-8 d-flex align-items-end flex-column">
                     <div class="case-study__item " data-toggle="modal" data-target="#basicModal2">
                         <div class="icons-abs-case-studies">
-                          <img src="assets/media/images/Data-enterprise-intelligence-and-cyber-security-WCS.svg" alt="">
-                          <img src="assets/media/images/NewGen-technology-WCS.svg" alt="">
-                          <img src="assets/media/images/Platforms-and-automation-WCS.svg" alt="">
+                          <img src="assets/media/images/Data-enterprise-intelligence-and-cyber-security-WCS.svg" alt="" data-target="#basicModal2">
+                          <img src="assets/media/images/NewGen-technology-WCS.svg" alt="" data-target="#basicModal2">
+                          <img src="assets/media/images/Platforms-and-automation-WCS.svg" alt="" data-target="#basicModal2">
                         </div>
-                        <h4 class="case-study__item__title">
+                        <h4 class="case-study__item__title" data-target="#basicModal2">
                             Retail | Cloud
                         </h4>
-                        <div class="case-study__item__img-block">
-                            <img class="case-study__item__main-img" src="assets/media/images/retail-img.png" alt="">
-                            <p>A one-stop destination for data that’s used for multiple functions</p>
+                        <div class="case-study__item__img-block" data-target="#basicModal2">
+                            <img class="case-study__item__main-img" src="assets/media/images/retail-img.png" alt="" data-target="#basicModal2">
+                            <p data-target="#basicModal2">A one-stop destination for data that’s used for multiple functions</p>
                         </div>
                         <div>
                             <div class="bottom-text">Discover how a leading retailer embraced cloud to boost data availability ></div>
@@ -2585,15 +2585,15 @@
                     </div>
                     <div class="case-study__item case-study__item-mt-0" data-toggle="modal" data-target="#basicModal3">
                       <div class="icons-abs-case-studies">
-                        <img src="assets/media/images/Data-enterprise-intelligence-and-cyber-security-WCS.svg" alt="">
-                        <img src="assets/media/images/NewGen-technology-WCS.svg" alt="">
+                        <img src="assets/media/images/Data-enterprise-intelligence-and-cyber-security-WCS.svg" alt="" data-target="#basicModal3">
+                        <img src="assets/media/images/NewGen-technology-WCS.svg" alt="" data-target="#basicModal3">
                       </div>
-                        <h4 class="case-study__item__title">
+                        <h4 class="case-study__item__title" data-target="#basicModal3">
                             Financial Services | AI
                         </h4>
                         <div class="case-study__item__img-block">
-                            <img class="case-study__item__main-img" src="assets/media/images/financial-service.png" alt="">
-                            <p>Engineering greater confidence in AI</p>
+                            <img class="case-study__item__main-img" src="assets/media/images/financial-service.png" alt="" data-target="#basicModal3">
+                            <p data-target="#basicModal3">Engineering greater confidence in AI</p>
                         </div>
                         <div>
                             <div class="bottom-text">Learn how we helped a global financial institution address risk by making AI more human ></div>
@@ -2966,13 +2966,13 @@
         </div>
     </div> -->
 
-    <div class="modal modal-case-studies fade fadeOut" id="basicModal2" tabindex="-1" role="dialog" aria-labelledby="basicModal2" aria-hidden="true">
+    <div class="modal modal-case-studies fade fadeOut" id="basicModal2" tabindex="-1" role="dialog" aria-labelledby="basicModal2" aria-hidden="true" data-backdrop="static" data-keyboard="false">
         <div class="modal-dialog">
           <div class="modal-content">
 
             <div class="modal-body">
                 <p class="modal-case-studies__text-oriented">Retail | Cloud</p>
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="assets/media/images/close-svg.svg" alt=""> </button>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="assets/media/images/close-svg.svg" alt="" data-target="#basicModal2"> </button>
                 <img class="modal-case-studies__main-image" src="assets/media/images/RetaiL-storefront_BRGHT.png" alt="">
                 <div class="modal-case-studies__wrapper">
                   <div class="icons-abs-case-studies">
@@ -3029,14 +3029,14 @@
         </div>
     </div>
 
-    <div class="modal modal-case-studies fade fadeOut" id="basicModal3" tabindex="-1" role="dialog" aria-labelledby="basicModal3" aria-hidden="true">
+    <div class="modal modal-case-studies fade fadeOut" id="basicModal3" tabindex="-1" role="dialog" aria-labelledby="basicModal3" aria-hidden="true" data-backdrop="static" data-keyboard="false">
         <div class="modal-dialog">
           <div class="modal-content">
 
             <div class="modal-body">
                 <p class="modal-case-studies__text-oriented">Financial Services | AI
                 </p>
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="assets/media/images/close-svg.svg" alt=""> </button>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="assets/media/images/close-svg.svg" alt="" data-target="#basicModal3"> </button>
                 <img class="modal-case-studies__main-image" src="assets/media/images/03B_CS_financialservice_2_OPEN_header.jpg" alt="">
                 <div class="modal-case-studies__wrapper">
                   <div class="icons-abs-case-studies">
@@ -3847,51 +3847,29 @@ $('.navbar-toggle').on('click', function(e) { // <----------- Click Handler (jQu
 const body = document.querySelector('body')
 const openPanelBtn = document.querySelectorAll('.advantage-class .case-study__item')
 const closePanelBtn = document.querySelectorAll('.advantage-class .close')
-const modal = document.querySelector('.advantage-class .modal')
+// const modal = document.querySelector('.advantage-class .modal')
 const objectCountRef = { current: 0 }  // to apply the solution for the scenario with multiple popup
 const caseStudies = document.querySelector('.advantage-class #case-studies')
 var caseStudiesPosition = caseStudies.getBoundingClientRect();
 
 // A. add button events:
 openPanelBtn.forEach(function(dom) {
-  dom.addEventListener('click', openPanelAndFreezeBodyScroll)
+  // dom.addEventListener('click', openPanelAndFreezeBodyScroll(modalDataTarget))
+  dom.addEventListener('click', function(e) {
+    var modal = document.querySelector(e.target.getAttribute("data-target"));
+    modal.style.display = 'block';
+    freezeBodyScroll();
+  })
 })
 
 closePanelBtn.forEach(function(dom) {
-  dom.addEventListener('click', closePanelAndFreeBodyScroll)
+  // dom.addEventListener('click', closePanelAndFreeBodyScroll(modalDataTarget))
+  dom.addEventListener('click', function(e) {
+    var modal = document.querySelector(e.target.getAttribute("data-target"));
+    modal.style.display = ''
+    freeBodyScroll();
+  })
 })
-
-// B. buttom-fixed panel:
-function openPanelAndFreezeBodyScroll () {
-  openPanel()
-  freezeBodyScroll()
-}
-function closePanelAndFreeBodyScroll () {
-  closePanel()
-  freeBodyScroll()
-}
-function openPanel () {
-  modal.style.display = 'block'
-}
-function closePanel () {
-  modal.style.display = ''
-}
-
-// C. modal:
-function openModalAndFreezeBodyScroll () {
-  openModal()
-  freezeBodyScroll()
-}
-function closeModalAndFreeBodyScroll () {
-  closeModal()
-  freeBodyScroll()
-}
-function openModal () {
-  modal.style.display = 'block'
-}
-function closeModal () {
-  modal.style.display = ''
-}
 
 // D. freeze or free the scrolling of the body:
 // base on the solution - https://css-tricks.com/prevent-page-scrolling-when-a-modal-is-open/
