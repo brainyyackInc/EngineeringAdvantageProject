@@ -418,7 +418,7 @@ body.advantage-class * {
     position: static
 }
 
-.advantage-class .fixed-top-sect--left {
+.advantage-class .fixed-top-sect--left a {
     font-family: 'Open Sans-Bold';
     font-size: 16px;
     line-height: 38px;
