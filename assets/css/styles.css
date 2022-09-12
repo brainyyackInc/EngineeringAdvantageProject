@@ -2646,6 +2646,16 @@ body.advantage-class * {
 
 @media only screen and (max-width: 1400px) {
 
+    .advantage-class .slider-main-abs {
+        width: calc(100% - 20px);
+        left: 10px;
+        padding: 25px 15px 15px 20px;
+    }
+
+    .advantage-class .slider-main-abs__pos {
+        font-size: 12px;
+    }
+
     .advantage-class .icon-wrapper img {
         width: 100%!important;
         max-width: 350px!important;
@@ -2657,7 +2667,7 @@ body.advantage-class * {
     }
 
     .advantage-class .arrow-banner-sect, .advantage-class .arrow-build-it-section {
-        bottom: 25px;    
+        bottom: 15px;    
         top: unset;   
     }
     
