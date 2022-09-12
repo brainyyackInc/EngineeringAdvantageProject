@@ -3778,10 +3778,14 @@ function lineDrawingOnScroll(svgPathID, panelID, viewportMultipler, nextIconID) 
     var threshold = window.innerHeight;
     var screenWidth = window.innerWidth;
 
+    
+
     // When the page scrolls...
     window.addEventListener("scroll", function(e) {
         var panel1TopPixels = ( document.documentElement.scrollTop - ( panel1ContainerPosition.top * viewportMultipler ) ) * ( ( 0.6 * threshold + 400 ) /  1000 );
         var linetrokeoffset = pathLength - panel1TopPixels;
+
+        // console.log(panelID, panel1ContainerPosition.top, document.documentElement.scrollTop, panel1TopPixels )
 
         // var panelNextTopPixels = document.documentElement.scrollTop - ( screenWidth * horizontalOrder ) - ( panelNextContainerPosition.bottom * 1000 / ( 0.14 * threshold + 860 ) ) 
         // console.log("next slide", svgPathID, panelNextTopPixels);
@@ -3808,8 +3812,8 @@ document.addEventListener("DOMContentLoaded", function(){
     lineDrawingOnScroll('#line2-icon1', '#panel-1', 1.12,'#panel-2');
     lineDrawingOnScroll('#line3-icon2', '#panel-2', 1.55,'#panel-3');
     lineDrawingOnScroll('#line4-icon2', '#panel-2', 1.52,'#panel-3');
-    lineDrawingOnScroll('#line5-icon3', '#panel-3', 2.11,'#panel-4');
-    lineDrawingOnScroll('#line6-icon3', '#panel-3', 2.13,'#panel-4');
+    lineDrawingOnScroll('#line5-icon3', '#panel-3', 1.76,'#panel-4');
+    lineDrawingOnScroll('#line6-icon3', '#panel-3', 1.78,'#panel-4');
     lineDrawingOnScroll('#line7-icon4', '#panel-4', 1.01,'#panel-5');
     lineDrawingOnScroll('#line8-icon4', '#panel-4', 1.03, '#panel-5');
     lineDrawingOnScroll('#line9-icon5', '#panel-5', 1.05, '#panel-6');
@@ -3821,7 +3825,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     lineDrawingOnScroll('#star-path', '#panel-1', 1.1, '#panel-2');
     lineDrawingOnScroll('#star-path2', '#panel-2', 1.5, '#panel-3');
-    lineDrawingOnScroll('#star-path3', '#panel-3', 2.1, '#panel-4');
+    lineDrawingOnScroll('#star-path3', '#panel-3', 1.75, '#panel-4');
     lineDrawingOnScroll('#star-path4', '#panel-4', 1, '#panel-5');
     lineDrawingOnScroll('#star-path5', '#panel-5', 1, '#panel-6');
     lineDrawingOnScroll('#star-path6', '#panel-6', 1.15, '#panel-7');
