@@ -237,10 +237,6 @@ body.advantage-class * {
     right: 62%;
 }
 
-.advantage-class .modal-case-studies {
-    background-color: #000;
-}
-
 .advantage-class .fade {
     transition: opacity 0.5s ease-in;
 }

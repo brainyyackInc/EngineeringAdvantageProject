@@ -35,16 +35,16 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#case-studies">Case Studies</a>
+                    <a class="case-studies-anchor" href="#case-studies">Case Studies</a>
                 </li>
                 <li>
-                    <a href="#insights-news">Insights and news</a>
+                    <a class="insights-news-anchor" href="#insights-news">Insights and news</a>
                 </li>
                 <li>
-                    <a href="#leaders">Leaders</a>
+                    <a class="leaders-anchor" href="#leaders">Leaders</a>
                 </li>
                 <li>
-                    <a href="#talent">Talent</a>
+                    <a class="talents-anchor" href="#talent">Talent</a>
                 </li>
                 <li>
                     <a class="connect" href="">Connect</a>
@@ -3358,7 +3358,6 @@ moveBackground();
       e.preventDefault();
       var viewportTop = $(window).scrollTop();
       let y = ( window.innerHeight * 3.4 );
-          console.log("distance top", viewportTop)
       gsap.to(window, {
         scrollTo: {
             y: y,
@@ -3372,6 +3371,62 @@ moveBackground();
     sevenIconsArrowClick.addEventListener("click", function(e) {
       e.preventDefault();
       let targetElem = document.querySelector(e.target.getAttribute("data-target_anchor")),
+          y = targetElem;
+      gsap.to(window, {
+        scrollTo: {
+            y: y,
+            autoKill: false
+        },
+        duration: 3
+      });
+    });
+
+    const caseStudiesAnchor = document.querySelector('.case-studies-anchor');
+    caseStudiesAnchor.addEventListener("click", function(e) {
+      e.preventDefault();
+      let targetElem = document.querySelector(e.target.getAttribute("href")),
+          y = targetElem;
+      gsap.to(window, {
+        scrollTo: {
+            y: y,
+            autoKill: false
+        },
+        duration: 3
+      });
+    });
+
+    const insightsNewsAnchor = document.querySelector('.insights-news-anchor');
+    insightsNewsAnchor.addEventListener("click", function(e) {
+      e.preventDefault();
+      let targetElem = document.querySelector(e.target.getAttribute("href")),
+          y = targetElem;
+      gsap.to(window, {
+        scrollTo: {
+            y: y,
+            autoKill: false
+        },
+        duration: 3
+      });
+    });
+
+    const leadersAnchor = document.querySelector('.leaders-anchor');
+    leadersAnchor.addEventListener("click", function(e) {
+      e.preventDefault();
+      let targetElem = document.querySelector(e.target.getAttribute("href")),
+          y = targetElem;
+      gsap.to(window, {
+        scrollTo: {
+            y: y,
+            autoKill: false
+        },
+        duration: 3
+      });
+    });
+
+    const talentsAnchor = document.querySelector('.talents-anchor');
+    talentsAnchor.addEventListener("click", function(e) {
+      e.preventDefault();
+      let targetElem = document.querySelector(e.target.getAttribute("href")),
           y = targetElem;
       gsap.to(window, {
         scrollTo: {
@@ -3790,20 +3845,21 @@ $('.navbar-toggle').on('click', function(e) { // <----------- Click Handler (jQu
 </script>
 <script>
 const body = document.querySelector('body')
-const openPanelBtn = document.querySelectorAll('.case-study__item')
-const closePanelBtn = document.querySelector('.close')
-const modal = document.querySelector('.modal')
+const openPanelBtn = document.querySelectorAll('.advantage-class .case-study__item')
+const closePanelBtn = document.querySelectorAll('.advantage-class .close')
+const modal = document.querySelector('.advantage-class .modal')
 const objectCountRef = { current: 0 }  // to apply the solution for the scenario with multiple popup
+const caseStudies = document.querySelector('.advantage-class #case-studies')
+var caseStudiesPosition = caseStudies.getBoundingClientRect();
 
 // A. add button events:
 openPanelBtn.forEach(function(dom) {
   dom.addEventListener('click', openPanelAndFreezeBodyScroll)
 })
-closePanelBtn.addEventListener('click', closePanelAndFreeBodyScroll)
-openModalBtn.forEach(function(dom) {
-  dom.addEventListener('click', openModalAndFreezeBodyScroll)
+
+closePanelBtn.forEach(function(dom) {
+  dom.addEventListener('click', closePanelAndFreeBodyScroll)
 })
-closeModalBtn.addEventListener('click', closeModalAndFreeBodyScroll)
 
 // B. buttom-fixed panel:
 function openPanelAndFreezeBodyScroll () {
@@ -3815,10 +3871,10 @@ function closePanelAndFreeBodyScroll () {
   freeBodyScroll()
 }
 function openPanel () {
-  panel.style.display = 'block'
+  modal.style.display = 'block'
 }
 function closePanel () {
-  panel.style.display = ''
+  modal.style.display = ''
 }
 
 // C. modal:
@@ -3840,21 +3896,26 @@ function closeModal () {
 // D. freeze or free the scrolling of the body:
 // base on the solution - https://css-tricks.com/prevent-page-scrolling-when-a-modal-is-open/
 function freezeBodyScroll () {
-  console.log('freeze objectCountRef.current', objectCountRef.current)
   if (objectCountRef.current === 0) {  // trigger the init process when there is no other popup exist
-    document.body.style.top = `-${window.scrollY}px`
+    document.body.style.top = `-${caseStudiesPosition.top}px`
     document.body.style.position = 'fixed'
   }
   objectCountRef.current += 1
 }
 function freeBodyScroll () {
   objectCountRef.current -= 1
-  console.log('free objectCountRef.current', objectCountRef.current)
   if (objectCountRef.current === 0) {  // trigger the reset process when all the popup are closed
     const scrollY = document.body.style.top
     document.body.style.position = ''
     document.body.style.top = ''
     window.scrollTo(0, parseInt(scrollY || '0') * -1)
+    // gsap.to(window, {
+    //     scrollTo: {
+    //         y: scrollY,
+    //         autoKill: false
+    //     },
+    //     duration: 3
+    // });
   }
 }
 
