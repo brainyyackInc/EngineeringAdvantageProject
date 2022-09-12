@@ -3523,10 +3523,6 @@ moveBackground();
                   let opacity = 1 - ( ( window.scrollY / threshold ) * 0.4 );
                   let opacity2 = 1 - ( ( window.scrollY / threshold ) * 0.4);
 
-                  console.log("scale", scale)
-                  console.log("opacity", opacity)
-                  console.log("opacity2", opacity2)
-
                   if (window.scrollY > 0.1 * threshold) { 
                     bannerArrow.style.opacity = '0';
                     bannerArrow.style.zIndex = "-1";
@@ -3793,7 +3789,7 @@ $('.navbar-toggle').on('click', function(e) { // <----------- Click Handler (jQu
 });
 </script>
 <script>
-  const body = document.querySelector('body')
+const body = document.querySelector('body')
 const openPanelBtn = document.querySelectorAll('.case-study__item')
 const closePanelBtn = document.querySelector('.close')
 const modal = document.querySelector('.modal')
@@ -3844,6 +3840,7 @@ function closeModal () {
 // D. freeze or free the scrolling of the body:
 // base on the solution - https://css-tricks.com/prevent-page-scrolling-when-a-modal-is-open/
 function freezeBodyScroll () {
+  console.log('freeze objectCountRef.current', objectCountRef.current)
   if (objectCountRef.current === 0) {  // trigger the init process when there is no other popup exist
     document.body.style.top = `-${window.scrollY}px`
     document.body.style.position = 'fixed'
@@ -3852,6 +3849,7 @@ function freezeBodyScroll () {
 }
 function freeBodyScroll () {
   objectCountRef.current -= 1
+  console.log('free objectCountRef.current', objectCountRef.current)
   if (objectCountRef.current === 0) {  // trigger the reset process when all the popup are closed
     const scrollY = document.body.style.top
     document.body.style.position = ''
