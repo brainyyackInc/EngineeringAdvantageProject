@@ -1392,12 +1392,19 @@ body.advantage-class * {
     font-size: 20px;
     line-height: 22px;
     color: #fff;
+    margin-bottom: 5px;
+    display: flex;
 }
 
 .advantage-class .slider-main-abs__pos {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 22px;
     color: #fff;
+    margin-bottom: 5px;
+}
+
+.advantage-class .slider-main-abs__pos:last-child {
+    margin-bottom: 0;
 }
 
 .advantage-class .slider-main-abs {
@@ -1405,8 +1412,9 @@ body.advantage-class * {
     bottom: 20px;
     width: calc(100% - 40px);
     left: 20px;
-    background-color: #00000094;;
-    padding: 35px 20px 30px 20px;
+    background-color: #00000094;
+    padding: 25px 20px 20px 20px;
+    min-height: 192px;
 }
 
 .advantage-class .slider-main-abs__pos-mt-5 {
