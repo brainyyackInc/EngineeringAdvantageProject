@@ -3315,9 +3315,11 @@ function moveBackground() {
 $(window).on('mousemove click', function(e) {
 	
 	var isHovered = $('.animate-this:hover').length > 0;
+  var isHovered1 = $('.build-it-section--container:hover').length > 0;
+  
 	
 	//if(!$(e.target).hasClass('animate-this')) {
-	if(isHovered) {
+	if((isHovered) || ( isHovered1)) {
 		var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX)),
 				lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
 
@@ -3810,5 +3812,76 @@ $('.navbar-toggle').on('click', function(e) { // <----------- Click Handler (jQu
 
 });
 </script>
+<!-- <script>
+  const body = document.querySelector('body')
+const openPanelBtn = document.querySelectorAll('.case-study__item ')
+const closePanelBtn = document.querySelector('.close')
+const openModalBtn = document.querySelectorAll('.case-study__item ')
+const closeModalBtn = document.querySelector('.close')
+const modal = document.querySelector('.modal')
+const objectCountRef = { current: 0 }  // to apply the solution for the scenario with multiple popup
+
+// A. add button events:
+openPanelBtn.forEach(function(dom) {
+  dom.addEventListener('click', openPanelAndFreezeBodyScroll)
+})
+closePanelBtn.addEventListener('click', closePanelAndFreeBodyScroll)
+openModalBtn.forEach(function(dom) {
+  dom.addEventListener('click', openModalAndFreezeBodyScroll)
+})
+closeModalBtn.addEventListener('click', closeModalAndFreeBodyScroll)
+
+// B. buttom-fixed panel:
+function openPanelAndFreezeBodyScroll () {
+  openPanel()
+  freezeBodyScroll()
+}
+function closePanelAndFreeBodyScroll () {
+  closePanel()
+  freeBodyScroll()
+}
+function openPanel () {
+  panel.style.display = 'block'
+}
+function closePanel () {
+  panel.style.display = ''
+}
+
+// C. modal:
+function openModalAndFreezeBodyScroll () {
+  openModal()
+  freezeBodyScroll()
+}
+function closeModalAndFreeBodyScroll () {
+  closeModal()
+  freeBodyScroll()
+}
+function openModal () {
+  modal.style.display = 'block'
+}
+function closeModal () {
+  modal.style.display = ''
+}
+
+// D. freeze or free the scrolling of the body:
+// base on the solution - https://css-tricks.com/prevent-page-scrolling-when-a-modal-is-open/
+function freezeBodyScroll () {
+  if (objectCountRef.current === 0) {  // trigger the init process when there is no other popup exist
+    document.body.style.top = `-${window.scrollY}px`
+    document.body.style.position = 'fixed'
+  }
+  objectCountRef.current += 1
+}
+function freeBodyScroll () {
+  objectCountRef.current -= 1
+  if (objectCountRef.current === 0) {  // trigger the reset process when all the popup are closed
+    const scrollY = document.body.style.top
+    document.body.style.position = ''
+    document.body.style.top = ''
+    window.scrollTo(0, parseInt(scrollY || '0') * -1)
+  }
+}
+
+</script> -->
 </body>
 </html>

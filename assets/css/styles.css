@@ -394,7 +394,7 @@ body.advantage-class * {
     justify-content: space-between;
     background-color: #5A5A5A;
     align-items: center;
-    z-index: 3;
+    z-index: 32;
     
 }
 
