@@ -3164,8 +3164,15 @@ body.advantage-class * {
 
     .human-exploration-sect .carousel {
         max-width: 300px;
-        max-height: 446px;
+        max-height: 395px;
         overflow-y: hidden;
+    }
+
+    .advantage-class .modal-case-studies .close {
+        background: #383838;
+        padding: 6px 6px 7px 6px;
+        right: 12px;
+        top: 12px;
     }
 
     .car-controls {
