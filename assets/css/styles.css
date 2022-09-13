@@ -3293,6 +3293,16 @@ body.advantage-class * {
         line-height: 20px;
     }
 
+    .advantage-class  .seven-element-sect__title-txt {
+        color: #fff;
+        font-size: 14px;
+        line-height: 26px;
+        margin-top: 0;
+        margin-bottom: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
     .build-it-section {
         height: auto;
         padding-bottom: 200px;
