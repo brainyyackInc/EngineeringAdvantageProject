@@ -846,6 +846,7 @@ body.advantage-class * {
     position: absolute;
     top: 0;
     left: 0;
+    max-width: 100%;
 }
 
 .advantage-class .main-container {
@@ -3143,9 +3144,7 @@ body.advantage-class * {
         display: none!important;
       } 
 
-    .fixed-top-sect--right {
-        display: none;
-    }
+
 
     .modal-case-studies__text-oriented {
         position: static;
@@ -3182,6 +3181,13 @@ body.advantage-class * {
 
     .seven-element-sect__item__title img {
         position: absolute;
+        top: -17px;
+        left: 29px;
+        width: 55px
+    }
+
+    .seven-element-sect__item__title .cstm-top-s {
+        top: 0;
     }
 
     .seven-element-sect__item__title  {
@@ -3244,6 +3250,17 @@ body.advantage-class * {
         padding-bottom: 200px;
     }
 
+    .advantage-class .fixed-top-sect--right ul li a {
+        padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    line-height: 22px;
+    }
+
+    .advantage-class .fixed-top-sect--right ul li {
+        font-size: 14px;
+        line-height: 22px;
+    }
 
 }
 
@@ -3253,6 +3270,10 @@ body.advantage-class * {
         max-width: 300px;
         max-height: 395px;
         overflow-y: hidden;
+    }
+
+    .fixed-top-sect--right {
+        display: none;
     }
 
     .advantage-class .modal-case-studies .close {
@@ -3272,8 +3293,27 @@ body.advantage-class * {
     }
     
     .advantage-class .icons-abs-case-studies img {
-        width: 40px;
-        height: 40px;
+        width: 42px;
+        height: 42px;
+    }
+
+    .advantage-class .the-future-cont__title {
+        max-width: 240px;
+        font-size: 24px;
+    }
+
+    .tabs-sect {
+        padding-top: 0;
+    }
+
+    .advantage-class .case-study__item__title {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .advantage-class .the-future-cont__wrapper p {
+        font-size: 18px;
+        line-height: 26px;
     }
 
     .advantage-class .icons-abs-case-studies {
@@ -3357,7 +3397,7 @@ body.advantage-class * {
     }
 
     .advantage-class .slider-main-abs {
-        bottom: 37px;
+        bottom: 85px;
     }
 
     .advantage-class .build-the-future-sect {
@@ -3406,6 +3446,8 @@ body.advantage-class * {
         padding-top: 70px;
         padding-bottom: 75px;
     }
+
+   
 
     .advantage-modal {
         flex-wrap: wrap;
@@ -3504,7 +3546,7 @@ body.advantage-class * {
         min-height: 100vh;
         width: 100%;
         background-image: url(../media/images/mobile-2nd-section.png);
-        background-size: cover;
+        background-size: 100% 101%;
         position: relative;
         padding: 75px 40px 108px 40px;
         overflow: hidden;
@@ -3535,6 +3577,10 @@ body.advantage-class * {
         font-size: 14px;
         line-height: 26px;
         font-family: 'Open Sans-SemiBold';
+    }
+
+    .case-study-bg-img {
+        width: 100%;
     }
 
 

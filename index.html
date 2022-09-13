@@ -2474,49 +2474,49 @@
         <div class="seven-element-sect__cont">
             <div class="seven-element-sect__item">
                 <div class="seven-element-sect__item__title">
-                    <img class="ecosystem-img" src="assets/media/images/ecosystem.svg" alt="">
+                    <img src="assets/media/images/Innovation-W.png" alt="">
                     Ecosystem innovation
                 </div>
                 <p class="seven-element-sect__item_txt">By aligning business and technology alliances and ecosystems, we can help you bring technology solutions to life with greater speed and precision.</p>
             </div>
             <div class="seven-element-sect__item">
                 <div class="seven-element-sect__item__title">
-                    <img class="technology-img" src="assets/media/images/next-gen-tech.svg" alt="">
+                    <img src="assets/media/images/NewGen-technology-W.png" alt="">
                     Next-gen technology
                 </div>
                 <p class="seven-element-sect__item_txt">We’re on the cutting-edge of emerging technology to help you design, apply, and scale  solutions tailored to your business reality.</p>
             </div>
             <div class="seven-element-sect__item">
                 <div class="seven-element-sect__item__title">
-                    <img class="platforms-img" src="assets/media/images/platforms.svg" alt="">
+                  <img src="assets/media/images/Platforms-and-automation-W.png" alt="">
                     Platforms and automation
                 </div>
                 <p class="seven-element-sect__item_txt">Using cloud-native and autonomous platforms, we can help you embed emerging technology with speed and security across industries and functions.</p>
             </div>
             <div class="seven-element-sect__item">
                 <div class="seven-element-sect__item__title">
-                    <img class="enterprice-img" src="assets/media/images/enterprice.svg" alt="">
+                    <img class="cstm-top-s" src="assets/media/images/Data-enterprise-intelligence-and-cyber-security-W.png" alt="">
                     Data, enterprise intelligence, and cyber security
                 </div>
                 <p class="seven-element-sect__item_txt">We help you connect technology output to results by optimizing data, cloud, AI, and security.</p>
             </div>
             <div class="seven-element-sect__item">
                 <div class="seven-element-sect__item__title">
-                    <img class="leadership-img" src="assets/media/images/leadership.svg" alt="">
+                  <img src="assets/media/images/Tech-Leadership-W.png" alt="">
                     Tech leadership
                 </div>
                 <p class="seven-element-sect__item_txt">Our leaders and technology insights are core to how we help you stay ahead of change and engineer transformation in your industry.</p>
             </div>
             <div class="seven-element-sect__item">
                 <div class="seven-element-sect__item__title">
-                    <img class="tech-talent-img" src="assets/media/images/tech-talent.svg" alt="">
+                  <img src="assets/media/images/Tech-Talent-W.png" alt="">
                     Tech talent
                 </div>
                 <p class="seven-element-sect__item_txt">We’re training and attracting the next generation of talent to help lead businesses through complex technology challenges and disruption.</p>
             </div>
             <div class="seven-element-sect__item">
                 <div class="seven-element-sect__item__title">
-                    <img class="markets-img" src="assets/media/images/markets.svg" alt="">
+                  <img src="assets/media/images/New-Markets-W.png" alt="">
                     New markets
                 </div>
                 <p class="seven-element-sect__item_txt">We make new markets possible by engineering new business models, monetizing platforms and data, and uncovering new revenue streams for your business.</p>
@@ -3236,6 +3236,7 @@
     <script src="assets/js/ScrollTrigger.min.js"></script>
     <script src="assets/js/ScrollToPlugin.min.js"></script>
     <script src="assets/js/ScrollSmoother.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
     <script>
 
 // smooth scroll to anchor, with option of hash appearing in url. Thanks:
@@ -3894,6 +3895,52 @@ function freeBodyScroll () {
   }
 }
 
+</script>
+<script>
+ $("#carousel-example-generic").carousel();
+
+$(".item").click(function(){
+$("#carousel-example-generic").carousel(1);
+});
+
+$(".left carousel-control").click(function(){
+$("#carousel-example-generic").carousel("prev");
+});
+
+$(".right carousel-control").click(function(){
+    $("#carousel-example-generic").carousel("next");
+    });
+</script>
+<script>
+  $(".carousel").swipe({
+  swipe: function(
+    event,
+    direction,
+    distance,
+    duration,
+    fingerCount,
+    fingerData
+  ) {
+    if (direction == "left") $(this).carousel("next");
+    if (direction == "right") $(this).carousel("prev");
+  },
+  allowPageScroll: "vertical"
+});
+
+$(".carousel").swipe({
+  swipe: function(
+    event,
+    direction,
+    distance,
+    duration,
+    fingerCount,
+    fingerData
+  ) {
+    if (direction == "left") $(this).carousel("next");
+    if (direction == "right") $(this).carousel("prev");
+  },
+  allowPageScroll: "vertical"
+});
 </script>
 </body>
 </html>
