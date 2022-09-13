@@ -506,7 +506,7 @@ body.advantage-class * {
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-    transition: 1.5s linear;
+    transition: 1.8s linear;
     opacity: 1;
     visibility: visible;
     z-index: 22;
