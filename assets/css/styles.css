@@ -743,7 +743,7 @@ body.advantage-class * {
 .bounce-arrow {
     -webkit-animation: bounce-arrow 2s 2;
     animation: bounce-arrow 2s 2;
-    animation-delay: 2.5s;
+    animation-delay: 1.5s;
   }     
 
 @-webkit-keyframes bounce-arrow {
