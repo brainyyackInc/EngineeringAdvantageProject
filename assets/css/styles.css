@@ -680,15 +680,15 @@ body.advantage-class * {
 }
 
 .advantage-class .seven-icons-arrow {
-    width: 40px;
+    width: 30px;
     position: absolute;
     bottom: 50px;
     opacity: 0;
     z-index: -1;
     transition: .5s;
     cursor: pointer;
-    border: 1px solid rgb(255, 255, 255);
-    padding: 5px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 5px 0px;
 }
 
 .advantage-class .seven-icons-arrow path {
@@ -705,16 +705,16 @@ body.advantage-class * {
 }
 
 .advantage-class .arrow-banner-sect {
-    width: 40px;
+    width: 30px;
     position: fixed;
     top: 94vh;
     z-index: 2;
     left: 50%;
-    transform: translateX(-50%);
+    /* transform: translateX(-50%); */
     cursor: pointer;
     transition: .3s;
-    border: 1px solid rgb(255, 255, 255);
-    padding: 5px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 5px 0px;
 }
 
 .advantage-class .arrow-banner-sect path {
@@ -727,17 +727,65 @@ body.advantage-class * {
 }
 
 .advantage-class .arrow-build-it-section {
-    width: 40px;
+    width: 30px;
     position: fixed;
     top: 94vh;
     z-index: 2;
     left: 50%;
-    transform: translateX(-50%);
+    /* transform: translateX(-50%); */
     cursor: pointer;
     transition: .3s;
-    border: 1px solid rgb(255, 255, 255);
-    padding: 5px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 5px 0px;
     display: none;
+}
+
+.bounce-arrow {
+    -webkit-animation: bounce-arrow 2s 2;
+    animation: bounce-arrow 2s 2;
+    animation-delay: 1.5s;
+  }     
+
+@-webkit-keyframes bounce-arrow {
+    0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+    40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+    60% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
+@-moz-keyframes bounce-arrow {
+    0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+    40% {
+    transform: translateY(-20px);
+  }
+    60% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes bounce-arrow {
+    0%, 20%, 50%, 80%, 100% {
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+    40% {
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+    60% {
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
 }
 
 .advantage-class .arrow-build-it-section path {

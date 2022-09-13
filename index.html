@@ -17,11 +17,6 @@
         <p class="fixed-top-sect--left"><a href=""> Engineering Advantage</a></p>
         <div class="fixed-top-sect--right">
             <ul class="d-flex">
-                <li>
-                    <a class="scroll-top-anchor" href="#top-sect">
-                        <img src="assets/media/images/scroll-top-icon.svg" alt="">
-                    </a>
-                </li>
                 <li class="capabilities-bl">
                     Capabilities
                     <ul>
@@ -143,7 +138,7 @@
       <div class="background-nebula">
         <img class="animate-this-opposition" src="assets/media/images/Nebula_03.jpg" alt="">
       </div>
-      <svg class="arrow-banner-sect" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path style="" d="m18.294 16.793-5.293 5.293V1h-1v21.086l-5.295-5.294-.707.707L12.501 24l6.5-6.5-.707-.707z"/></svg>
+      <svg class="arrow-banner-sect bounce-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path style="" d="m18.294 16.793-5.293 5.293V1h-1v21.086l-5.295-5.294-.707.707L12.501 24l6.5-6.5-.707-.707z"/></svg>
     
       <div id="" class="panels-bg-f"></div>
 
@@ -3438,17 +3433,6 @@ moveBackground();
       });
     });
     
-    const scrolltopButton = document.querySelector('.scroll-top-anchor');
-    scrolltopButton.addEventListener("click", function(e) {
-      e.preventDefault();
-      gsap.to(window, {
-        scrollTo: {
-            y: 0,
-            autoKill: false
-        },
-        duration: 5
-      });
-    });
 
     
 
@@ -3618,6 +3602,7 @@ moveBackground();
                     buildItArrow.style.display = 'none';
                   } else if (window.scrollY > 0.18 * threshold) { 
                     buildItArrow.style.display = 'block';
+                    buildItArrow.classList.add("bounce-arrow");
                   } else {
                     buildItArrow.style.display = 'none';
                   }
@@ -3645,6 +3630,7 @@ moveBackground();
                     trailer2.style.zIndex = "2222";
                     sevenIconsArrow.style.zIndex = "2222";
                     sevenIconsArrow.style.opacity = "1"; 
+                    sevenIconsArrow.classList.add("bounce-arrow");
                    
                   } else {
                     ecotext.style.opacity = "0";
