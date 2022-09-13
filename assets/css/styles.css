@@ -3303,6 +3303,16 @@ body.advantage-class * {
         padding-right: 30px;
     }
 
+    .advantage-class .nebula-section-mobile-title {
+        font-size: 22px;
+        line-height: 26px;
+        font-family: 'Open Sans-SemiBold';
+        color: #fff;
+        margin-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
     .build-it-section {
         height: auto;
         padding-bottom: 200px;
