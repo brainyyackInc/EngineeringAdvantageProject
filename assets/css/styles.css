@@ -240,7 +240,7 @@ body.advantage-class * {
 .advantage-class .fade {
     transition: opacity 0.5s ease-in;
 }
-  
+
 .advantage-class .fadeOut { 
     opacity: 0; 
 }

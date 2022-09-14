@@ -4730,13 +4730,13 @@
         translate = 'translateX(' + x + 'px) translateY(' + y + 'px)';
         translateOposition = 'translateX(' + x1 + 'px) translateY(' + y1 + 'px)';
 
-        $('.animate-this').css({
+        $('.advantage-class .animate-this').css({
           '-webit-transform': translate,
           '-moz-transform': translate,
           'transform': translate
         });
 
-        $('.animate-this-opposition').css({
+        $('.advantage-class .animate-this-opposition').css({
           '-webit-transform': translateOposition,
           '-moz-transform': translateOposition,
           'transform': translateOposition
@@ -4746,8 +4746,8 @@
       }
       $(window).on('mousemove click', function (e) {
 
-        var isHovered = $('.animate-this:hover').length > 0;
-        var isHovered1 = $('.build-it-section--container:hover').length > 0;
+        var isHovered = $('.advantage-class .animate-this:hover').length > 0;
+        var isHovered1 = $('.advantage-class .build-it-section--container:hover').length > 0;
 
 
         if ((isHovered) || (isHovered1)) {
@@ -4765,7 +4765,7 @@
       gsap.registerPlugin(ScrollToPlugin, ScrollTrigger, ScrollSmoother);
 
       /*Arrows and menu icons smooth scroll*/
-      const bannerArrowClick = document.querySelector('.arrow-banner-sect');
+      const bannerArrowClick = document.querySelector('.advantage-class .arrow-banner-sect');
       bannerArrowClick.addEventListener("click", function (e) {
         e.preventDefault();
         gsap.to(window, {
@@ -4777,7 +4777,7 @@
         });
       });
 
-      const buildItArrowClick = document.querySelector('.arrow-build-it-section');
+      const buildItArrowClick = document.querySelector('.advantage-class .arrow-build-it-section');
       buildItArrowClick.addEventListener("click", function (e) {
         e.preventDefault();
         var viewportTop = $(window).scrollTop();
@@ -4791,7 +4791,7 @@
         });
       });
 
-      const sevenIconsArrowClick = document.querySelector('.seven-icons-arrow');
+      const sevenIconsArrowClick = document.querySelector('.advantage-class .seven-icons-arrow');
       sevenIconsArrowClick.addEventListener("click", function (e) {
         e.preventDefault();
         let targetElem = document.querySelector(e.target.getAttribute("data-target_anchor")),
@@ -4805,7 +4805,7 @@
         });
       });
 
-      const caseStudiesAnchor = document.querySelector('.case-studies-anchor');
+      const caseStudiesAnchor = document.querySelector('.advantage-class .case-studies-anchor');
       caseStudiesAnchor.addEventListener("click", function (e) {
         e.preventDefault();
         let targetElem = document.querySelector(e.target.getAttribute("href")),
@@ -4819,7 +4819,7 @@
         });
       });
 
-      const insightsNewsAnchor = document.querySelector('.insights-news-anchor');
+      const insightsNewsAnchor = document.querySelector('.advantage-class .insights-news-anchor');
       insightsNewsAnchor.addEventListener("click", function (e) {
         e.preventDefault();
         let targetElem = document.querySelector(e.target.getAttribute("href")),
@@ -4833,7 +4833,7 @@
         });
       });
 
-      const leadersAnchor = document.querySelector('.leaders-anchor');
+      const leadersAnchor = document.querySelector('.advantage-class .leaders-anchor');
       leadersAnchor.addEventListener("click", function (e) {
         e.preventDefault();
         let targetElem = document.querySelector(e.target.getAttribute("href")),
@@ -4847,7 +4847,7 @@
         });
       });
 
-      const talentsAnchor = document.querySelector('.talents-anchor');
+      const talentsAnchor = document.querySelector('.advantage-class .talents-anchor');
       talentsAnchor.addEventListener("click", function (e) {
         e.preventDefault();
         let targetElem = document.querySelector(e.target.getAttribute("href")),
@@ -4862,11 +4862,11 @@
       });
 
       /* Capability section menu smooth scroll */
-      let panelsSection = document.querySelector("#panels"),
-        panelsContainer = document.querySelector(".seven-icons-container"),
+      let panelsSection = document.querySelector(".advantage-class #panels"),
+        panelsContainer = document.querySelector(".advantage-class .seven-icons-container"),
         tween0,
         tween1;
-      document.querySelectorAll(".anchor").forEach(anchor => {
+      document.querySelectorAll(".advantage-class .anchor").forEach(anchor => {
         anchor.addEventListener("click", function (e) {
           e.preventDefault();
           let targetElem = document.querySelector(e.target.getAttribute("href")),
@@ -4900,7 +4900,7 @@
       });
 
       // Horizontal scroll functionality
-      const horizontalSections = gsap.utils.toArray('.panels-container');
+      const horizontalSections = gsap.utils.toArray('.advantage-class .panels-container');
       var tween;
 
       horizontalSections.forEach(function (sec, i) {
@@ -4941,22 +4941,22 @@
       $(document).ready(function () {
 
         $(window).scroll(function () {
-          const hero = document.querySelector('.img-bg-abs');
-          const bannerImage = document.querySelector('.img-bg-bottom-abs')
-          const hero1 = document.querySelector('.hero');
-          const hero2 = document.querySelector('.build-it-section--container');
+          const hero = document.querySelector('.advantage-class .img-bg-abs');
+          const bannerImage = document.querySelector('.advantage-class .img-bg-bottom-abs')
+          const hero1 = document.querySelector('.advantage-class .hero');
+          const hero2 = document.querySelector('.advantage-class .build-it-section--container');
           const iconHero1 = document.getElementById('hero-ban-img');
-          const trailer2 = document.querySelector('.trailer');
-          const trailer = document.querySelector('.engenering-section--container');
-          const ecotext = document.querySelector('.eco-hide-scroll');
-          const staticimg = document.querySelector('.eco-hide-scroll-static');
-          const ecoImg = document.querySelector('.eco-hide-scroll-img');
-          const opacityLayer = document.querySelector('.panels-bg-f');
+          const trailer2 = document.querySelector('.advantage-class .trailer');
+          const trailer = document.querySelector('.advantage-class .engenering-section--container');
+          const ecotext = document.querySelector('.advantage-class .eco-hide-scroll');
+          const staticimg = document.querySelector('.advantage-class .eco-hide-scroll-static');
+          const ecoImg = document.querySelector('.advantage-class .eco-hide-scroll-img');
+          const opacityLayer = document.querySelector('.advantage-class .panels-bg-f');
           const panelsBackground = document.getElementById('panels');
-          const nebulaBG = document.querySelector('.background-nebula');
-          const bannerArrow = document.querySelector('.arrow-banner-sect');
-          const sevenIconsArrow = document.querySelector('.seven-icons-arrow');
-          const buildItArrow = document.querySelector('.arrow-build-it-section');
+          const nebulaBG = document.querySelector('.advantage-class .background-nebula');
+          const bannerArrow = document.querySelector('.advantage-class .arrow-banner-sect');
+          const sevenIconsArrow = document.querySelector('.advantage-class .seven-icons-arrow');
+          const buildItArrow = document.querySelector('.advantage-class .arrow-build-it-section');
 
           const threshold = window.innerHeight;
 
@@ -5053,13 +5053,9 @@
               }
 
               if (window.scrollY > 3.8 * threshold) {
-                // $(ecoImg).removeClass("eco-hide-scroll-img__scroll");
-                // $(ecoImg).addClass("eco-hide-scroll-img__scroll-stt");
                 opacityLayer.style.opacity = ".5";
 
               } else if (window.scrollY > 3.6 * threshold) {
-                // $(ecoImg).addClass("eco-hide-scroll-img__scroll");
-                // $(ecoImg).removeClass("eco-hide-scroll-img__scroll-stt");
                 opacityLayer.style.opacity = "0";
                 nebulaBG.style.transform = `scale(${scale * 0.6})`;
               } else {
@@ -5069,61 +5065,18 @@
                 nebulaBG.style.transform = `scale(1.05)`;
               }
 
-
               // toggle threshold class at threshold value
               window.scrollY > threshold ?
                 document.body.classList.add('past-threshold') :
                 document.body.classList.remove('past-threshold');
             })
-
           }
         });
       });
 
-      // Capability section big icons observer 
-      const observerOptions = {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0
-      };
-      function observerCallback(entries, observer) {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.replace('fadeOut', 'fadeIn');
-            observer.unobserve(entry.target)
-          }
-        });
-      }
-      const observer = new IntersectionObserver(observerCallback, observerOptions);
-
-      const fadeElms = document.querySelectorAll('.fade');
-      fadeElms.forEach(el => observer.observe(el));
-
-
-      const observerOptions2 = {
-        root: null,
-        rootMargin: "-50% 0% -50% 0%",
-        threshold: 0
-      };
-      function observerCallback2(entries, observer) {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.replace('scaleOut', 'scaleIn');
-            entry.target.classList.replace('fadeOut1', 'fadeIn1');
-            observer.unobserve(entry.target)
-          }
-        });
-      }
-      const observer2 = new IntersectionObserver(observerCallback2, observerOptions2);
-
-      const scaleElms2 = document.querySelectorAll('.scale1.firstBigIcon');
-      scaleElms2.forEach(el => observer2.observe(el));
-      const fadeElements2 = document.querySelectorAll('.fade1.firstBigIcon');
-      fadeElements2.forEach(el => observer2.observe(el));
-
       // Capability section texts animation 
       jQuery(document).scroll(function () {
-        var caseItem = jQuery('.panels-txt');
+        var caseItem = jQuery('.advantage-class .panels-txt');
         jQuery(caseItem).each(function () {
           var centerLine = jQuery(window).width() / 2;
           var divStart = jQuery(this).offset().left;
@@ -5159,11 +5112,6 @@
         window.addEventListener("scroll", function (e) {
           var panel1TopPixels = (document.documentElement.scrollTop - (panel1ContainerPosition.top * viewportMultipler)) * ((0.6 * threshold + 400) / 1000);
           var linetrokeoffset = pathLength - panel1TopPixels;
-
-          // console.log(panelID, panel1ContainerPosition.top, document.documentElement.scrollTop, panel1TopPixels )
-
-          // var panelNextTopPixels = document.documentElement.scrollTop - ( screenWidth * horizontalOrder ) - ( panelNextContainerPosition.bottom * 1000 / ( 0.14 * threshold + 860 ) ) 
-          // console.log("next slide", svgPathID, panelNextTopPixels);
           if (panel1TopPixels > 0 && linetrokeoffset > 400 && screenWidth > 1400) {
             path.style.strokeDashoffset = linetrokeoffset;
           } else if (panel1TopPixels < 0 && linetrokeoffset > 400 && screenWidth > 1400) {
@@ -5173,14 +5121,9 @@
           } else if (panel1TopPixels < 0 && linetrokeoffset > 350 && screenWidth < 1400) {
             path.style.strokeDashoffset = pathLength;
           }
-          // if ( pathLength < panel1TopPixels) {
-          //     path.style.strokeDasharray = "none";
-          // } else {
-          path.style.strokeDasharray = pathLength + ' ' + pathLength;
-          // }  
+          path.style.strokeDasharray = pathLength + ' ' + pathLength; 
         });
       }
-
 
       document.addEventListener("DOMContentLoaded", function () {
         lineDrawingOnScroll('#line1-icon1', '#panel-1', 1.15, '#panel-2');
@@ -5205,14 +5148,12 @@
         lineDrawingOnScroll('#star-path5', '#panel-5', 1, '#panel-6');
         lineDrawingOnScroll('#star-path6', '#panel-6', 1.15, '#panel-7');
       });
-    } else {
-
     }
 
     // Observer viewport prototype
     $.fn.isInViewport = function () {
-      var elementTop = $('.sticky-sect-cont').offset().top;
-      var elementBottom = elementTop + $('.sticky-sect-cont').outerHeight();
+      var elementTop = $('.advantage-class .sticky-sect-cont').offset().top;
+      var elementBottom = elementTop + $('.advantage-class .sticky-sect-cont').outerHeight();
 
       var viewportTop = $(window).scrollTop();
       var viewportBottom = viewportTop + $(window).height();
@@ -5221,34 +5162,29 @@
     };
 
     // Banner section slide on offset    
-    var topofDiv = $(".banner-sect").offset().top;
-    var heightDiv = $(".banner-sect").outerHeight();
+    var topofDiv = $(".advantage-class .banner-sect").offset().top;
+    var heightDiv = $(".advantage-class .banner-sect").outerHeight();
 
     $(window).scroll(function () {
       if ($(window).scrollTop() > (topofDiv + heightDiv / 10)) {
-        $(".banner-sect").addClass("banner-sect-hide");
+        $(".advantage-class .banner-sect").addClass("banner-sect-hide");
 
       } else {
-        $(".banner-sect").removeClass("banner-sect-hide");
+        $(".advantage-class .banner-sect").removeClass("banner-sect-hide");
 
       }
     });
 
     // Hamburger Menu collapse 
     $(document).ready(function (jQuery) {
-
-      $('.navbar-toggle').on('click', function (e) {
-
+      $('.advantage-class .navbar-toggle').on('click', function (e) {
         if ($(".navbar-collapse ").hasClass("in")) {
           $(this).removeClass('open');
         } else {
           $(this).addClass('open');
         }
-
       })
-
     });
-
 
     const body = document.querySelector('body.advantage-class')
     const openPanelBtn = document.querySelectorAll('.advantage-class .case-study__item')
@@ -5292,44 +5228,80 @@
         window.scrollTo(0, parseInt(scrollY || '0') * -1)
       }
     }
+    
+      // Capability section big icons observer 
+      const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0
+      };
+      function observerCallback(entries, observer) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.replace('fadeOut', 'fadeIn');
+            observer.unobserve(entry.target)
+          }
+        });
+      }
+      const observer = new IntersectionObserver(observerCallback, observerOptions);
+      const fadeElms = document.querySelectorAll('.fade');
+      fadeElms.forEach(el => observer.observe(el));
+      const observerOptions2 = {
+        root: null,
+        rootMargin: "-50% 0% -50% 0%",
+        threshold: 0
+      };
+      function observerCallback2(entries, observer) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.replace('scaleOut', 'scaleIn');
+            entry.target.classList.replace('fadeOut1', 'fadeIn1');
+            observer.unobserve(entry.target)
+          }
+        });
+      }
+      const observer2 = new IntersectionObserver(observerCallback2, observerOptions2);
+
+      const scaleElms2 = document.querySelectorAll('.advantage-class .scale1.firstBigIcon');
+      scaleElms2.forEach(el => observer2.observe(el));
+      const fadeElements2 = document.querySelectorAll('.advantage-class .fade1.firstBigIcon');
+      fadeElements2.forEach(el => observer2.observe(el));
 
     // Carousel settings 
-    $('.carousel').carousel({
+    $('.advantage-class .carousel').carousel({
       interval: false
     })
 
-    $('.carousel[data-type="multi"] .item').each(function () {
+    $('.advantage-class .carousel[data-type="multi"] .item').each(function () {
       var next = $(this).next();
       if (!next.length) {
         next = $(this).siblings(':first');
       }
       next.children(':first-child').clone().appendTo($(this));
-
       for (var i = 0; i < 1; i++) {
         next = next.next();
         if (!next.length) {
           next = $(this).siblings(':first');
         }
-
         next.children(':first-child').clone().appendTo($(this));
       }
     });
 
-    $("#carousel-example-generic").carousel();
+    $(".advantage-class #carousel-example-generic").carousel();
 
-    $(".item").click(function () {
-      $("#carousel-example-generic").carousel(1);
+    $(".advantage-class .item").click(function () {
+      $(".advantage-class #carousel-example-generic").carousel(1);
     });
 
-    $(".left carousel-control").click(function () {
-      $("#carousel-example-generic").carousel("prev");
+    $(".advantage-class .left carousel-control").click(function () {
+      $(".advantage-class #carousel-example-generic").carousel("prev");
     });
 
-    $(".right carousel-control").click(function () {
-      $("#carousel-example-generic").carousel("next");
+    $(".advantage-class .right carousel-control").click(function () {
+      $(".advantage-class #carousel-example-generic").carousel("next");
     });
 
-    $(".carousel").swipe({
+    $(".advantage-class .carousel").swipe({
       swipe: function (
         event,
         direction,
@@ -5344,7 +5316,7 @@
       allowPageScroll: "vertical"
     });
 
-    $(".carousel").swipe({
+    $(".advantage-class .carousel").swipe({
       swipe: function (
         event,
         direction,
@@ -5360,5 +5332,4 @@
     });
   </script>
 </body>
-
 </html>
