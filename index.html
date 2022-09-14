@@ -4697,239 +4697,91 @@
   <script src="assets/js/ScrollSmoother.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
   <script>
-
-    // smooth scroll to anchor, with option of hash appearing in url. Thanks:
-    // https://paulund.co.uk/smooth-scroll-to-internal-links-with-jquery
-    $(document).ready(function () {
-      $('.nav-tabs a[href^="#"]').on('click', function (e) {
-        e.preventDefault();
-        var target = this.hash;
-        var $target = $(target);
-        $('html, body').stop().animate({
-          'scrollTop': $target.offset().top
-        }, 100, 'swing', function () {
-          // window.location.hash = target;
+    if (window.innerWidth > 768) {
+      // smooth scroll to anchor, with option of hash appearing in url. Thanks:
+      // https://paulund.co.uk/smooth-scroll-to-internal-links-with-jquery
+      $(document).ready(function () {
+        $('.nav-tabs a[href^="#"]').on('click', function (e) {
+          e.preventDefault();
+          var target = this.hash;
+          var $target = $(target);
+          $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+          }, 100, 'swing', function () {
+            // window.location.hash = target;
+          });
         });
       });
-    });
-  </script>
-  <script>
-    $('.carousel').carousel({
-      interval: false
-    })
-  </script>
-  <script>
-    var lFollowX = 0,
-      lFollowY = 0,
-      x = 0,
-      y = 0,
-      x1 = 0,
-      y1 = 0,
-      friction = 1 / 30;
+      // Move Elements On mouse move functionality 
+      var lFollowX = 0,
+        lFollowY = 0,
+        x = 0,
+        y = 0,
+        x1 = 0,
+        y1 = 0,
+        friction = 1 / 30;
 
-    function moveBackground() {
-      x += (lFollowX - x) * friction;
-      y += (lFollowY - y) * friction;
-      x1 += -(lFollowX - x) * friction;
-      y1 += -(lFollowY - y) * friction;
+      function moveBackground() {
+        x += (lFollowX - x) * friction;
+        y += (lFollowY - y) * friction;
+        x1 += -(lFollowX - x) * friction;
+        y1 += -(lFollowY - y) * friction;
 
-      //  translate = 'translateX(' + x + 'px, ' + y + 'px)';
-      translate = 'translateX(' + x + 'px) translateY(' + y + 'px)';
-      translateOposition = 'translateX(' + x1 + 'px) translateY(' + y1 + 'px)';
+        translate = 'translateX(' + x + 'px) translateY(' + y + 'px)';
+        translateOposition = 'translateX(' + x1 + 'px) translateY(' + y1 + 'px)';
 
-      $('.animate-this').css({
-        '-webit-transform': translate,
-        '-moz-transform': translate,
-        'transform': translate
-      });
+        $('.animate-this').css({
+          '-webit-transform': translate,
+          '-moz-transform': translate,
+          'transform': translate
+        });
 
-      $('.animate-this-opposition').css({
-        '-webit-transform': translateOposition,
-        '-moz-transform': translateOposition,
-        'transform': translateOposition
-      });
+        $('.animate-this-opposition').css({
+          '-webit-transform': translateOposition,
+          '-moz-transform': translateOposition,
+          'transform': translateOposition
+        });
 
-      window.requestAnimationFrame(moveBackground);
-    }
-
-    $(window).on('mousemove click', function (e) {
-
-      var isHovered = $('.animate-this:hover').length > 0;
-      var isHovered1 = $('.build-it-section--container:hover').length > 0;
-
-
-      //if(!$(e.target).hasClass('animate-this')) {
-      if ((isHovered) || (isHovered1)) {
-        var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX)),
-          lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
-
-        lFollowX = (5 * lMouseX) / 100;
-        lFollowY = (5 * lMouseY) / 100;
+        window.requestAnimationFrame(moveBackground);
       }
-    });
+      $(window).on('mousemove click', function (e) {
 
-    moveBackground();
+        var isHovered = $('.animate-this:hover').length > 0;
+        var isHovered1 = $('.build-it-section--container:hover').length > 0;
 
-  </script>
-  <script>
-    $('.carousel[data-type="multi"] .item').each(function () {
-      var next = $(this).next();
-      if (!next.length) {
-        next = $(this).siblings(':first');
-      }
-      next.children(':first-child').clone().appendTo($(this));
 
-      for (var i = 0; i < 1; i++) {
-        next = next.next();
-        if (!next.length) {
-          next = $(this).siblings(':first');
+        if ((isHovered) || (isHovered1)) {
+          var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX)),
+            lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
+
+          lFollowX = (5 * lMouseX) / 100;
+          lFollowY = (5 * lMouseY) / 100;
         }
-
-        next.children(':first-child').clone().appendTo($(this));
-      }
-    });
-
-
-
-    gsap.registerPlugin(ScrollToPlugin, ScrollTrigger, ScrollSmoother);
-
-    /* Sections Smooth scroll */
-    // ScrollSmoother.create({
-    //   smooth: 5,               // how long (in seconds) it takes to "catch up" to the native scroll position
-    //   smoothTouch: 0.1,        // much shorter smoothing time on touch devices (default is NO smoothing on touch devices)
-    // });
-
-
-    /* Banner Arrow and 7 icons section arrow */
-    const bannerArrowClick = document.querySelector('.arrow-banner-sect');
-    bannerArrowClick.addEventListener("click", function (e) {
-      e.preventDefault();
-      gsap.to(window, {
-        scrollTo: {
-          y: window.innerHeight / 5,
-          autoKill: false
-        },
-        duration: 2
       });
-    });
 
-    const buildItArrowClick = document.querySelector('.arrow-build-it-section');
-    buildItArrowClick.addEventListener("click", function (e) {
-      e.preventDefault();
-      var viewportTop = $(window).scrollTop();
-      let y = (window.innerHeight * 3.4);
-      gsap.to(window, {
-        scrollTo: {
-          y: y,
-          autoKill: false
-        },
-        duration: 4
-      });
-    });
+      moveBackground();
 
-    const sevenIconsArrowClick = document.querySelector('.seven-icons-arrow');
-    sevenIconsArrowClick.addEventListener("click", function (e) {
-      e.preventDefault();
-      let targetElem = document.querySelector(e.target.getAttribute("data-target_anchor")),
-        y = targetElem;
-      gsap.to(window, {
-        scrollTo: {
-          y: y,
-          autoKill: false
-        },
-        duration: 3
-      });
-    });
+      // GSAP library registration 
+      gsap.registerPlugin(ScrollToPlugin, ScrollTrigger, ScrollSmoother);
 
-    const caseStudiesAnchor = document.querySelector('.case-studies-anchor');
-    caseStudiesAnchor.addEventListener("click", function (e) {
-      e.preventDefault();
-      let targetElem = document.querySelector(e.target.getAttribute("href")),
-        y = targetElem;
-      gsap.to(window, {
-        scrollTo: {
-          y: y,
-          autoKill: false
-        },
-        duration: 3
-      });
-    });
-
-    const insightsNewsAnchor = document.querySelector('.insights-news-anchor');
-    insightsNewsAnchor.addEventListener("click", function (e) {
-      e.preventDefault();
-      let targetElem = document.querySelector(e.target.getAttribute("href")),
-        y = targetElem;
-      gsap.to(window, {
-        scrollTo: {
-          y: y,
-          autoKill: false
-        },
-        duration: 3
-      });
-    });
-
-    const leadersAnchor = document.querySelector('.leaders-anchor');
-    leadersAnchor.addEventListener("click", function (e) {
-      e.preventDefault();
-      let targetElem = document.querySelector(e.target.getAttribute("href")),
-        y = targetElem;
-      gsap.to(window, {
-        scrollTo: {
-          y: y,
-          autoKill: false
-        },
-        duration: 4
-      });
-    });
-
-    const talentsAnchor = document.querySelector('.talents-anchor');
-    talentsAnchor.addEventListener("click", function (e) {
-      e.preventDefault();
-      let targetElem = document.querySelector(e.target.getAttribute("href")),
-        y = targetElem;
-      gsap.to(window, {
-        scrollTo: {
-          y: y,
-          autoKill: false
-        },
-        duration: 5
-      });
-    });
-
-
-
-
-
-
-    /* Main navigation */
-    let panelsSection = document.querySelector("#panels"),
-      panelsContainer = document.querySelector(".seven-icons-container"),
-      tween0,
-      tween1;
-    document.querySelectorAll(".anchor").forEach(anchor => {
-      anchor.addEventListener("click", function (e) {
+      /*Arrows and menu icons smooth scroll*/
+      const bannerArrowClick = document.querySelector('.arrow-banner-sect');
+      bannerArrowClick.addEventListener("click", function (e) {
         e.preventDefault();
-        let targetElem = document.querySelector(e.target.getAttribute("href")),
-          elemTween = e.target.getAttribute("datatween"),
-          y = targetElem;
-        if (targetElem && elemTween == "tween0") {
-          let totalScroll = tween0.scrollTrigger.end - tween0.scrollTrigger.start,
-            totalMovement = (2) * targetElem.offsetWidth;
-          y = Math.round(tween0.scrollTrigger.start + (targetElem.offsetLeft / totalMovement) * totalScroll);
-        } else if (targetElem && elemTween == "tween1" && e.target.getAttribute("href") == '#panel-5') {
-          let totalScroll = tween1.scrollTrigger.end - tween1.scrollTrigger.start,
-            totalMovement = (2) * targetElem.offsetWidth;
-          y = Math.round(tween1.scrollTrigger.start + (0 / totalMovement) * totalScroll);
-        } else if (targetElem && elemTween == "tween1" && e.target.getAttribute("href") == '#panel-6') {
-          let totalScroll = tween1.scrollTrigger.end - tween1.scrollTrigger.start,
-            totalMovement = (2) * targetElem.offsetWidth;
-          y = Math.round(tween1.scrollTrigger.start + (targetElem.offsetLeft / totalMovement) * totalScroll);
-        } else if (targetElem && elemTween == "tween1" && e.target.getAttribute("href") == '#panel-7') {
-          let totalScroll = tween1.scrollTrigger.end - tween1.scrollTrigger.start,
-            totalMovement = (2) * targetElem.offsetWidth;
-          y = Math.round(tween1.scrollTrigger.start + (2 * targetElem.offsetWidth / totalMovement) * totalScroll);
-        }
+        gsap.to(window, {
+          scrollTo: {
+            y: window.innerHeight / 5,
+            autoKill: false
+          },
+          duration: 2
+        });
+      });
+
+      const buildItArrowClick = document.querySelector('.arrow-build-it-section');
+      buildItArrowClick.addEventListener("click", function (e) {
+        e.preventDefault();
+        var viewportTop = $(window).scrollTop();
+        let y = (window.innerHeight * 3.4);
         gsap.to(window, {
           scrollTo: {
             y: y,
@@ -4938,49 +4790,426 @@
           duration: 4
         });
       });
-    });
 
-    const horizontalSections = gsap.utils.toArray('.panels-container');
-    var tween;
-
-    horizontalSections.forEach(function (sec, i) {
-
-      var thisPinWrap = sec.querySelector('.pin-wrap');
-      var thisAnimWrap = thisPinWrap.querySelector('.seven-icons-container');
-
-      var getToValue = () => -(thisAnimWrap.scrollWidth - window.innerWidth);
-
-      tween = gsap.fromTo(thisAnimWrap, {
-        x: () => thisAnimWrap.classList.contains('to-right') ? 0 : getToValue()
-      }, {
-        x: () => thisAnimWrap.classList.contains('to-right') ? getToValue() : 0,
-        ease: "none",
-        scrollTrigger: {
-          trigger: sec,
-          start: "top top",
-          end: () => "+=" + (thisAnimWrap.scrollWidth - window.innerWidth),
-          pin: thisPinWrap,
-          // pinSpacing: true,
-          invalidateOnRefresh: true,
-          // anticipatePin: 1,
-          scrub: true,
-          //markers: true,
-          onComplete: () => {
-            if (sec.scrollTrigger) sec.scrollTrigger.kill(true);
-            sec.progress(1);
-          }
-        }
+      const sevenIconsArrowClick = document.querySelector('.seven-icons-arrow');
+      sevenIconsArrowClick.addEventListener("click", function (e) {
+        e.preventDefault();
+        let targetElem = document.querySelector(e.target.getAttribute("data-target_anchor")),
+          y = targetElem;
+        gsap.to(window, {
+          scrollTo: {
+            y: y,
+            autoKill: false
+          },
+          duration: 3
+        });
       });
 
-      if (tween0) {
-        tween1 = tween;
-      } else {
-        tween0 = tween;
+      const caseStudiesAnchor = document.querySelector('.case-studies-anchor');
+      caseStudiesAnchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        let targetElem = document.querySelector(e.target.getAttribute("href")),
+          y = targetElem;
+        gsap.to(window, {
+          scrollTo: {
+            y: y,
+            autoKill: false
+          },
+          duration: 3
+        });
+      });
+
+      const insightsNewsAnchor = document.querySelector('.insights-news-anchor');
+      insightsNewsAnchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        let targetElem = document.querySelector(e.target.getAttribute("href")),
+          y = targetElem;
+        gsap.to(window, {
+          scrollTo: {
+            y: y,
+            autoKill: false
+          },
+          duration: 3
+        });
+      });
+
+      const leadersAnchor = document.querySelector('.leaders-anchor');
+      leadersAnchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        let targetElem = document.querySelector(e.target.getAttribute("href")),
+          y = targetElem;
+        gsap.to(window, {
+          scrollTo: {
+            y: y,
+            autoKill: false
+          },
+          duration: 4
+        });
+      });
+
+      const talentsAnchor = document.querySelector('.talents-anchor');
+      talentsAnchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        let targetElem = document.querySelector(e.target.getAttribute("href")),
+          y = targetElem;
+        gsap.to(window, {
+          scrollTo: {
+            y: y,
+            autoKill: false
+          },
+          duration: 5
+        });
+      });
+
+      /* Capability section menu smooth scroll */
+      let panelsSection = document.querySelector("#panels"),
+        panelsContainer = document.querySelector(".seven-icons-container"),
+        tween0,
+        tween1;
+      document.querySelectorAll(".anchor").forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          let targetElem = document.querySelector(e.target.getAttribute("href")),
+            elemTween = e.target.getAttribute("datatween"),
+            y = targetElem;
+          if (targetElem && elemTween == "tween0") {
+            let totalScroll = tween0.scrollTrigger.end - tween0.scrollTrigger.start,
+              totalMovement = (2) * targetElem.offsetWidth;
+            y = Math.round(tween0.scrollTrigger.start + (targetElem.offsetLeft / totalMovement) * totalScroll);
+          } else if (targetElem && elemTween == "tween1" && e.target.getAttribute("href") == '#panel-5') {
+            let totalScroll = tween1.scrollTrigger.end - tween1.scrollTrigger.start,
+              totalMovement = (2) * targetElem.offsetWidth;
+            y = Math.round(tween1.scrollTrigger.start + (0 / totalMovement) * totalScroll);
+          } else if (targetElem && elemTween == "tween1" && e.target.getAttribute("href") == '#panel-6') {
+            let totalScroll = tween1.scrollTrigger.end - tween1.scrollTrigger.start,
+              totalMovement = (2) * targetElem.offsetWidth;
+            y = Math.round(tween1.scrollTrigger.start + (targetElem.offsetLeft / totalMovement) * totalScroll);
+          } else if (targetElem && elemTween == "tween1" && e.target.getAttribute("href") == '#panel-7') {
+            let totalScroll = tween1.scrollTrigger.end - tween1.scrollTrigger.start,
+              totalMovement = (2) * targetElem.offsetWidth;
+            y = Math.round(tween1.scrollTrigger.start + (2 * targetElem.offsetWidth / totalMovement) * totalScroll);
+          }
+          gsap.to(window, {
+            scrollTo: {
+              y: y,
+              autoKill: false
+            },
+            duration: 4
+          });
+        });
+      });
+
+      // Horizontal scroll functionality
+      const horizontalSections = gsap.utils.toArray('.panels-container');
+      var tween;
+
+      horizontalSections.forEach(function (sec, i) {
+
+        var thisPinWrap = sec.querySelector('.pin-wrap');
+        var thisAnimWrap = thisPinWrap.querySelector('.seven-icons-container');
+
+        var getToValue = () => -(thisAnimWrap.scrollWidth - window.innerWidth);
+
+        tween = gsap.fromTo(thisAnimWrap, {
+          x: () => thisAnimWrap.classList.contains('to-right') ? 0 : getToValue()
+        }, {
+          x: () => thisAnimWrap.classList.contains('to-right') ? getToValue() : 0,
+          ease: "none",
+          scrollTrigger: {
+            trigger: sec,
+            start: "top top",
+            end: () => "+=" + (thisAnimWrap.scrollWidth - window.innerWidth),
+            pin: thisPinWrap,
+            invalidateOnRefresh: true,
+            scrub: true,
+            onComplete: () => {
+              if (sec.scrollTrigger) sec.scrollTrigger.kill(true);
+              sec.progress(1);
+            }
+          }
+        });
+
+        if (tween0) {
+          tween1 = tween;
+        } else {
+          tween0 = tween;
+        }
+
+      });
+
+      // The First 3 section elements observer actions 
+      $(document).ready(function () {
+
+        $(window).scroll(function () {
+          const hero = document.querySelector('.img-bg-abs');
+          const bannerImage = document.querySelector('.img-bg-bottom-abs')
+          const hero1 = document.querySelector('.hero');
+          const hero2 = document.querySelector('.build-it-section--container');
+          const iconHero1 = document.getElementById('hero-ban-img');
+          const trailer2 = document.querySelector('.trailer');
+          const trailer = document.querySelector('.engenering-section--container');
+          const ecotext = document.querySelector('.eco-hide-scroll');
+          const staticimg = document.querySelector('.eco-hide-scroll-static');
+          const ecoImg = document.querySelector('.eco-hide-scroll-img');
+          const opacityLayer = document.querySelector('.panels-bg-f');
+          const panelsBackground = document.getElementById('panels');
+          const nebulaBG = document.querySelector('.background-nebula');
+          const bannerArrow = document.querySelector('.arrow-banner-sect');
+          const sevenIconsArrow = document.querySelector('.seven-icons-arrow');
+          const buildItArrow = document.querySelector('.arrow-build-it-section');
+
+          const threshold = window.innerHeight;
+
+          if ($(window).scrollTop() > 0.1 * threshold) {
+
+            // Y value at which trailer switches to absolute positioning and scrolls up
+
+            window.addEventListener('scroll', function () {
+              // scale up hero section until scale is 20x
+              // and fade out hero title
+              let scale = 1 + ((window.scrollY / threshold) * 1 - 1);
+              let scaleImg = 1 + ((window.scrollY / threshold) * 0.1);
+              let bottomG = 1 - ((window.scrollY / threshold) * 10000);
+              let leftG = 1 + ((window.scrollY / threshold) * 10000);
+              let opacity = 1 - ((window.scrollY / threshold) * 0.4);
+              let opacity2 = 1 - ((window.scrollY / threshold) * 0.4);
+
+              if (window.scrollY > 0.1 * threshold) {
+                bannerArrow.style.opacity = '0';
+                bannerArrow.style.zIndex = "-1";
+              } else {
+                bannerArrow.style.opacity = '1';
+                bannerArrow.style.zIndex = "22222";
+              }
+
+              if (window.scrollY > 3.1 * threshold) {
+                bannerImage.style.display = 'none';
+                bannerImage.style.opacity = '0';
+                iconHero1.style.display = 'none';
+
+              } else if (window.scrollY > 1 * threshold) {
+                hero.style.opacity = opacity;
+                hero.style.transform = `scale(${scale ** 2})`;
+                hero1.style.position = 'fixed';
+                iconHero1.style.opacity = opacity * 2.3;
+                bannerImage.style.opacity = opacity2 * 4;
+                bannerImage.style.display = 'block';
+                bannerImage.style.bottom = "0";
+                // bannerImage.style.bottom = bottomG * .02 + "px";
+                bannerImage.style.transform = `scale(${scale ** 0.5})`;
+                iconHero1.style.display = 'block';
+                iconHero1.style.opacity = opacity * 1.1;
+                nebulaBG.style.display = 'block';
+
+              } else {
+                hero.style.transform = `scale(1.05)`;
+                bannerImage.style.bottom = '0vh';
+                bannerImage.style.opacity = '1';
+                iconHero1.style.opacity = '1';
+
+              }
+
+              if (window.scrollY > 1.5 * threshold) {
+                buildItArrow.style.display = 'none';
+              } else if (window.scrollY > 0.18 * threshold) {
+                buildItArrow.style.display = 'block';
+                buildItArrow.classList.add("bounce-arrow");
+              } else {
+                buildItArrow.style.display = 'none';
+              }
+
+              if (window.scrollY > 2.8 * threshold) {
+                hero2.style.opacity = '0';
+              } else if (window.scrollY > 1.5 * threshold) {
+                hero2.style.opacity = opacity2 ** 2;
+              } else {
+                hero2.style.opacity = '1';
+              }
+
+              if (window.scrollY > 4.1 * threshold) {
+
+                $(trailer).removeClass("trailer-hidden");
+                ecotext.style.opacity = opacity * 2.3;
+                staticimg.style.opacity = opacity * 2.3;
+                sevenIconsArrow.style.zIndex = "-1";
+                sevenIconsArrow.style.opacity = "0";
+
+              } else if (window.scrollY > 3.1 * threshold) {
+                ecotext.style.opacity = "1";
+                staticimg.style.opacity = "1";
+                $(trailer).addClass("trailer-hidden");
+                trailer2.style.zIndex = "2222";
+                sevenIconsArrow.style.zIndex = "2222";
+                sevenIconsArrow.style.opacity = "1";
+                sevenIconsArrow.classList.add("bounce-arrow");
+
+              } else {
+                ecotext.style.opacity = "0";
+                $(trailer).removeClass("trailer-hidden");
+                staticimg.style.opacity = "0";
+                trailer2.style.zIndex = "19";
+                sevenIconsArrow.style.zIndex = "-1";
+                sevenIconsArrow.style.opacity = "0";
+              }
+
+              if (window.scrollY > 3.8 * threshold) {
+                // $(ecoImg).removeClass("eco-hide-scroll-img__scroll");
+                // $(ecoImg).addClass("eco-hide-scroll-img__scroll-stt");
+                opacityLayer.style.opacity = ".5";
+
+              } else if (window.scrollY > 3.6 * threshold) {
+                // $(ecoImg).addClass("eco-hide-scroll-img__scroll");
+                // $(ecoImg).removeClass("eco-hide-scroll-img__scroll-stt");
+                opacityLayer.style.opacity = "0";
+                nebulaBG.style.transform = `scale(${scale * 0.6})`;
+              } else {
+
+                $(ecoImg).removeClass("eco-hide-scroll-img__scroll");
+                opacityLayer.style.opacity = "0";
+                nebulaBG.style.transform = `scale(1.05)`;
+              }
+
+
+              // toggle threshold class at threshold value
+              window.scrollY > threshold ?
+                document.body.classList.add('past-threshold') :
+                document.body.classList.remove('past-threshold');
+            })
+
+          }
+        });
+      });
+
+      // Capability section big icons observer 
+      const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0
+      };
+      function observerCallback(entries, observer) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.replace('fadeOut', 'fadeIn');
+            observer.unobserve(entry.target)
+          }
+        });
+      }
+      const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+      const fadeElms = document.querySelectorAll('.fade');
+      fadeElms.forEach(el => observer.observe(el));
+
+
+      const observerOptions2 = {
+        root: null,
+        rootMargin: "-50% 0% -50% 0%",
+        threshold: 0
+      };
+      function observerCallback2(entries, observer) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.replace('scaleOut', 'scaleIn');
+            entry.target.classList.replace('fadeOut1', 'fadeIn1');
+            observer.unobserve(entry.target)
+          }
+        });
+      }
+      const observer2 = new IntersectionObserver(observerCallback2, observerOptions2);
+
+      const scaleElms2 = document.querySelectorAll('.scale1.firstBigIcon');
+      scaleElms2.forEach(el => observer2.observe(el));
+      const fadeElements2 = document.querySelectorAll('.fade1.firstBigIcon');
+      fadeElements2.forEach(el => observer2.observe(el));
+
+      // Capability section texts animation 
+      jQuery(document).scroll(function () {
+        var caseItem = jQuery('.panels-txt');
+        jQuery(caseItem).each(function () {
+          var centerLine = jQuery(window).width() / 2;
+          var divStart = jQuery(this).offset().left;
+          var divEnd = divStart + jQuery(this).width();
+          if (divStart < centerLine && divEnd > centerLine) {
+            jQuery(caseItem.addClass('no-blur'));
+          }
+          else {
+            jQuery(caseItem.removeClass('no-blur'));
+          }
+        });
+      });
+      // Drawing lines functionality 
+      // https://jakearchibald.com/2013/animated-line-drawing-svg/
+      function lineDrawingOnScroll(svgPathID, panelID, viewportMultipler, nextIconID) {
+        var path = document.querySelector(svgPathID);
+        var pathLength = path.getTotalLength();
+        var panel1Container = document.querySelector(panelID);
+        var panelNextContainer;
+        var panelNextContainerPosition;
+        if (nextIconID != "") {
+          panelNextContainer = document.querySelector(nextIconID);
+          panelNextContainerPosition = panelNextContainer.getBoundingClientRect();
+        }
+        var panel1ContainerPosition = panel1Container.getBoundingClientRect();
+        path.style.strokeDashoffset = 0;
+        var threshold = window.innerHeight;
+        var screenWidth = window.innerWidth;
+
+
+
+        // When the page scrolls...
+        window.addEventListener("scroll", function (e) {
+          var panel1TopPixels = (document.documentElement.scrollTop - (panel1ContainerPosition.top * viewportMultipler)) * ((0.6 * threshold + 400) / 1000);
+          var linetrokeoffset = pathLength - panel1TopPixels;
+
+          // console.log(panelID, panel1ContainerPosition.top, document.documentElement.scrollTop, panel1TopPixels )
+
+          // var panelNextTopPixels = document.documentElement.scrollTop - ( screenWidth * horizontalOrder ) - ( panelNextContainerPosition.bottom * 1000 / ( 0.14 * threshold + 860 ) ) 
+          // console.log("next slide", svgPathID, panelNextTopPixels);
+          if (panel1TopPixels > 0 && linetrokeoffset > 400 && screenWidth > 1400) {
+            path.style.strokeDashoffset = linetrokeoffset;
+          } else if (panel1TopPixels < 0 && linetrokeoffset > 400 && screenWidth > 1400) {
+            path.style.strokeDashoffset = pathLength;
+          } else if (panel1TopPixels > 0 && linetrokeoffset > 350 && screenWidth < 1400) {
+            path.style.strokeDashoffset = linetrokeoffset;
+          } else if (panel1TopPixels < 0 && linetrokeoffset > 350 && screenWidth < 1400) {
+            path.style.strokeDashoffset = pathLength;
+          }
+          // if ( pathLength < panel1TopPixels) {
+          //     path.style.strokeDasharray = "none";
+          // } else {
+          path.style.strokeDasharray = pathLength + ' ' + pathLength;
+          // }  
+        });
       }
 
-    });
 
+      document.addEventListener("DOMContentLoaded", function () {
+        lineDrawingOnScroll('#line1-icon1', '#panel-1', 1.15, '#panel-2');
+        lineDrawingOnScroll('#line2-icon1', '#panel-1', 1.12, '#panel-2');
+        lineDrawingOnScroll('#line3-icon2', '#panel-2', 1.55, '#panel-3');
+        lineDrawingOnScroll('#line4-icon2', '#panel-2', 1.52, '#panel-3');
+        lineDrawingOnScroll('#line5-icon3', '#panel-3', 1.76, '#panel-4');
+        lineDrawingOnScroll('#line6-icon3', '#panel-3', 1.78, '#panel-4');
+        lineDrawingOnScroll('#line7-icon4', '#panel-4', 1.01, '#panel-5');
+        lineDrawingOnScroll('#line8-icon4', '#panel-4', 1.03, '#panel-5');
+        lineDrawingOnScroll('#line9-icon5', '#panel-5', 1.05, '#panel-6');
+        lineDrawingOnScroll('#line10-icon5', '#panel-5', 1.02, '#panel-6');
+        lineDrawingOnScroll('#line11-icon6', '#panel-6', 1.17, '#panel-7');
+        lineDrawingOnScroll('#line12-icon6', '#panel-6', 1.16, '#panel-7');
+        lineDrawingOnScroll('#line13-icon7', '#panel-7', 1.32, '#panel-7');
+        lineDrawingOnScroll('#line14-icon7', '#panel-7', 1.29, '#panel-7');
 
+        lineDrawingOnScroll('#star-path', '#panel-1', 1.1, '#panel-2');
+        lineDrawingOnScroll('#star-path2', '#panel-2', 1.5, '#panel-3');
+        lineDrawingOnScroll('#star-path3', '#panel-3', 1.75, '#panel-4');
+        lineDrawingOnScroll('#star-path4', '#panel-4', 1, '#panel-5');
+        lineDrawingOnScroll('#star-path5', '#panel-5', 1, '#panel-6');
+        lineDrawingOnScroll('#star-path6', '#panel-6', 1.15, '#panel-7');
+      });
+    } else {
+
+    }
+
+    // Observer viewport prototype
     $.fn.isInViewport = function () {
       var elementTop = $('.sticky-sect-cont').offset().top;
       var elementBottom = elementTop + $('.sticky-sect-cont').outerHeight();
@@ -4991,198 +5220,7 @@
       return elementBottom > viewportTop && elementTop < viewportBottom;
     };
 
-    $(document).ready(function () {
-
-      $(window).scroll(function () {
-        const hero = document.querySelector('.img-bg-abs');
-        const bannerImage = document.querySelector('.img-bg-bottom-abs')
-        const hero1 = document.querySelector('.hero');
-        const hero2 = document.querySelector('.build-it-section--container');
-        const iconHero1 = document.getElementById('hero-ban-img');
-        const trailer2 = document.querySelector('.trailer');
-        const trailer = document.querySelector('.engenering-section--container');
-        const ecotext = document.querySelector('.eco-hide-scroll');
-        const staticimg = document.querySelector('.eco-hide-scroll-static');
-        const ecoImg = document.querySelector('.eco-hide-scroll-img');
-        const opacityLayer = document.querySelector('.panels-bg-f');
-        const panelsBackground = document.getElementById('panels');
-        const nebulaBG = document.querySelector('.background-nebula');
-        const bannerArrow = document.querySelector('.arrow-banner-sect');
-        const sevenIconsArrow = document.querySelector('.seven-icons-arrow');
-        const buildItArrow = document.querySelector('.arrow-build-it-section');
-
-        const threshold = window.innerHeight;
-
-        if ($(window).scrollTop() > 0.1 * threshold) {
-
-          // Y value at which trailer switches to absolute positioning and scrolls up
-
-          window.addEventListener('scroll', function () {
-            // scale up hero section until scale is 20x
-            // and fade out hero title
-            let scale = 1 + ((window.scrollY / threshold) * 1 - 1);
-            let scaleImg = 1 + ((window.scrollY / threshold) * 0.1);
-            let bottomG = 1 - ((window.scrollY / threshold) * 10000);
-            let leftG = 1 + ((window.scrollY / threshold) * 10000);
-            let opacity = 1 - ((window.scrollY / threshold) * 0.4);
-            let opacity2 = 1 - ((window.scrollY / threshold) * 0.4);
-
-            if (window.scrollY > 0.1 * threshold) {
-              bannerArrow.style.opacity = '0';
-              bannerArrow.style.zIndex = "-1";
-            } else {
-              bannerArrow.style.opacity = '1';
-              bannerArrow.style.zIndex = "22222";
-            }
-
-            if (window.scrollY > 3.1 * threshold) {
-              bannerImage.style.display = 'none';
-              bannerImage.style.opacity = '0';
-              iconHero1.style.display = 'none';
-
-            } else if (window.scrollY > 1 * threshold) {
-              hero.style.opacity = opacity;
-              hero.style.transform = `scale(${scale ** 2})`;
-              hero1.style.position = 'fixed';
-              iconHero1.style.opacity = opacity * 2.3;
-              bannerImage.style.opacity = opacity2 * 4;
-              bannerImage.style.display = 'block';
-              bannerImage.style.bottom = "0";
-              // bannerImage.style.bottom = bottomG * .02 + "px";
-              bannerImage.style.transform = `scale(${scale ** 0.5})`;
-              iconHero1.style.display = 'block';
-              iconHero1.style.opacity = opacity * 1.1;
-              nebulaBG.style.display = 'block';
-
-            } else {
-              hero.style.transform = `scale(1.05)`;
-              bannerImage.style.bottom = '0vh';
-              bannerImage.style.opacity = '1';
-              iconHero1.style.opacity = '1';
-
-            }
-
-            if (window.scrollY > 1.5 * threshold) {
-              buildItArrow.style.display = 'none';
-            } else if (window.scrollY > 0.18 * threshold) {
-              buildItArrow.style.display = 'block';
-              buildItArrow.classList.add("bounce-arrow");
-            } else {
-              buildItArrow.style.display = 'none';
-            }
-
-            if (window.scrollY > 2.8 * threshold) {
-              hero2.style.opacity = '0';
-            } else if (window.scrollY > 1.5 * threshold) {
-              hero2.style.opacity = opacity2 ** 2;
-            } else {
-              hero2.style.opacity = '1';
-            }
-
-            if (window.scrollY > 4.1 * threshold) {
-
-              $(trailer).removeClass("trailer-hidden");
-              ecotext.style.opacity = opacity * 2.3;
-              staticimg.style.opacity = opacity * 2.3;
-              sevenIconsArrow.style.zIndex = "-1";
-              sevenIconsArrow.style.opacity = "0";
-
-            } else if (window.scrollY > 3.1 * threshold) {
-              ecotext.style.opacity = "1";
-              staticimg.style.opacity = "1";
-              $(trailer).addClass("trailer-hidden");
-              trailer2.style.zIndex = "2222";
-              sevenIconsArrow.style.zIndex = "2222";
-              sevenIconsArrow.style.opacity = "1";
-              sevenIconsArrow.classList.add("bounce-arrow");
-
-            } else {
-              ecotext.style.opacity = "0";
-              $(trailer).removeClass("trailer-hidden");
-              staticimg.style.opacity = "0";
-              trailer2.style.zIndex = "19";
-              sevenIconsArrow.style.zIndex = "-1";
-              sevenIconsArrow.style.opacity = "0";
-            }
-
-            if (window.scrollY > 3.8 * threshold) {
-              // $(ecoImg).removeClass("eco-hide-scroll-img__scroll");
-              // $(ecoImg).addClass("eco-hide-scroll-img__scroll-stt");
-              opacityLayer.style.opacity = ".5";
-
-            } else if (window.scrollY > 3.6 * threshold) {
-              // $(ecoImg).addClass("eco-hide-scroll-img__scroll");
-              // $(ecoImg).removeClass("eco-hide-scroll-img__scroll-stt");
-              opacityLayer.style.opacity = "0";
-              nebulaBG.style.transform = `scale(${scale * 0.6})`;
-            } else {
-
-              $(ecoImg).removeClass("eco-hide-scroll-img__scroll");
-              opacityLayer.style.opacity = "0";
-              nebulaBG.style.transform = `scale(1.05)`;
-            }
-
-
-            // toggle threshold class at threshold value
-            window.scrollY > threshold ?
-              document.body.classList.add('past-threshold') :
-              document.body.classList.remove('past-threshold');
-          })
-
-        }
-      });
-    });
-
-    const observerOptions = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0
-    };
-    function observerCallback(entries, observer) {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.replace('fadeOut', 'fadeIn');
-          // entry.target.classList.replace('scaleOut', 'scaleIn');
-          observer.unobserve(entry.target)
-        }
-      });
-    }
-    const observer = new IntersectionObserver(observerCallback, observerOptions);
-
-    const fadeElms = document.querySelectorAll('.fade');
-    fadeElms.forEach(el => observer.observe(el));
-    // const scaleElms = document.querySelectorAll('.scale');
-    // scaleElms.forEach(el => observer.observe(el));
-
-
-    const observerOptions2 = {
-      root: null,
-      rootMargin: "-50% 0% -50% 0%",
-      threshold: 0
-    };
-    function observerCallback2(entries, observer) {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.replace('scaleOut', 'scaleIn');
-          entry.target.classList.replace('fadeOut1', 'fadeIn1');
-          observer.unobserve(entry.target)
-        }
-      });
-    }
-    const observer2 = new IntersectionObserver(observerCallback2, observerOptions2);
-
-    const scaleElms2 = document.querySelectorAll('.scale1.firstBigIcon');
-    scaleElms2.forEach(el => observer2.observe(el));
-    const fadeElements2 = document.querySelectorAll('.fade1.firstBigIcon');
-    fadeElements2.forEach(el => observer2.observe(el));
-
-
-  </script>
-  <script>
-    if ($('#line-svg').is(':visible')) {
-      //
-    }
-
+    // Banner section slide on offset    
     var topofDiv = $(".banner-sect").offset().top;
     var heightDiv = $(".banner-sect").outerHeight();
 
@@ -5196,97 +5234,11 @@
       }
     });
 
-    jQuery(document).scroll(function () {
-      var caseItem = jQuery('.panels-txt');
-      jQuery(caseItem).each(function () {
-        var centerLine = jQuery(window).width() / 2;
-        var divStart = jQuery(this).offset().left;
-        var divEnd = divStart + jQuery(this).width();
-        if (divStart < centerLine && divEnd > centerLine) {
-          jQuery(caseItem.addClass('no-blur'));
-        }
-        else {
-          jQuery(caseItem.removeClass('no-blur'));
-        }
-      });
-    });
-
-
-    // https://jakearchibald.com/2013/animated-line-drawing-svg/
-    function lineDrawingOnScroll(svgPathID, panelID, viewportMultipler, nextIconID) {
-      var path = document.querySelector(svgPathID);
-      var pathLength = path.getTotalLength();
-      var panel1Container = document.querySelector(panelID);
-      var panelNextContainer;
-      var panelNextContainerPosition;
-      if (nextIconID != "") {
-        panelNextContainer = document.querySelector(nextIconID);
-        panelNextContainerPosition = panelNextContainer.getBoundingClientRect();
-      }
-      var panel1ContainerPosition = panel1Container.getBoundingClientRect();
-      path.style.strokeDashoffset = 0;
-      var threshold = window.innerHeight;
-      var screenWidth = window.innerWidth;
-
-
-
-      // When the page scrolls...
-      window.addEventListener("scroll", function (e) {
-        var panel1TopPixels = (document.documentElement.scrollTop - (panel1ContainerPosition.top * viewportMultipler)) * ((0.6 * threshold + 400) / 1000);
-        var linetrokeoffset = pathLength - panel1TopPixels;
-
-        // console.log(panelID, panel1ContainerPosition.top, document.documentElement.scrollTop, panel1TopPixels )
-
-        // var panelNextTopPixels = document.documentElement.scrollTop - ( screenWidth * horizontalOrder ) - ( panelNextContainerPosition.bottom * 1000 / ( 0.14 * threshold + 860 ) ) 
-        // console.log("next slide", svgPathID, panelNextTopPixels);
-        if (panel1TopPixels > 0 && linetrokeoffset > 400 && screenWidth > 1400) {
-          path.style.strokeDashoffset = linetrokeoffset;
-        } else if (panel1TopPixels < 0 && linetrokeoffset > 400 && screenWidth > 1400) {
-          path.style.strokeDashoffset = pathLength;
-        } else if (panel1TopPixels > 0 && linetrokeoffset > 350 && screenWidth < 1400) {
-          path.style.strokeDashoffset = linetrokeoffset;
-        } else if (panel1TopPixels < 0 && linetrokeoffset > 350 && screenWidth < 1400) {
-          path.style.strokeDashoffset = pathLength;
-        }
-        // if ( pathLength < panel1TopPixels) {
-        //     path.style.strokeDasharray = "none";
-        // } else {
-        path.style.strokeDasharray = pathLength + ' ' + pathLength;
-        // }  
-      });
-    }
-
-
-    document.addEventListener("DOMContentLoaded", function () {
-      lineDrawingOnScroll('#line1-icon1', '#panel-1', 1.15, '#panel-2');
-      lineDrawingOnScroll('#line2-icon1', '#panel-1', 1.12, '#panel-2');
-      lineDrawingOnScroll('#line3-icon2', '#panel-2', 1.55, '#panel-3');
-      lineDrawingOnScroll('#line4-icon2', '#panel-2', 1.52, '#panel-3');
-      lineDrawingOnScroll('#line5-icon3', '#panel-3', 1.76, '#panel-4');
-      lineDrawingOnScroll('#line6-icon3', '#panel-3', 1.78, '#panel-4');
-      lineDrawingOnScroll('#line7-icon4', '#panel-4', 1.01, '#panel-5');
-      lineDrawingOnScroll('#line8-icon4', '#panel-4', 1.03, '#panel-5');
-      lineDrawingOnScroll('#line9-icon5', '#panel-5', 1.05, '#panel-6');
-      lineDrawingOnScroll('#line10-icon5', '#panel-5', 1.02, '#panel-6');
-      lineDrawingOnScroll('#line11-icon6', '#panel-6', 1.17, '#panel-7');
-      lineDrawingOnScroll('#line12-icon6', '#panel-6', 1.16, '#panel-7');
-      lineDrawingOnScroll('#line13-icon7', '#panel-7', 1.32, '#panel-7');
-      lineDrawingOnScroll('#line14-icon7', '#panel-7', 1.29, '#panel-7');
-
-      lineDrawingOnScroll('#star-path', '#panel-1', 1.1, '#panel-2');
-      lineDrawingOnScroll('#star-path2', '#panel-2', 1.5, '#panel-3');
-      lineDrawingOnScroll('#star-path3', '#panel-3', 1.75, '#panel-4');
-      lineDrawingOnScroll('#star-path4', '#panel-4', 1, '#panel-5');
-      lineDrawingOnScroll('#star-path5', '#panel-5', 1, '#panel-6');
-      lineDrawingOnScroll('#star-path6', '#panel-6', 1.15, '#panel-7');
-    });
-  </script>
-  <script>
+    // Hamburger Menu collapse 
     $(document).ready(function (jQuery) {
 
-      $('.navbar-toggle').on('click', function (e) { // <----------- Click Handler (jQuery)
+      $('.navbar-toggle').on('click', function (e) {
 
-        // Use $(this) to access current clicked element
         if ($(".navbar-collapse ").hasClass("in")) {
           $(this).removeClass('open');
         } else {
@@ -5296,19 +5248,17 @@
       })
 
     });
-  </script>
-  <script>
-    const body = document.querySelector('body')
+
+
+    const body = document.querySelector('body.advantage-class')
     const openPanelBtn = document.querySelectorAll('.advantage-class .case-study__item')
     const closePanelBtn = document.querySelectorAll('.advantage-class .close')
-    // const modal = document.querySelector('.advantage-class .modal')
     const objectCountRef = { current: 0 }  // to apply the solution for the scenario with multiple popup
     const caseStudies = document.querySelector('.advantage-class #case-studies')
     var caseStudiesPosition = caseStudies.getBoundingClientRect();
 
     // A. add button events:
     openPanelBtn.forEach(function (dom) {
-      // dom.addEventListener('click', openPanelAndFreezeBodyScroll(modalDataTarget))
       dom.addEventListener('click', function (e) {
         var modal = document.querySelector(e.target.getAttribute("data-target"));
         modal.style.display = 'block';
@@ -5317,7 +5267,6 @@
     })
 
     closePanelBtn.forEach(function (dom) {
-      // dom.addEventListener('click', closePanelAndFreeBodyScroll(modalDataTarget))
       dom.addEventListener('click', function (e) {
         var modal = document.querySelector(e.target.getAttribute("data-target"));
         modal.style.display = ''
@@ -5344,8 +5293,28 @@
       }
     }
 
-  </script>
-  <script>
+    // Carousel settings 
+    $('.carousel').carousel({
+      interval: false
+    })
+
+    $('.carousel[data-type="multi"] .item').each(function () {
+      var next = $(this).next();
+      if (!next.length) {
+        next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+
+      for (var i = 0; i < 1; i++) {
+        next = next.next();
+        if (!next.length) {
+          next = $(this).siblings(':first');
+        }
+
+        next.children(':first-child').clone().appendTo($(this));
+      }
+    });
+
     $("#carousel-example-generic").carousel();
 
     $(".item").click(function () {
@@ -5359,8 +5328,7 @@
     $(".right carousel-control").click(function () {
       $("#carousel-example-generic").carousel("next");
     });
-  </script>
-  <script>
+
     $(".carousel").swipe({
       swipe: function (
         event,
