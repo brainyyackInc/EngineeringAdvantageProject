@@ -25,15 +25,15 @@
 #engineering-advantage {
     scroll-behavior: unset;
     overflow-x: hidden;
-  }
+}
 
 .advantage-tabs__item--w100 {
-cursor: pointer;
+    cursor: pointer;
 }
 
 body.advantage-class * {
     font-family: 'Open Sans';
-   
+
 }
 
 .advantage-class .d-flex {
@@ -73,7 +73,7 @@ body.advantage-class * {
 
 .advantage-class .bigIcon-frst-line {
     position: absolute;
-    height: 1px!important;
+    height: 1px !important;
     bottom: -40%;
     transform: rotate(49deg);
     right: -119%;
@@ -81,7 +81,7 @@ body.advantage-class * {
 
 .advantage-class .bigIcon-scnd-line {
     position: absolute;
-    height: 1px!important;
+    height: 1px !important;
     transform: rotate(90deg);
     bottom: -73%;
     left: -37%;
@@ -89,7 +89,7 @@ body.advantage-class * {
 
 .advantage-class .bigIcon-2-frst-line {
     position: absolute;
-    height: 1px!important;
+    height: 1px !important;
     transform: rotate(-42deg);
     top: -39%;
     left: 57%;
@@ -97,7 +97,7 @@ body.advantage-class * {
 
 .advantage-class .bigIcon-2-scnd-line {
     position: absolute;
-    height: 1px!important;
+    height: 1px !important;
     transform: rotate(-18deg);
     left: 85%;
     top: 6%;
@@ -105,15 +105,15 @@ body.advantage-class * {
 
 .advantage-class .bigIcon-3-frst-line {
     position: absolute;
-    height: 1px!important;
-    transform:rotate(109deg);
+    height: 1px !important;
+    transform: rotate(109deg);
     bottom: -75.5%;
     right: 9%;
 }
 
 .advantage-class .bigIcon-3-scnd-line {
     position: absolute;
-    height: 1px!important;
+    height: 1px !important;
     transform: rotate(61deg);
     bottom: -64%;
     left: 33%;
@@ -121,7 +121,7 @@ body.advantage-class * {
 
 .advantage-class .bigIcon-4-frst-line {
     position: absolute;
-    height: 1px!important;
+    height: 1px !important;
     transform: rotate(96deg);
     top: 177%;
     right: -25%;
@@ -129,7 +129,7 @@ body.advantage-class * {
 
 .advantage-class .bigIcon-4-scnd-line {
     position: absolute;
-    height: 1px!important;
+    height: 1px !important;
     transform: rotate(55deg);
     top: 150%;
     right: -105%;
@@ -137,7 +137,7 @@ body.advantage-class * {
 
 .advantage-class .bigIcon-6-frst-line {
     position: absolute;
-    height: 1px!important;
+    height: 1px !important;
     transform: rotate(-149deg);
     right: 68%;
     top: -14%;
@@ -150,7 +150,7 @@ body.advantage-class * {
 
 .advantage-class .bigIcon-6-scnd-line {
     position: absolute;
-    height: 1px!important;
+    height: 1px !important;
     transform: rotate(-203deg);
     bottom: 1%;
     right: 77%;
@@ -158,7 +158,7 @@ body.advantage-class * {
 
 .advantage-class .bigIcon-5-frst-line {
     position: absolute;
-    height: 1px!important;
+    height: 1px !important;
     transform: rotate(-122deg);
     right: 21%;
     top: -62%;
@@ -166,7 +166,7 @@ body.advantage-class * {
 
 .advantage-class .bigIcon-5-scnd-line {
     position: absolute;
-    height: 1px!important;
+    height: 1px !important;
     transform: rotate(-157deg);
     bottom: 566px;
     right: 440px;
@@ -223,7 +223,7 @@ body.advantage-class * {
 
 .advantage-class .bigIcon-7-frst-line {
     position: absolute;
-    height: 1px!important;
+    height: 1px !important;
     transform: rotate(112deg);
     bottom: -61%;
     right: 14%;
@@ -231,7 +231,7 @@ body.advantage-class * {
 
 .advantage-class .bigIcon-7-scnd-line {
     position: absolute;
-    height: 1px!important;
+    height: 1px !important;
     transform: rotate(135deg);
     bottom: -35%;
     right: 62%;
@@ -241,24 +241,24 @@ body.advantage-class * {
     transition: opacity 0.5s ease-in;
 }
 
-.advantage-class .fadeOut { 
-    opacity: 0; 
+.advantage-class .fadeOut {
+    opacity: 0;
 }
 
-.advantage-class .fadeIn { 
-    opacity: 1; 
+.advantage-class .fadeIn {
+    opacity: 1;
 }
 
 .advantage-class .fade1 {
     transition: opacity 0.3s ease-in;
 }
-  
-.advantage-class .fadeOut1 { 
-    opacity: 0; 
+
+.advantage-class .fadeOut1 {
+    opacity: 0;
 }
 
-.advantage-class .fadeIn1 { 
-    opacity: 1; 
+.advantage-class .fadeIn1 {
+    opacity: 1;
 }
 
 .advantage-class .icon-wrapper .scale,
@@ -277,19 +277,19 @@ body.advantage-class * {
     /* transition: scale 1s linear; */
     transition: 1s linear;
 }
-  
-.advantage-class .scaleOut { 
+
+.advantage-class .scaleOut {
     transform: scale(.1);
-    opacity: 0;    
+    opacity: 0;
 }
 
-.advantage-class .scaleIn { 
+.advantage-class .scaleIn {
 
     transform: scale(1);
-    opacity: 1;  
+    opacity: 1;
 }
 
-  .advantage-class .bh-section__item {
+.advantage-class .bh-section__item {
     display: flex;
     align-items: center;
     height: 100vh;
@@ -309,7 +309,7 @@ body.advantage-class * {
 .advantage-class .container.fade {
     max-width: 1070px;
     width: 100%;
-    top:50%;
+    top: 50%;
 }
 
 .advantage-class .container.fade .row {
@@ -332,7 +332,7 @@ body.advantage-class * {
 }
 
 .advantage-class .clearHeader {
-    position: absolute!important;
+    position: absolute !important;
 }
 
 .advantage-class .align-items-center {
@@ -344,7 +344,7 @@ body.advantage-class * {
 }
 
 .advantage-class .jcc {
-    justify-content:center;
+    justify-content: center;
 }
 
 .advantage-class .align-items-end {
@@ -363,13 +363,20 @@ body.advantage-class * {
     text-decoration: none;
 }
 
-.advantage-class h1, .advantage-class h2, .advantage-class h3, .advantage-class h4, .advantage-class h5, .advantage-class h6, .advantage-class p, .advantage-class ul {
+.advantage-class h1,
+.advantage-class h2,
+.advantage-class h3,
+.advantage-class h4,
+.advantage-class h5,
+.advantage-class h6,
+.advantage-class p,
+.advantage-class ul {
     margin: 0;
     padding: 0;
 }
 
 .advantage-class .jcfs {
-    justify-content: flex-start!important;
+    justify-content: flex-start !important;
 }
 
 .advantage-class li {
@@ -395,7 +402,7 @@ body.advantage-class * {
     background-color: #5A5A5A;
     align-items: center;
     z-index: 32;
-    
+
 }
 
 .advantage-class .container.hiden-elem .row {
@@ -426,7 +433,7 @@ body.advantage-class * {
 }
 
 .advantage-class .scroll-top {
-   margin-right: 125px;
+    margin-right: 125px;
 }
 
 .advantage-class .capabilities-bl {
@@ -447,7 +454,7 @@ body.advantage-class * {
 }
 
 .advantage-class .fixed-top-sect--right ul li a {
-    transition:.2s;
+    transition: .2s;
 }
 
 .advantage-class .fixed-top-sect--right ul li a:hover {
@@ -459,7 +466,8 @@ body.advantage-class * {
     visibility: visible;
 }
 
-.advantage-class .fixed-top-sect--right ul li, .advantage-class .fixed-top-sect--right ul li a {
+.advantage-class .fixed-top-sect--right ul li,
+.advantage-class .fixed-top-sect--right ul li a {
     font-size: 16px;
     line-height: 26px;
     color: #fff;
@@ -468,8 +476,8 @@ body.advantage-class * {
 }
 
 .advantage-class .fixed-top-sect--right>ul>li>a {
-   padding-left: 22px;
-   padding-right: 22px;
+    padding-left: 22px;
+    padding-right: 22px;
 }
 
 .advantage-class .capabilities-bl {
@@ -482,7 +490,7 @@ body.advantage-class * {
 
 .advantage-class .fixed-top-sect--right>ul>li>a.connect {
     background-color: #87BA34;
-    font-family: 'Open Sans-Bold'; 
+    font-family: 'Open Sans-Bold';
     margin-left: 22px;
     display: none;
 }
@@ -490,7 +498,8 @@ body.advantage-class * {
 .advantage-class .panels-bg-f {
     position: fixed;
     width: 100%;
-    height: 100vh;opacity: 0;
+    height: 100vh;
+    opacity: 0;
     background-color: #000;
     transition: .5s;
 }
@@ -514,7 +523,7 @@ body.advantage-class * {
 }
 
 .advantage-class .banner-sect-hide {
-   top:-100%;
+    top: -100%;
 }
 
 .advantage-class .banner-sect-content h1 {
@@ -569,12 +578,12 @@ body.advantage-class * {
     opacity: 1;
     text-shadow: none;
     box-shadow: none;
-    background-image: none!important;
-    position: static!important;
+    background-image: none !important;
+    position: static !important;
     display: flex;
     top: unset;
     z-index: 222;
-    
+
 }
 
 .advantage-class .min-height-bl {
@@ -632,7 +641,8 @@ body.advantage-class * {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;object-fit: cover;
+    height: 100%;
+    object-fit: cover;
 }
 
 .advantage-class .modal-bannersect button.close {
@@ -659,7 +669,7 @@ body.advantage-class * {
 .advantage-class .modal-bannersect .modal-dialog {
     width: 60%;
     top: 50%;
-    transform: translateY(-50%)!important;
+    transform: translateY(-50%) !important;
 }
 
 .advantage-class .img-bg-abs {
@@ -743,48 +753,69 @@ body.advantage-class * {
     -webkit-animation: bounce-arrow 2s 2;
     animation: bounce-arrow 2s 2;
     animation-delay: 1.5s;
-  }     
+}
 
 @-webkit-keyframes bounce-arrow {
-    0%, 20%, 50%, 80%, 100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
     40% {
-    -webkit-transform: translateY(-20px);
-    transform: translateY(-20px);
-  }
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
     60% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
 }
 
 @-moz-keyframes bounce-arrow {
-    0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
     40% {
-    transform: translateY(-20px);
-  }
+        transform: translateY(-20px);
+    }
+
     60% {
-    transform: translateY(-10px);
-  }
+        transform: translateY(-10px);
+    }
 }
 
 @keyframes bounce-arrow {
-    0%, 20%, 50%, 80%, 100% {
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-  }
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+
     40% {
-    -ms-transform: translateY(-20px);
-    transform: translateY(-20px);
-  }
+        -ms-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
     60% {
-    -ms-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
 }
 
 .advantage-class .arrow-build-it-section path {
@@ -828,7 +859,7 @@ body.advantage-class * {
     height: 100%;
 }
 
-.advantage-class #panel-2 .icon-cont-abs, 
+.advantage-class #panel-2 .icon-cont-abs,
 .advantage-class #panel-5 .icon-cont-abs,
 .advantage-class #panel-7 .icon-cont-abs {
     margin-top: -20vh;
@@ -851,7 +882,7 @@ body.advantage-class * {
 }
 
 .advantage-class .icon-wrapper img {
-    position: absolute; 
+    position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
     left: 50%;
@@ -905,7 +936,7 @@ body.advantage-class * {
 
 .advantage-class .eco-hide-scroll-img {
     opacity: 0;
-    transition: 0.8s linear!important;
+    transition: 0.8s linear !important;
     position: relative;
     left: 0;
     transform: scale(1);
@@ -925,10 +956,11 @@ body.advantage-class * {
 
 .advantage-class .eco-hide-scroll {
     opacity: 0;
-    transition: .2s;;
+    transition: .2s;
+    ;
 }
 
-.advantage-class .eco-hide-scroll-img  {
+.advantage-class .eco-hide-scroll-img {
     position: absolute;
     width: 100%;
     opacity: 0;
@@ -1015,7 +1047,7 @@ body.advantage-class * {
 .advantage-class .build-it-section--abs {
     position: absolute;
     right: -297px;
-    top: -270px!important
+    top: -270px !important
 }
 
 .advantage-class .case-study-section--green-title {
@@ -1027,9 +1059,9 @@ body.advantage-class * {
 }
 
 .advantage-class .case-study-section__p {
-   font-size: 22px;
-   line-height: 30px;
-   color: #fff; 
+    font-size: 22px;
+    line-height: 30px;
+    color: #fff;
 }
 
 .advantage-class .case-study__item__title {
@@ -1055,7 +1087,7 @@ body.advantage-class * {
     color: #87BA34;
 }
 
-.advantage-class  .modal-case-studies__ul {
+.advantage-class .modal-case-studies__ul {
     padding-right: 35px;
 }
 
@@ -1112,7 +1144,7 @@ body.advantage-class * {
     width: 100%;
     max-width: 1100px;
     margin-top: 80px;
-    
+
 }
 
 .advantage-class .modal-case-studies .modal-body {
@@ -1245,7 +1277,7 @@ body.advantage-class * {
 }
 
 .advantage-class .advantage-tabs .tab-content {
-    margin-top: 22px;  
+    margin-top: 22px;
 }
 
 .advantage-class .tabs-sect {
@@ -1280,7 +1312,8 @@ body.advantage-class * {
     color: #fff;
 }
 
-.advantage-class .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus {
+.advantage-class .nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus {
     color: #fff;
 }
 
@@ -1315,7 +1348,7 @@ body.advantage-class * {
 
 .advantage-class .advantage-tabs__cont:hover img {
     transform: scale(1.2)
-} 
+}
 
 .advantage-class .advantage-tabs__cont p {
     position: absolute;
@@ -1340,7 +1373,7 @@ body.advantage-class * {
     font-size: 16px;
     line-height: 20px;
     display: flex;
-    transition:.2s;
+    transition: .2s;
     cursor: pointer;
     margin-top: 15px;
 }
@@ -1364,7 +1397,7 @@ body.advantage-class * {
 }
 
 .advantage-class .advantage-modal {
-    padding: 50px 30px 50px 30px; 
+    padding: 50px 30px 50px 30px;
 }
 
 .advantage-class .advantage-modal__left {
@@ -1395,7 +1428,7 @@ body.advantage-class * {
 
 .advantage-class .modal-case-studies .modal-dialog-advantage {
     top: 50%;
-    transform: translateY(-50%)!important;
+    transform: translateY(-50%) !important;
     margin-top: 0;
 }
 
@@ -1607,11 +1640,11 @@ body.advantage-class * {
     position: absolute;
     top: 120px;
     right: -400px;
-    animation: spin 30s linear 0s infinite;  
+    animation: spin 30s linear 0s infinite;
 }
 
-.advantage-class .case-studies__element{
-    animation: spin 30s linear 0s infinite;  
+.advantage-class .case-studies__element {
+    animation: spin 30s linear 0s infinite;
     position: absolute;
 }
 
@@ -1629,14 +1662,14 @@ body.advantage-class * {
 .advantage-class .panel.full-screen {
     overflow: visible;
 }
-  
-.advantage-class   #intro {
+
+.advantage-class #intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-  
-.advantage-class  #masthead {
+
+.advantage-class #masthead {
     position: fixed;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1644,11 +1677,11 @@ body.advantage-class * {
     z-index: 9999;
 }
 
-.advantage-class  #masthead a {
+.advantage-class #masthead a {
     padding: 1rem 2rem;
 }
 
-.advantage-class  #panels {
+.advantage-class #panels {
     position: relative;
     z-index: 2;
     background-color: #071231;
@@ -1668,43 +1701,43 @@ body.advantage-class * {
 
 .advantage-class .background-nebula img {
     width: 100%;
-    height: 100vh; 
+    height: 100vh;
 }
 
 
-  /* ControlBar (Inherited by icons in the ControlBar, but NOT the ProgressControl) */
-  .advantage-class .video-js .vjs-control-bar {
-    display: none!important
-  }
+/* ControlBar (Inherited by icons in the ControlBar, but NOT the ProgressControl) */
+.advantage-class .video-js .vjs-control-bar {
+    display: none !important
+}
 
-  .advantage-class .banner-sect--layout {
+.advantage-class .banner-sect--layout {
     width: 100%;
     height: 100%;
     opacity: 0;
     position: absolute;
     z-index: 2;
-  }
+}
 
-  .advantage-class .video-sect video {
+.advantage-class .video-sect video {
     object-fit: cover;
-  }
-  
-  /* PlayToggle */
-  .advantage-class .video-js .vjs-play-control {
-    display:none;
-  }
-  
-  .advantage-class .vjs-dock-text {
+}
+
+/* PlayToggle */
+.advantage-class .video-js .vjs-play-control {
+    display: none;
+}
+
+.advantage-class .vjs-dock-text {
 
     display: none;
-    }
+}
 
 
 .advantage-class .flex-posabs {
     position: absolute;
 }
-  
-.advantage-class  .panels-title {
+
+.advantage-class .panels-title {
     font-family: 'Open Sans-Bold';
     font-size: 30px;
     line-height: 34px;
@@ -1749,7 +1782,7 @@ body.advantage-class * {
 .advantage-class .panel {
     background-color: unset;
 }
-  
+
 .advantage-class #panels .panels-container {
     height: 100%;
     width: 100%;
@@ -1768,7 +1801,7 @@ body.advantage-class * {
 .advantage-class #panels .panels-container .pin-wrap,
 .advantage-class #panels .panels-container .seven-icons-container {
     position: relative;
-    z-index: 1;  
+    z-index: 1;
     height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1784,7 +1817,8 @@ body.advantage-class * {
     height: 100vh;
 }
 
-.advantage-class #panels .panels-container .panel, .advantage-class #panels1 .panels-container1 .panel {
+.advantage-class #panels .panels-container .panel,
+.advantage-class #panels1 .panels-container1 .panel {
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -1821,67 +1855,75 @@ body.advantage-class * {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-  }
-  .advantage-class #panels .panels-container .panel .anchor-panel,
-  .advantage-class #panels .panels-container .panel .nav-panel {
+}
+
+.advantage-class #panels .panels-container .panel .anchor-panel,
+.advantage-class #panels .panels-container .panel .nav-panel {
     color: #000;
     text-transform: uppercase;
     margin-right: 2rem;
-  }
-  .advantage-class #panels .panels-container .panels-navigation {
+}
+
+.advantage-class #panels .panels-container .panels-navigation {
     position: absolute;
     width: 100%;
     bottom: 2rem;
     right: 2rem;
-  }
+}
 
-  .advantage-class .navbar-header {
-    display: none!important;
-  }
+.advantage-class .navbar-header {
+    display: none !important;
+}
 
-  .advantage-class .navbar-collapse.collapse {
-    display: none!important;
-  }
+.advantage-class .navbar-collapse.collapse {
+    display: none !important;
+}
 
-  .advantage-class .position-longline, .advantage-class .position-longline2, .advantage-class .position-longline3, .advantage-class .position-longline4, .advantage-class .position-longline5, .advantage-class .position-longline6 {
+.advantage-class .position-longline,
+.advantage-class .position-longline2,
+.advantage-class .position-longline3,
+.advantage-class .position-longline4,
+.advantage-class .position-longline5,
+.advantage-class .position-longline6 {
     top: 42%;
     left: 70%;
     transform: rotate(-30deg) translate(61%, 0%);
-  }
+}
 
-  .advantage-class .position-longline2 {
+.advantage-class .position-longline2 {
     left: 75%;
     transform: rotate(-4deg) translate(14%, 4%)
-  }
+}
 
-  .advantage-class .position-longline4 {
+.advantage-class .position-longline4 {
     top: 4%;
     left: 57%;
-  }
+}
 
-  .advantage-class .position-longline5 {
+.advantage-class .position-longline5 {
     transform: rotate(-16deg) translate(36%, 1%)
-  }
+}
 
-  .advantage-class .position-longline6 {
+.advantage-class .position-longline6 {
     transform: rotate(-55deg) translate(99%, -9%);
-  }
+}
 
-  .advantage-class .position-longline3 {
+.advantage-class .position-longline3 {
     transform: rotate(-71deg) translate(145%, 8%);
-  }
-  
-  .advantage-class .bowspin-class {
+}
+
+.advantage-class .bowspin-class {
     animation: bowspin 100s linear infinite;
-  }
+}
 
-  .advantage-class .group-roatate2 {
+.advantage-class .group-roatate2 {
     animation: bowspin1 100s linear infinite;
-  }
+}
 
-  .advantage-class .opacity-anim {
-      animation: opac 3s ease-in-out infinite;
-  }
+.advantage-class .opacity-anim {
+    animation: opac 3s ease-in-out infinite;
+}
+
 /* 
 @keyframes spin {
     from {transform:rotate(0deg);}
@@ -1889,66 +1931,72 @@ body.advantage-class * {
 } */
 @-webkit-keyframes bowspin {
     0% {
-      transform: rotate(0deg);
-      transform-origin: center;
-      transform-box: fill-box;
+        transform: rotate(0deg);
+        transform-origin: center;
+        transform-box: fill-box;
     }
-    100% {
-      transform: rotate(360deg);
-      transform-origin: center;
-      transform-box: fill-box;
-    }
-  }
 
-  @-webkit-keyframes bowspin1 {
-    0% {
-      transform: rotate(0deg);
-      transform-origin: center;
-      transform-box: fill-box;
-    }
     100% {
-      transform: rotate(-360deg);
-      transform-origin: center;
-      transform-box: fill-box;
+        transform: rotate(360deg);
+        transform-origin: center;
+        transform-box: fill-box;
     }
-  }
+}
 
-  @-webkit-keyframes opac {
+@-webkit-keyframes bowspin1 {
     0% {
-     opacity: 0;
+        transform: rotate(0deg);
+        transform-origin: center;
+        transform-box: fill-box;
     }
+
+    100% {
+        transform: rotate(-360deg);
+        transform-origin: center;
+        transform-box: fill-box;
+    }
+}
+
+@-webkit-keyframes opac {
+    0% {
+        opacity: 0;
+    }
+
     50% {
         opacity: 1;
     }
+
     100% {
-      opacity: 0;
+        opacity: 0;
     }
-  }
+}
 
-  .advantage-class .cks-anuma {
-      animation: translate 10s linear infinite;
-  }
+.advantage-class .cks-anuma {
+    animation: translate 10s linear infinite;
+}
 
-  @-webkit-keyframes translate {
+@-webkit-keyframes translate {
     0% {
-     transform:translate(0, 0)
+        transform: translate(0, 0)
     }
+
     50% {
-        transform:translate(23px, -29px)
+        transform: translate(23px, -29px)
     }
+
     100% {
         transform: translate(0, 0)
     }
-  }
+}
 
-  .advantage-class .bow {
+.advantage-class .bow {
     -webkit-animation: bowspin 1.3s infinite;
     transform-origin: bottom center;
     animation: bowspin 30s infinite;
     -webkit-animation-timing-function: linear;
-  }
+}
 
-  .advantage-class .bow-2 {
+.advantage-class .bow-2 {
     -webkit-animation: bowspin1 1.3s infinite;
     transform-origin: top center;
     animation: bowspin1 50s infinite;
@@ -1974,72 +2022,79 @@ body.advantage-class * {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     z-index: 21;
-  }
-  .advantage-class .hero__top {
+}
+
+.advantage-class .hero__top {
     width: 100%;
     height: 60%;
     min-height: 400px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .advantage-class .hero__bottom {
+}
+
+.advantage-class .hero__bottom {
     width: 100%;
     background: #fff;
     -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
     text-align: center;
-  }
-  .advantage-class .hero__top .filler {
+}
+
+.advantage-class .hero__top .filler {
     -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-  }
-  .advantage-class .filler-white {
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.advantage-class .filler-white {
     background-color: #fff;
-  }
-  .advantage-class .hero__illustration {
+}
+
+.advantage-class .hero__illustration {
     height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .advantage-class .hero__illustration .filler:first-child {
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.advantage-class .hero__illustration .filler:first-child {
     padding-top: 200px;
-  }
-  .advantage-class .hero-icon {
+}
+
+.advantage-class .hero-icon {
     width: 200px;
     height: 200px;
     background: transparent;
     margin: 0 auto;
     -webkit-clip-path: polygon(0 0, 50% 50%, 100.5% 0, 100.5% 100%, 50% 50%, 0 100%);
-            clip-path: polygon(0 0, 50% 50%, 100.5% 0, 100.5% 100%, 50% 50%, 0 100%);
-  }
-  
-  .advantage-class .hero h1 {
+    clip-path: polygon(0 0, 50% 50%, 100.5% 0, 100.5% 100%, 50% 50%, 0 100%);
+}
+
+.advantage-class .hero h1 {
     font-size: 120px;
     font-weight: lighter;
     margin: 0;
     opacity: 1;
-  }
-  
-  .advantage-class .trailer {
+}
+
+.advantage-class .trailer {
     position: fixed;
     height: 100vh;
     width: 100%;
     z-index: 19;
     background-color: transparent;
-  }
+}
 
-  .advantage-class .video-wrapper {
+.advantage-class .video-wrapper {
     width: 100%;
     position: absolute;
     top: 0;
@@ -2048,378 +2103,383 @@ body.advantage-class * {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-transform-origin: center;
-        -ms-transform-origin: center;
-            transform-origin: center;
-  }
-  .advantage-class .video {
+    -ms-transform-origin: center;
+    transform-origin: center;
+}
+
+.advantage-class .video {
     height: 100vh;
     width: 100%;
     background: url(http://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif) no-repeat center center;
     background-size: cover;
-  }
-  
-  .advantage-class.past-threshold .trailer {
+}
+
+.advantage-class.past-threshold .trailer {
     position: absolute;
     height: 200vh;
     z-index: 2;
-  }
-  
-  .advantage-class .engen-icon {
-      position: absolute;
-      width: 100%;
-      max-width: 320px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-  }
+}
 
-  .advantage-class .engen-icon img {
+.advantage-class .engen-icon {
+    position: absolute;
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.advantage-class .engen-icon img {
     width: 100px;
-  }
-  
-  .advantage-class .engen-icon p {
-      text-transform: uppercase;
-      font-size: 14px!important;
-      line-height: 20px!important;
-      transition: .2s;
-      text-align: center;
-  }
-  
-  .advantage-class .engen-icon-platforms {
-      top: -179px
-  }
-  
-  .advantage-class .engen-icon-innovation {
-      left: -272px;
-      top: -80px;
-  }
-  
-  .advantage-class .engen-icon-platforms p, .advantage-class .engen-icon-markets p {
-      top: 100px;
-  }
-  
-  .advantage-class .engen-icon-innovation p {
-      top: 125px;
-  }
-  
-  .advantage-class .engen-icon-gen {
-      left: -378px;
-      top: 154px;
-  }
-  
-  .advantage-class .engen-icon-gen p, .advantage-class .engen-icon-data p, .advantage-class .engen-icon-talent p, .advantage-class .engen-icon-tech p {
-      max-width: 100px;
-      margin: 0 auto;
-      top: -104px;
-  }
-  
-  .advantage-class .engen-icon-tech p, .advantage-class .engen-icon-talent p {
-      max-width: 100%;
-  }
-  
-  .advantage-class .engen-icon-data {
-      left: -74px;
-      top: 300px;
-  }
-  
-  .advantage-class .engen-icon-data p {
-      max-width: 245px;
-  }
-  
-  .advantage-class .engen-icon-tech {
-      top: 300px;
-      left: 397px;
-  }
-  
-  .advantage-class .engen-icon-talent {
-      right: -319px;
-      top: 47px;
-  }
-  
-  .advantage-class .content {
+}
+
+.advantage-class .engen-icon p {
+    text-transform: uppercase;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    transition: .2s;
+    text-align: center;
+}
+
+.advantage-class .engen-icon-platforms {
+    top: -179px
+}
+
+.advantage-class .engen-icon-innovation {
+    left: -272px;
+    top: -80px;
+}
+
+.advantage-class .engen-icon-platforms p,
+.advantage-class .engen-icon-markets p {
+    top: 100px;
+}
+
+.advantage-class .engen-icon-innovation p {
+    top: 125px;
+}
+
+.advantage-class .engen-icon-gen {
+    left: -378px;
+    top: 154px;
+}
+
+.advantage-class .engen-icon-gen p,
+.advantage-class .engen-icon-data p,
+.advantage-class .engen-icon-talent p,
+.advantage-class .engen-icon-tech p {
+    max-width: 100px;
+    margin: 0 auto;
+    top: -104px;
+}
+
+.advantage-class .engen-icon-tech p,
+.advantage-class .engen-icon-talent p {
+    max-width: 100%;
+}
+
+.advantage-class .engen-icon-data {
+    left: -74px;
+    top: 300px;
+}
+
+.advantage-class .engen-icon-data p {
+    max-width: 245px;
+}
+
+.advantage-class .engen-icon-tech {
+    top: 300px;
+    left: 397px;
+}
+
+.advantage-class .engen-icon-talent {
+    right: -319px;
+    top: 47px;
+}
+
+.advantage-class .content {
     /* pushs content below header hero & trailer (should equal trailer height after threshold) */
     padding-top: 200vh;
-  }
+}
 
-  .advantage-class .section {
+.advantage-class .section {
     height: 75vh;
     display: -ms-grid;
     display: grid;
     place-items: center;
-  }
+}
 
-  .advantage-class .section:nth-child(2n) {
+.advantage-class .section:nth-child(2n) {
     background-color: #000;
     color: #fff;
     font-weight: bold;
-  }
+}
 
-  .advantage-class .section h2 {
+.advantage-class .section h2 {
     font-size: 80px;
     font-weight: lighter;
-  }
-  
-  :root {
-      /* z-indexes */
-      --hero-z-index: 2;
-      --trailer-z-index: 1;
-    }
-    
-    * {
-      -webkit-box-sizing: inherit;
-              box-sizing: inherit;
-    }
-    
-    body {
-      font-family: "-apple-system", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      margin: 0;
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box;
-    }
-    
-    .advantage-class .hero {
-      height: calc(100vh + 2px);
-      top: 0;
-      width: calc(100% + 2px);
-      position: fixed;
-      z-index: 21;
-      background-color: transparent;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      transition: .2s;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-    }
-  
-    .advantage-class .sticky-sect-cont {
-        position: relative;
-        height: 200vh;
-        width: 100%;
-    }
+}
 
-    .advantage-class .hero__top {
-      width: 100%;
-      height: 60%;
-      min-height: 400px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-    }
+:root {
+    /* z-indexes */
+    --hero-z-index: 2;
+    --trailer-z-index: 1;
+}
 
-    .advantage-class .hero__bottom {
-      width: 100%;
-      background: #fff;
-      -webkit-box-flex: 1;
-          -ms-flex-positive: 1;
-              flex-grow: 1;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+* {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
 
-    .advantage-class .hero__top .filler {
-      -webkit-box-flex: 1;
-          -ms-flex-positive: 1;
-              flex-grow: 1;
-    }
+body {
+    font-family: "-apple-system", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
-    .advantage-class .filler-white {
-      background-color: #fff;
-    }
+.advantage-class .hero {
+    height: calc(100vh + 2px);
+    top: 0;
+    width: calc(100% + 2px);
+    position: fixed;
+    z-index: 21;
+    background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    transition: .2s;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
 
-    .advantage-class .hero__illustration {
-      height: 100%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-    }
+.advantage-class .sticky-sect-cont {
+    position: relative;
+    height: 200vh;
+    width: 100%;
+}
 
-    .advantage-class .hero__illustration .filler:first-child {
-      padding-top: 200px;
-    }
+.advantage-class .hero__top {
+    width: 100%;
+    height: 60%;
+    min-height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
 
-    .advantage-class .hero-icon {
-      width: 200px;
-      height: 200px;
-      background: transparent;
-      margin: 0 auto;
-      -webkit-clip-path: polygon(0 0, 50% 50%, 100.5% 0, 100.5% 100%, 50% 50%, 0 100%);
-              clip-path: polygon(0 0, 50% 50%, 100.5% 0, 100.5% 100%, 50% 50%, 0 100%);
-    }
-    
-    .advantage-class .hero h1 {
-      font-size: 120px;
-      font-weight: lighter;
-      margin: 0;
-      opacity: 1;
-    }
-    
-    .advantage-class .trailer {
-      position: fixed!important;
-      top: 0;
-      height: 100vh;
-      width: 100%;
-      z-index: var(--trailer-z-index);
-      background-color: transparent;
-      top: 0;
-      background-size: cover;
-      visibility: visible;
-      z-index: 19;
-      transition: .2s;
-    }
-  
-    .advantage-class .trailer-hide {
-      opacity: 0;
-      visibility: hidden;
-      z-index: -1;
-    }
-  
-    .advantage-class #line-svg {
-      top: 0%;
-      
-      left: 0%;
-    }
-  
-    .advantage-class .b-hsect-abs-svg {
-      max-width: 1600px;
-      width: 100%;
-      position: absolute;
-      height: 100%;
-      left: 50%;
-      transform: translateX(-50%)
-    }
-  
-    .advantage-class .video-wrapper {
-      width: 100%;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-transform-origin: center;
-          -ms-transform-origin: center;
-              transform-origin: center;
-    }
+.advantage-class .hero__bottom {
+    width: 100%;
+    background: #fff;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    .advantage-class .video {
-      height: 100vh;
-      width: 100%;
-      background: url(http://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif) no-repeat center center;
-      background-size: cover;
-    }
-    
-    .advantage-class.past-threshold .trailer {
-      position: absolute;
-      height: 100vh;
-    }
-  
-    
-    .advantage-class .content {
-      /* pushs content below header hero & trailer (should equal trailer height after threshold) */
-      padding-top: 200vh;
-    }
+.advantage-class .hero__top .filler {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
 
-    .advantage-class .section {
-      height: 75vh;
-      display: -ms-grid;
-      display: grid;
-      place-items: center;
-    }
+.advantage-class .filler-white {
+    background-color: #fff;
+}
 
-    .advantage-class .section:nth-child(2n) {
-      background-color: #000;
-      color: #fff;
-      font-weight: bold;
-    }
+.advantage-class .hero__illustration {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
 
-    .advantage-class .section h2 {
-      font-size: 80px;
-      font-weight: lighter;
-    }
-    
+.advantage-class .hero__illustration .filler:first-child {
+    padding-top: 200px;
+}
 
+.advantage-class .hero-icon {
+    width: 200px;
+    height: 200px;
+    background: transparent;
+    margin: 0 auto;
+    -webkit-clip-path: polygon(0 0, 50% 50%, 100.5% 0, 100.5% 100%, 50% 50%, 0 100%);
+    clip-path: polygon(0 0, 50% 50%, 100.5% 0, 100.5% 100%, 50% 50%, 0 100%);
+}
+
+.advantage-class .hero h1 {
+    font-size: 120px;
+    font-weight: lighter;
+    margin: 0;
+    opacity: 1;
+}
+
+.advantage-class .trailer {
+    position: fixed !important;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: var(--trailer-z-index);
+    background-color: transparent;
+    top: 0;
+    background-size: cover;
+    visibility: visible;
+    z-index: 19;
+    transition: .2s;
+}
+
+.advantage-class .trailer-hide {
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+}
+
+.advantage-class #line-svg {
+    top: 0%;
+
+    left: 0%;
+}
+
+.advantage-class .b-hsect-abs-svg {
+    max-width: 1600px;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.advantage-class .video-wrapper {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+}
+
+.advantage-class .video {
+    height: 100vh;
+    width: 100%;
+    background: url(http://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif) no-repeat center center;
+    background-size: cover;
+}
+
+.advantage-class.past-threshold .trailer {
+    position: absolute;
+    height: 100vh;
+}
+
+
+.advantage-class .content {
+    /* pushs content below header hero & trailer (should equal trailer height after threshold) */
+    padding-top: 200vh;
+}
+
+.advantage-class .section {
+    height: 75vh;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+}
+
+.advantage-class .section:nth-child(2n) {
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+}
+
+.advantage-class .section h2 {
+    font-size: 80px;
+    font-weight: lighter;
+}
 
 @media (max-width: 768px) {
 
-    .advantage-class .carousel-inner > .item.next,
-    .advantage-class .carousel-inner > .item.active.right {
+    .carousel-inner>.item.active.right {
         left: 0;
         -webkit-transform: translate3d(100%, 0, 0);
         transform: translate3d(100%, 0, 0);
     }
 
-    .advantage-class .carousel-inner > .item.prev,
-    .advantage-class .carousel-inner > .item.active.left {
+    .carousel-inner>.item.prev,
+    .carousel-inner>.item.active.left {
         left: 0;
         -webkit-transform: translate3d(-100%, 0, 0);
         transform: translate3d(-100%, 0, 0);
     }
-  
-  }
-  @media (min-width: 769px) and (max-width: 992px ) {
 
-    .advantage-class .carousel-inner > .item.next,
-    .advantage-class .carousel-inner > .item.active.right {
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+    .carousel-inner>.item.next,
+    .carousel-inner>.item.active.right {
         left: 0;
         -webkit-transform: translate3d(33.3333333%, 0, 0);
         transform: translate3d(33.3333333%, 0, 0);
     }
 
-    .advantage-class .carousel-inner > .item.prev,
-    .advantage-class .carousel-inner > .item.active.left {
+    .carousel-inner>.item.prev,
+    .carousel-inner>.item.active.left {
         left: 0;
         -webkit-transform: translate3d(-33.3333333%, 0, 0);
         transform: translate3d(-33.3333333%, 0, 0);
     }
 
-  }
-  @media (min-width: 992px ) {
-    
-    .advantage-class .carousel-inner > .item.next,
-    .advantage-class .carousel-inner > .item.active.right {
+}
+
+@media (min-width: 992px) {
+
+    .carousel-inner>.item.next,
+    .carousel-inner>.item.active.right {
         left: 0;
         -webkit-transform: translate3d(33.3333333%, 0, 0);
         transform: translate3d(33.3333333%, 0, 0);
     }
 
-    .advantage-class .carousel-inner > .item.prev,
-    .advantage-class .carousel-inner > .item.active.left {
+    .carousel-inner>.item.prev,
+    .carousel-inner>.item.active.left {
         left: 0;
         -webkit-transform: translate3d(-33.3333333%, 0, 0);
         transform: translate3d(-33.3333333%, 0, 0);
     }
-    
-  }
+
+}
 
 @media only screen and (min-width: 1401px) and (max-height: 746px) {
 
     .advantage-class .icon-wrapper img {
-        width: 100%!important;
-        max-width: 350px!important;
+        width: 100% !important;
+        max-width: 350px !important;
     }
-    
+
     .advantage-class .engenering-section {
         max-width: 520px;
     }
@@ -2427,7 +2487,7 @@ body.advantage-class * {
     .advantage-class .engen-icon img {
         width: 70px;
     }
-    
+
     .advantage-class .engen-icon-data {
         left: 46px;
         top: 234px;
@@ -2443,9 +2503,9 @@ body.advantage-class * {
         left: 481px;
     }
 
-    .advantage-class .icon-wrapper>div>svg{
-        max-width: 350px!important;
-        width: 100%!important;
+    .advantage-class .icon-wrapper>div>svg {
+        max-width: 350px !important;
+        width: 100% !important;
     }
 
     .advantage-class .icon-wrapper>div {
@@ -2453,7 +2513,8 @@ body.advantage-class * {
         justify-content: flex-start;
     }
 
-    .advantage-class .big-icon-new-3>div, .advantage-class .big-icon-new-5>div {
+    .advantage-class .big-icon-new-3>div,
+    .advantage-class .big-icon-new-5>div {
         justify-content: flex-end;
     }
 
@@ -2462,7 +2523,8 @@ body.advantage-class * {
         transform: translateY(-50%);
     }
 
-    .advantage-class .big-icon-new-3 img, .advantage-class .big-icon-new-5 img {
+    .advantage-class .big-icon-new-3 img,
+    .advantage-class .big-icon-new-5 img {
         left: unset;
         right: 0;
         transform: translateY(-50%);
@@ -2472,7 +2534,7 @@ body.advantage-class * {
         font-size: 32px;
         line-height: 40px;
     }
-    
+
     .advantage-class .banner-sect-content p {
         font-size: 20px;
         line-height: 28px;
@@ -2495,7 +2557,7 @@ body.advantage-class * {
 
     .advantage-class .build-it-section--abs {
         right: -157px;
-        top: -333px!important;
+        top: -333px !important;
         max-width: 401px;
     }
 
@@ -2520,7 +2582,8 @@ body.advantage-class * {
         left: 88px;
     }
 
-    .advantage-class .engen-icon-platforms p, .advantage-class .engen-icon-markets p {
+    .advantage-class .engen-icon-platforms p,
+    .advantage-class .engen-icon-markets p {
         top: 87px;
     }
 
@@ -2607,7 +2670,8 @@ body.advantage-class * {
         top: 35%;
     }
 
-    .advantage-class .case-study-section--green-title, .advantage-class .advantage-tabs__cont p {
+    .advantage-class .case-study-section--green-title,
+    .advantage-class .advantage-tabs__cont p {
         font-size: 24px;
         line-height: 24px;
     }
@@ -2668,7 +2732,7 @@ body.advantage-class * {
     .advantage-class .bigIcon-scnd-line {
         bottom: -129%;
         left: -57%;
-       
+
     }
 
     .advantage-class .bigIcon-6-scnd-line {
@@ -2690,7 +2754,10 @@ body.advantage-class * {
         left: -195px;
     }
 
-    .advantage-class .engen-icon-gen p, .advantage-class .engen-icon-data p, .advantage-class .engen-icon-talent p, .advantage-class .engen-icon-tech p {
+    .advantage-class .engen-icon-gen p,
+    .advantage-class .engen-icon-data p,
+    .advantage-class .engen-icon-talent p,
+    .advantage-class .engen-icon-tech p {
         top: -85px;
     }
 
@@ -2722,8 +2789,8 @@ body.advantage-class * {
     }
 
     .advantage-class .icon-wrapper img {
-        width: 100%!important;
-        max-width: 350px!important;
+        width: 100% !important;
+        max-width: 350px !important;
     }
 
     .advantage-class .seven-icons-arrow {
@@ -2731,12 +2798,13 @@ body.advantage-class * {
         bottom: 25px;
     }
 
-    .advantage-class .arrow-banner-sect, .advantage-class .arrow-build-it-section {
-        bottom: 15px;    
-        top: unset;   
+    .advantage-class .arrow-banner-sect,
+    .advantage-class .arrow-build-it-section {
+        bottom: 15px;
+        top: unset;
     }
-    
-    
+
+
     .advantage-class .engenering-section {
         max-width: 520px;
     }
@@ -2744,7 +2812,7 @@ body.advantage-class * {
     .advantage-class .engen-icon svg {
         width: 70px;
     }
-    
+
     .advantage-class .engen-icon-data {
         left: 10px;
         top: 234px;
@@ -2760,9 +2828,9 @@ body.advantage-class * {
         left: 481px;
     }
 
-    .advantage-class .icon-wrapper>div>svg{
-        max-width: 350px!important;
-        width: 100%!important;
+    .advantage-class .icon-wrapper>div>svg {
+        max-width: 350px !important;
+        width: 100% !important;
     }
 
     .advantage-class .icon-wrapper>div {
@@ -2770,7 +2838,8 @@ body.advantage-class * {
         justify-content: flex-start;
     }
 
-    .advantage-class .big-icon-new-3>div, .advantage-class .big-icon-new-5>div {
+    .advantage-class .big-icon-new-3>div,
+    .advantage-class .big-icon-new-5>div {
         justify-content: flex-end;
     }
 
@@ -2779,7 +2848,8 @@ body.advantage-class * {
         transform: translateY(-50%);
     }
 
-    .advantage-class .big-icon-new-3 img, .advantage-class .big-icon-new-5 img {
+    .advantage-class .big-icon-new-3 img,
+    .advantage-class .big-icon-new-5 img {
         left: unset;
         right: 0;
         transform: translateY(-50%);
@@ -2789,7 +2859,7 @@ body.advantage-class * {
         font-size: 32px;
         line-height: 40px;
     }
-    
+
     .advantage-class .banner-sect-content p {
         font-size: 20px;
         line-height: 28px;
@@ -2812,7 +2882,7 @@ body.advantage-class * {
 
     .advantage-class .build-it-section--abs {
         right: -157px;
-        top: -333px!important;
+        top: -333px !important;
         max-width: 401px;
     }
 
@@ -2837,7 +2907,8 @@ body.advantage-class * {
         left: 88px;
     }
 
-    .advantage-class .engen-icon-platforms p, .advantage-class .engen-icon-markets p {
+    .advantage-class .engen-icon-platforms p,
+    .advantage-class .engen-icon-markets p {
         top: 87px;
     }
 
@@ -2924,7 +2995,8 @@ body.advantage-class * {
         top: 35%;
     }
 
-    .advantage-class .case-study-section--green-title, .advantage-class .advantage-tabs__cont p {
+    .advantage-class .case-study-section--green-title,
+    .advantage-class .advantage-tabs__cont p {
         font-size: 24px;
         line-height: 24px;
     }
@@ -3006,7 +3078,10 @@ body.advantage-class * {
         left: -195px;
     }
 
-    .advantage-class .engen-icon-gen p, .advantage-class .engen-icon-data p, .advantage-class .engen-icon-talent p, .advantage-class .engen-icon-tech p {
+    .advantage-class .engen-icon-gen p,
+    .advantage-class .engen-icon-data p,
+    .advantage-class .engen-icon-talent p,
+    .advantage-class .engen-icon-tech p {
         top: -85px;
     }
 
@@ -3025,7 +3100,7 @@ body.advantage-class * {
     }
 
 }
-  
+
 @media only screen and (max-width: 1200px) {
 
     .advantage-class .banner-sect {
@@ -3076,7 +3151,8 @@ body.advantage-class * {
         margin-right: 25px;
     }
 
-    .advantage-class .build-the-future-sect, .advantage-class .transform-next-sect {
+    .advantage-class .build-the-future-sect,
+    .advantage-class .transform-next-sect {
         padding-left: 30px;
         padding-right: 30px;
     }
@@ -3147,9 +3223,9 @@ body.advantage-class * {
         -moz-transition: .25s ease-in-out;
         -o-transition: .25s ease-in-out;
         transition: .25s ease-in-out;
-      }
+    }
 
-      .advantage-class .navbar-collapse {
+    .advantage-class .navbar-collapse {
         position: absolute;
         background: rgb(90, 90, 90);
         top: 50px;
@@ -3160,50 +3236,50 @@ body.advantage-class * {
 
     .advantage-class .navbar-toggle span:nth-child(1) {
         top: 0px;
-      }
-      
+    }
+
     .advantage-class .navbar-toggle span:nth-child(2) {
         top: 12px;
-      }
-      
+    }
+
     .advantage-class .navbar-toggle span:nth-child(3) {
         top: 24px;
-      }
-      
+    }
+
     .advantage-class .navbar-toggle.open span:nth-child(1) {
         top: 18px;
         -webkit-transform: rotate(135deg);
         -moz-transform: rotate(135deg);
         -o-transform: rotate(135deg);
         transform: rotate(135deg);
-      }
-      
+    }
+
     .advantage-class .navbar-toggle.open span:nth-child(2) {
         opacity: 0;
         right: -60px;
-      }
-      
+    }
+
     .advantage-class .navbar-toggle.open span:nth-child(3) {
         top: 18px;
         -webkit-transform: rotate(-135deg);
         -moz-transform: rotate(-135deg);
         -o-transform: rotate(-135deg);
         transform: rotate(-135deg);
-      }
+    }
 
     .advantage-class .navbar-header {
-        display: block!important;
-      }
+        display: block !important;
+    }
 
     .advantage-class .navbar-collapse.collapse.in {
-        display: block!important;
-      }
-    
-    .advantage-class .navbar-collapse.collapse {
-        display: none!important;
-      } 
+        display: block !important;
+    }
 
-      .advantage-class .modal-case-studies__text-oriented {
+    .advantage-class .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+    .advantage-class .modal-case-studies__text-oriented {
         position: static;
         transform: none;
         writing-mode: horizontal-tb;
@@ -3213,7 +3289,7 @@ body.advantage-class * {
         margin-bottom: 20px;
         padding: 30px 20px 0 20px;
     }
-    
+
     .advantage-class .seven-element-sect__cont {
         display: flex;
         flex-wrap: wrap;
@@ -3247,7 +3323,7 @@ body.advantage-class * {
         top: 0;
     }
 
-    .advantage-class .seven-element-sect__item__title  {
+    .advantage-class .seven-element-sect__item__title {
         font-size: 18px;
         font-family: 'Open Sans-Bold';
         color: #fff;
@@ -3257,12 +3333,12 @@ body.advantage-class * {
 
     .advantage-class .seven-element-sect__item__title .ecosystem-img {
         left: -38px;
-        top: -70px;    
-    } 
+        top: -70px;
+    }
 
     .advantage-class .seven-element-sect__item__title .technology-img {
         left: -52px;
-        top: -18px;    
+        top: -18px;
     }
 
     .advantage-class .seven-element-sect__item__title .platforms-img {
@@ -3368,7 +3444,7 @@ body.advantage-class * {
     .advantage-class .modal-case-studies__wrapper .icons-abs-case-studies {
         top: -20px;
     }
-    
+
     .advantage-class .icons-abs-case-studies img {
         width: 42px;
         height: 42px;
@@ -3423,7 +3499,7 @@ body.advantage-class * {
     }
 
     .advantage-class .advantage-tabs__item {
-        width:100%!important;
+        width: 100% !important;
         margin-left: 0;
     }
 
@@ -3537,13 +3613,14 @@ body.advantage-class * {
         margin-top: 20px;
     }
 
-    .advantage-class .bottom-sect-abs, .advantage-class .case-studies__element {
+    .advantage-class .bottom-sect-abs,
+    .advantage-class .case-studies__element {
         display: none;
     }
 
-    .advantage-class .modal-bannersect .modal-dialog  {
+    .advantage-class .modal-bannersect .modal-dialog {
         left: 50%;
-        transform: translate(-50%, -50%)!important;
+        transform: translate(-50%, -50%) !important;
         top: 50%;
         width: 100%;
         margin: 0;
@@ -3583,7 +3660,7 @@ body.advantage-class * {
 
     .advantage-class .build-it-section--abs {
         right: -79px;
-        top: -370px!important;
+        top: -370px !important;
         max-width: 180px;
         z-index: 1;
     }
@@ -3748,25 +3825,24 @@ body.advantage-class * {
 
 }
 
-
-  
-  @media (max-width: 1000px) {
+@media (max-width: 1000px) {
     .advantage-class .hero h1 {
-      font-size: 90px;
+        font-size: 90px;
     }
-  }
-  @media (max-width: 760px) {
+}
+
+@media (max-width: 760px) {
     .advantage-class .hero h1 {
-      font-size: 60px;
+        font-size: 60px;
     }
 
     .advantage-class #panels {
         display: none;
     }
-  }
-  @media (max-width: 510px) {
+}
+
+@media (max-width: 510px) {
     .advantage-class .hero h1 {
-      font-size: 40px;
+        font-size: 40px;
     }
-  }
-  
+}
