@@ -1,0 +1,124 @@
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 99 99">
+                            <defs>
+                              <style>
+                                .uuid-8ecdd84c-1cf1-4c75-9c62-906735f0bfa3 {
+                                  opacity: .3;
+                                  stroke-dasharray: 0 0 1 10;
+                                  stroke-width: 10px;
+                                }
+                          
+                                .uuid-8ecdd84c-1cf1-4c75-9c62-906735f0bfa3, .uuid-bf30ac49-a93a-4cdc-affe-4d36c38fcfbc, .uuid-1454dd8f-a54e-4ed5-bc9f-1c02254a664f, .uuid-53e69a44-842c-4772-8ee8-dd1451779171 {
+                                  fill: none;
+                                  stroke: #fff;
+                                  stroke-miterlimit: 10;
+                                }
+                          
+                                .uuid-bf30ac49-a93a-4cdc-affe-4d36c38fcfbc {
+                                  opacity: .3;
+                                }
+                          
+                                .uuid-c81d947a-2f72-40e8-a521-0ac9b51af611, .uuid-91166aa2-61c4-4038-80d5-a76c77ac58c9, .uuid-45603f93-6d1e-4e52-8d84-b250a4335a00 {
+                                  fill: #fff;
+                                }
+                          
+                                .uuid-565e49b2-0398-48b7-bb61-31e1dfacc767 {
+                                  fill: url(#uuid-92303187-c717-4b4c-9b95-e4483c4fdc8a);
+                                }
+                          
+                                .uuid-53e69a44-842c-4772-8ee8-dd1451779171, .uuid-45603f93-6d1e-4e52-8d84-b250a4335a00 {
+                                  opacity: .75;
+                                }
+                          
+                                .uuid-91166aa2-61c4-4038-80d5-a76c77ac58c9 {
+                                  opacity: .5;
+                                }
+                              </style>
+                              <radialGradient id="uuid-92303187-c717-4b4c-9b95-e4483c4fdc8a" cx="48.95" cy="49.02" fx="48.95" fy="49.02" r="9.08" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+                                <stop offset="0" stop-color="#e4ebb8" stop-opacity="0"/>
+                                <stop offset="0" stop-color="#e6ecbd" stop-opacity=".08"/>
+                                <stop offset="0" stop-color="#ecf0cd" stop-opacity=".3"/>
+                                <stop offset="0" stop-color="#f5f7e5" stop-opacity=".64"/>
+                                <stop offset="0" stop-color="#fff"/>
+                                <stop offset=".13" stop-color="#e7e7e6" stop-opacity=".89"/>
+                                <stop offset=".41" stop-color="#a9a9a9" stop-opacity=".62"/>
+                                <stop offset=".82" stop-color="#484847" stop-opacity=".19"/>
+                                <stop offset="1" stop-color="#1d1d1b" stop-opacity="0"/>
+                              </radialGradient>
+                            </defs>
+                            <g id="uuid-14772bc3-8363-4342-9429-2f6adc409085" data-name="Layer 1"/>
+                            <g id="uuid-76f98cb5-42b2-4156-8e99-f0fe6ceb8023" data-name="Layer 2">
+                              <g id="uuid-72eea1dd-241b-4ff5-b8f9-090a279b1ed2" data-name="white icon">
+                                <circle class="uuid-53e69a44-842c-4772-8ee8-dd1451779171" cx="49.5" cy="49.5" r="49"/>
+                                <g id="uuid-0bd8e3b3-726f-4953-a2bf-7e95a36b5a75" data-name="Green outer ring">
+                                  <path class="uuid-c81d947a-2f72-40e8-a521-0ac9b51af611" d="M78.77,19.81c-1.09-1.09-2.21-2.1-3.37-3.06l-5.26,6.16c1,.82,1.97,1.69,2.91,2.63,1.03,1.03,1.99,2.12,2.89,3.23l6.44-4.91c-1.11-1.4-2.31-2.76-3.6-4.05Z"/>
+                                  <path class="uuid-45603f93-6d1e-4e52-8d84-b250a4335a00" d="M85.36,49.87c-.39,19.39-16.01,35.04-35.38,35.47v4.7c10.28,0,20.56-3.92,28.4-11.76,7.84-7.84,11.76-18.12,11.76-28.4h-4.78Z"/>
+                                  <path class="uuid-45603f93-6d1e-4e52-8d84-b250a4335a00" d="M11.93,64.79c2.06,5,5.16,9.65,9.31,13.64,3.91,3.76,8.38,6.57,13.14,8.43l1.29-3.16c-9.27-3.52-16.74-10.74-20.56-19.89"/>
+                                  <path class="uuid-45603f93-6d1e-4e52-8d84-b250a4335a00" d="M87.04,34.38c-2.02-5.01-5.09-9.69-9.21-13.71-3.88-3.79-8.34-6.63-13.08-8.53l-1.32,3.15c9.24,3.59,16.66,10.86,20.42,20.04"/>
+                                  <path class="uuid-45603f93-6d1e-4e52-8d84-b250a4335a00" d="M13.52,48.97c.39-19.39,16.01-35.04,35.38-35.47v-4.7c-10.28,0-20.56,3.92-28.4,11.76-7.84,7.84-11.76,18.12-11.76,28.4h4.78Z"/>
+                                  <path class="uuid-c81d947a-2f72-40e8-a521-0ac9b51af611" d="M20.52,80.04c1.1,1.07,1.85,1.27,3.02,2.21l5.2-6.21c-1.01-.81-1.99-1.67-2.93-2.6-1.05-1.02-2.02-2.1-2.92-3.2l-6.39,4.97c1.12,1.39,2.72,3.55,4.03,4.83Z"/>
+                                  <path class="uuid-c81d947a-2f72-40e8-a521-0ac9b51af611" d="M65.28,86.86c4.99-2.07,9.64-5.18,13.62-9.34,3.75-3.92,6.55-8.4,8.41-13.15l-3.16-1.29c-3.5,9.27-10.71,16.76-19.85,20.6"/>
+                                  <path class="uuid-91166aa2-61c4-4038-80d5-a76c77ac58c9" d="M36.25,11.26c-5.12,1.73-9.97,4.52-14.22,8.4-4,3.66-7.1,7.94-9.27,12.56l3.07,1.5c4.12-9.02,11.81-16,21.2-19.22"/>
+                                </g>
+                                <circle id="uuid-3d7b6ce6-892c-406a-965f-af35838abca9" data-name="lines ring" class="uuid-8ecdd84c-1cf1-4c75-9c62-906735f0bfa3" cx="49.05" cy="49.4" r="39.99"/>
+                                <g id="uuid-bc0d6100-077d-498d-b9a4-e7c21c6584e8" data-name="Layer 4 copy">
+                                  <circle class="uuid-bf30ac49-a93a-4cdc-affe-4d36c38fcfbc" cx="48.96" cy="48.98" r="29.46"/>
+                                  <circle class="uuid-bf30ac49-a93a-4cdc-affe-4d36c38fcfbc" cx="48.96" cy="48.98" r="19.43"/>
+                                  <circle class="uuid-bf30ac49-a93a-4cdc-affe-4d36c38fcfbc" cx="48.96" cy="48.98" r="13.88"/>
+                                  <line class="uuid-bf30ac49-a93a-4cdc-affe-4d36c38fcfbc" x1="51.64" y1="35.57" x2="54.71" y2="20.04"/>
+                                  <line class="uuid-bf30ac49-a93a-4cdc-affe-4d36c38fcfbc" x1="54.43" y1="36.25" x2="60.63" y2="22.01"/>
+                                  <line class="uuid-bf30ac49-a93a-4cdc-affe-4d36c38fcfbc" x1="56.89" y1="37.54" x2="65.88" y2="25.08"/>
+                                  <line class="uuid-bf30ac49-a93a-4cdc-affe-4d36c38fcfbc" x1="59.07" y1="39.59" x2="70.58" y2="29.3"/>
+                                  <line class="uuid-bf30ac49-a93a-4cdc-affe-4d36c38fcfbc" x1="60.97" y1="42.04" x2="74.32" y2="34.14"/>
+                                  <line class="uuid-bf30ac49-a93a-4cdc-affe-4d36c38fcfbc" x1="62.13" y1="44.83" x2="76.91" y2="39.79"/>
+                                  <line class="uuid-bf30ac49-a93a-4cdc-affe-4d36c38fcfbc" x1="62.68" y1="47.69" x2="78.2" y2="45.58"/>
+                                  <line class="uuid-bf30ac49-a93a-4cdc-affe-4d36c38fcfbc" x1="62.68" y1="50.48" x2="78.2" y2="52.12"/>
+                                  <line class="uuid-bf30ac49-a93a-4cdc-affe-4d36c38fcfbc" x1="62.27" y1="53.34" x2="76.91" y2="58.11"/>
+                                  <line class="uuid-bf30ac49-a93a-4cdc-affe-4d36c38fcfbc" x1="61.11" y1="56.14" x2="74.25" y2="63.77"/>
+                                  <line class="uuid-bf30ac49-a93a-4cdc-affe-4d36c38fcfbc" x1="59.34" y1="58.32" x2="70.71" y2="68.6"/>
+                                  <line class="uuid-bf30ac49-a93a-4cdc-affe-4d36c38fcfbc" x1="57.09" y1="60.43" x2="66.08" y2="72.82"/>
+                                  <line class="uuid-bf30ac49-a93a-4cdc-affe-4d36c38fcfbc" x1="54.57" y1="61.72" x2="60.77" y2="75.96"/>
+                                  <line class="uuid-bf30ac49-a93a-4cdc-affe-4d36c38fcfbc" x1="51.51" y1="62.61" x2="54.91" y2="77.73"/>
+                                  <line class="uuid-bf30ac49-a93a-4cdc-affe-4d36c38fcfbc" x1="46.06" y1="62.68" x2="42.86" y2="77.8"/>
+                                  <line class="uuid-bf30ac49-a93a-4cdc-affe-4d36c38fcfbc" x1="43.2" y1="61.72" x2="37.13" y2="75.89"/>
+                                  <line class="uuid-bf30ac49-a93a-4cdc-affe-4d36c38fcfbc" x1="40.74" y1="60.16" x2="31.75" y2="72.96"/>
+                                  <line class="uuid-bf30ac49-a93a-4cdc-affe-4d36c38fcfbc" x1="38.5" y1="58.18" x2="27.39" y2="68.81"/>
+                                  <line class="uuid-bf30ac49-a93a-4cdc-affe-4d36c38fcfbc" x1="36.59" y1="55.93" x2="23.38" y2="63.77"/>
+                                  <line class="uuid-bf30ac49-a93a-4cdc-affe-4d36c38fcfbc" x1="35.5" y1="53.48" x2="21.13" y2="58.25"/>
+                                  <line class="uuid-bf30ac49-a93a-4cdc-affe-4d36c38fcfbc" x1="35.16" y1="50.14" x2="20.04" y2="52.32"/>
+                                  <line class="uuid-bf30ac49-a93a-4cdc-affe-4d36c38fcfbc" x1="34.82" y1="47.76" x2="19.83" y2="46.19"/>
+                                  <line class="uuid-bf30ac49-a93a-4cdc-affe-4d36c38fcfbc" x1="35.5" y1="44.83" x2="21.2" y2="40.2"/>
+                                  <line class="uuid-bf30ac49-a93a-4cdc-affe-4d36c38fcfbc" x1="36.66" y1="42.31" x2="23.24" y2="34.89"/>
+                                  <line class="uuid-bf30ac49-a93a-4cdc-affe-4d36c38fcfbc" x1="38.5" y1="39.86" x2="27.26" y2="29.71"/>
+                                  <line class="uuid-bf30ac49-a93a-4cdc-affe-4d36c38fcfbc" x1="40.47" y1="37.95" x2="31.55" y2="25.49"/>
+                                  <line class="uuid-bf30ac49-a93a-4cdc-affe-4d36c38fcfbc" x1="43.2" y1="36.39" x2="36.86" y2="22.29"/>
+                                  <line class="uuid-bf30ac49-a93a-4cdc-affe-4d36c38fcfbc" x1="45.78" y1="35.43" x2="42.65" y2="20.52"/>
+                                </g>
+                                <g id="uuid-4101d42a-8c7c-43e6-8889-3ed15fa65475" data-name="Layer 6 copy">
+                                  <g>
+                                    <polygon class="uuid-c81d947a-2f72-40e8-a521-0ac9b51af611" points="48.69 48.89 48.69 19.69 54.03 43.46 48.69 48.89"/>
+                                    <polygon points="48.69 48.89 48.69 19.69 43.45 43.47 48.69 48.89"/>
+                                  </g>
+                                  <g>
+                                    <polygon class="uuid-c81d947a-2f72-40e8-a521-0ac9b51af611" points="48.79 48.85 48.79 78.05 43.45 54.28 48.79 48.85"/>
+                                    <polygon points="48.79 48.85 48.79 78.05 54.03 54.28 48.79 48.85"/>
+                                  </g>
+                                  <g>
+                                    <polygon class="uuid-c81d947a-2f72-40e8-a521-0ac9b51af611" points="48.72 48.82 77.92 48.82 54.15 54.17 48.72 48.82"/>
+                                    <polygon points="48.72 48.82 77.92 48.82 54.14 43.58 48.72 48.82"/>
+                                  </g>
+                                  <g>
+                                    <polygon class="uuid-c81d947a-2f72-40e8-a521-0ac9b51af611" points="48.76 48.93 19.56 48.92 43.33 43.58 48.76 48.93"/>
+                                    <polygon points="48.76 48.93 19.56 48.92 43.34 54.17 48.76 48.93"/>
+                                  </g>
+                                  <polyline class="uuid-1454dd8f-a54e-4ed5-bc9f-1c02254a664f" points="54.37 41.04 57.54 39.25 56.43 43.13"/>
+                                  <polyline class="uuid-1454dd8f-a54e-4ed5-bc9f-1c02254a664f" points="56.75 54.37 57.7 58.26 54.32 56.05"/>
+                                  <polyline class="uuid-1454dd8f-a54e-4ed5-bc9f-1c02254a664f" points="43.4 41.04 40.22 39.25 41.33 43.13"/>
+                                  <polyline class="uuid-1454dd8f-a54e-4ed5-bc9f-1c02254a664f" points="41.02 54.37 40.07 58.26 43.44 56.05"/>
+                                </g>
+                                <g id="uuid-3a1288ed-f9d6-4956-b3a5-cf0e57abd918" data-name="Layer 5 copy">
+                                  <polygon class="uuid-1454dd8f-a54e-4ed5-bc9f-1c02254a664f" points="54.43 54.57 48.78 79.87 42.92 54.54 17.56 48.95 42.86 43.16 48.71 17.83 54.47 43.03 79.83 48.75 54.43 54.57"/>
+                                </g>
+                                <circle class="uuid-565e49b2-0398-48b7-bb61-31e1dfacc767" cx="48.95" cy="49.02" r="9.08"/>
+                              </g>
+                            </g>
+                          </svg>

@@ -1,0 +1,209 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 99 99">
+  <defs>
+    <style>
+      .uuid-69052e38-9bc8-42b1-a17c-be9f56e36583 {
+        fill: url(#uuid-16ec569e-d315-4d68-b769-aae3299e5367);
+      }
+
+      .uuid-69052e38-9bc8-42b1-a17c-be9f56e36583, .uuid-ca240572-acc5-4d7e-8ce3-59ecef6094fc, .uuid-3d9129c8-c088-4520-bf88-2de81a054f3c, .uuid-163e0788-3bb1-4c79-bce9-1cc3f26bd110, .uuid-66a88e14-91e6-4f92-9291-fad91aba8f66, .uuid-4dde0ba0-a6ef-445f-8087-3ea2f5df8b7d, .uuid-a2996b53-ba1c-4e71-94e2-ded48ac85d08 {
+        opacity: .25;
+      }
+
+      .uuid-ca240572-acc5-4d7e-8ce3-59ecef6094fc {
+        fill: url(#uuid-30887a46-c457-402a-816c-854928446f43);
+      }
+
+      .uuid-a638e621-9f7c-4572-a379-96147f0e86b4 {
+        fill: url(#uuid-2e627452-4a2b-4a29-a765-c6273743b5c4);
+      }
+
+      .uuid-bc251dde-8e76-4d7f-8226-d53366b3c607 {
+        fill: url(#uuid-69513d9e-4f7c-4d99-b510-3fabe97579de);
+      }
+
+      .uuid-2c754308-57bc-4840-8009-2c6a76cad4c5 {
+        fill: url(#uuid-ecf44642-d3bd-43b5-a15b-c9e4fee369d6);
+      }
+
+      .uuid-2c754308-57bc-4840-8009-2c6a76cad4c5, .uuid-a62bb6ef-8fa4-4d5e-a3f7-7f5e9aac01dd, .uuid-98aad8d2-9df8-45e5-9197-9a11a729e9d3, .uuid-875339f5-c3de-40aa-bcd6-9171040f199d {
+        opacity: .5;
+      }
+
+      .uuid-c5efea0e-7d94-4b89-bc33-0346bb779e22 {
+        fill: url(#uuid-e210a791-8efa-49a6-a081-9d804544671a);
+      }
+
+      .uuid-3d9129c8-c088-4520-bf88-2de81a054f3c {
+        fill: url(#uuid-61af22fa-7bd5-4171-a662-82f47c3e4df7);
+      }
+
+      .uuid-163e0788-3bb1-4c79-bce9-1cc3f26bd110 {
+        fill: url(#uuid-b8607ffb-a050-4263-ae7c-892ae8117efd);
+      }
+
+      .uuid-5968a5a3-6a68-4cda-be29-d96d750ebd5e {
+        fill: url(#uuid-8f5c84ba-457e-4d88-8442-254ead541eac);
+      }
+
+      .uuid-4acae139-4ce5-4c9f-8120-a1bde9cb2d72 {
+        stroke-linecap: round;
+      }
+
+      .uuid-4acae139-4ce5-4c9f-8120-a1bde9cb2d72, .uuid-db1035f2-5a7f-4825-bf92-17ba113a30a9 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .uuid-3504c2ab-3ce4-471e-bf0c-1613ae857054 {
+        fill: url(#uuid-969db212-7895-4ec8-a277-125062ec5925);
+      }
+
+      .uuid-933f9b4b-2cd7-4dbe-b633-e409c8947dfe {
+        fill: url(#uuid-00461cb8-d169-4a52-b7c2-d736e007da63);
+      }
+
+      .uuid-66a88e14-91e6-4f92-9291-fad91aba8f66 {
+        fill: url(#uuid-0a2de5a1-13e8-4704-ba2f-98271456471e);
+      }
+
+      .uuid-a62bb6ef-8fa4-4d5e-a3f7-7f5e9aac01dd {
+        fill: url(#uuid-a8c5d1de-4e2c-4b98-b66e-e97885aa1c64);
+      }
+
+      .uuid-4dde0ba0-a6ef-445f-8087-3ea2f5df8b7d {
+        fill: url(#uuid-57b6f610-0188-4a3b-b02a-9b9fafbb86a7);
+      }
+
+      .uuid-a2996b53-ba1c-4e71-94e2-ded48ac85d08 {
+        fill: url(#uuid-63e4c7c8-fbf6-4ff1-8ff6-f76590638fd1);
+      }
+
+      .uuid-0aad86e7-8d2d-4e91-b68f-129586fd23bd {
+        fill: url(#uuid-bf94d6d9-1bdd-4896-80e1-a1eb9706ea73);
+      }
+
+      .uuid-98aad8d2-9df8-45e5-9197-9a11a729e9d3 {
+        fill: url(#uuid-31fa2928-d3f2-4b73-a505-9b407a104171);
+      }
+
+      .uuid-eba884c0-4b58-4965-b979-0d6b1ad37ba5 {
+        fill: url(#uuid-fc6097d4-b338-4abe-a36b-c2d965c6ea9a);
+      }
+
+      .uuid-80677850-913d-49d0-bfc1-319377bec0fa {
+        fill: url(#uuid-4e30fd29-3aca-4c45-9e3e-78d097c6c7b2);
+        opacity: .3;
+      }
+
+      .uuid-73b74b07-ea13-4751-b80e-a2203778f501 {
+        fill: url(#uuid-abe2b3e4-4795-4388-bd32-2af6ef3260a5);
+      }
+
+      .uuid-875339f5-c3de-40aa-bcd6-9171040f199d {
+        fill: url(#uuid-46fbab36-02a6-4b53-8d8a-c17a37d77339);
+      }
+    </style>
+    <radialGradient id="uuid-00461cb8-d169-4a52-b7c2-d736e007da63" cx="80.02" cy="70.1" fx="80.02" fy="70.1" r="13.85" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".16" stop-color="#fff"/>
+      <stop offset=".57" stop-color="#fff"/>
+      <stop offset=".98" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </radialGradient>
+    <radialGradient id="uuid-2e627452-4a2b-4a29-a765-c6273743b5c4" cx="19.27" cy="29.95" fx="19.27" fy="29.95" r="13.85" xlink:href="#uuid-00461cb8-d169-4a52-b7c2-d736e007da63"/>
+    <radialGradient id="uuid-8f5c84ba-457e-4d88-8442-254ead541eac" cx="29.57" cy="80.4" fx="29.57" fy="80.4" r="13.85" xlink:href="#uuid-00461cb8-d169-4a52-b7c2-d736e007da63"/>
+    <radialGradient id="uuid-fc6097d4-b338-4abe-a36b-c2d965c6ea9a" cx="69.72" cy="19.65" fx="69.72" fy="19.65" r="13.85" xlink:href="#uuid-00461cb8-d169-4a52-b7c2-d736e007da63"/>
+    <radialGradient id="uuid-69513d9e-4f7c-4d99-b510-3fabe97579de" cx="80.02" cy="70.1" fx="80.02" fy="70.1" r="13.85" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".09" stop-color="#fff" stop-opacity=".7"/>
+      <stop offset=".15" stop-color="#fff" stop-opacity=".62"/>
+      <stop offset=".16" stop-color="#fff" stop-opacity=".6"/>
+      <stop offset=".25" stop-color="#fff" stop-opacity=".49"/>
+      <stop offset=".39" stop-color="#fff" stop-opacity=".3"/>
+      <stop offset=".72" stop-color="#fff" stop-opacity=".1"/>
+    </radialGradient>
+    <radialGradient id="uuid-969db212-7895-4ec8-a277-125062ec5925" cx="19.27" cy="29.95" fx="19.27" fy="29.95" r="13.85" xlink:href="#uuid-69513d9e-4f7c-4d99-b510-3fabe97579de"/>
+    <radialGradient id="uuid-bf94d6d9-1bdd-4896-80e1-a1eb9706ea73" cx="29.57" cy="80.4" fx="29.57" fy="80.4" r="13.85" xlink:href="#uuid-69513d9e-4f7c-4d99-b510-3fabe97579de"/>
+    <radialGradient id="uuid-e210a791-8efa-49a6-a081-9d804544671a" cx="69.72" cy="19.65" fx="69.72" fy="19.65" r="13.85" xlink:href="#uuid-69513d9e-4f7c-4d99-b510-3fabe97579de"/>
+    <linearGradient id="uuid-57b6f610-0188-4a3b-b02a-9b9fafbb86a7" x1="30.51" y1="85.01" x2="77.44" y2="85.01" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".07" stop-color="#fff"/>
+      <stop offset=".65" stop-color="#fff"/>
+      <stop offset=".66" stop-color="#fff"/>
+      <stop offset=".94" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="uuid-b8607ffb-a050-4263-ae7c-892ae8117efd" x1="16.97" y1="74.32" x2="45.41" y2="74.32" xlink:href="#uuid-57b6f610-0188-4a3b-b02a-9b9fafbb86a7"/>
+    <linearGradient id="uuid-30887a46-c457-402a-816c-854928446f43" x1="5.02" y1="54.88" x2="24.46" y2="54.88" xlink:href="#uuid-57b6f610-0188-4a3b-b02a-9b9fafbb86a7"/>
+    <linearGradient id="uuid-4e30fd29-3aca-4c45-9e3e-78d097c6c7b2" x1="5.7" y1="32.1" x2="45.14" y2="32.1" xlink:href="#uuid-57b6f610-0188-4a3b-b02a-9b9fafbb86a7"/>
+    <linearGradient id="uuid-63e4c7c8-fbf6-4ff1-8ff6-f76590638fd1" x1="21.4" y1="15.65" x2="68.33" y2="15.65" xlink:href="#uuid-57b6f610-0188-4a3b-b02a-9b9fafbb86a7"/>
+    <linearGradient id="uuid-0a2de5a1-13e8-4704-ba2f-98271456471e" x1="53.43" y1="26.33" x2="81.87" y2="26.33" xlink:href="#uuid-57b6f610-0188-4a3b-b02a-9b9fafbb86a7"/>
+    <linearGradient id="uuid-61af22fa-7bd5-4171-a662-82f47c3e4df7" x1="74.37" y1="45.77" x2="93.82" y2="45.77" xlink:href="#uuid-57b6f610-0188-4a3b-b02a-9b9fafbb86a7"/>
+    <linearGradient id="uuid-16ec569e-d315-4d68-b769-aae3299e5367" x1="53.69" y1="68.56" x2="93.13" y2="68.56" xlink:href="#uuid-57b6f610-0188-4a3b-b02a-9b9fafbb86a7"/>
+    <radialGradient id="uuid-a8c5d1de-4e2c-4b98-b66e-e97885aa1c64" cx="56.94" cy="90.18" fx="56.94" fy="90.18" r="14.21" xlink:href="#uuid-00461cb8-d169-4a52-b7c2-d736e007da63"/>
+    <radialGradient id="uuid-ecf44642-d3bd-43b5-a15b-c9e4fee369d6" cx="42.34" cy="9.87" fx="42.34" fy="9.87" r="14.21" xlink:href="#uuid-00461cb8-d169-4a52-b7c2-d736e007da63"/>
+    <radialGradient id="uuid-31fa2928-d3f2-4b73-a505-9b407a104171" cx="89.8" cy="42.73" fx="89.8" fy="42.73" r="14.21" xlink:href="#uuid-00461cb8-d169-4a52-b7c2-d736e007da63"/>
+    <radialGradient id="uuid-46fbab36-02a6-4b53-8d8a-c17a37d77339" cx="9.49" cy="57.32" fx="9.49" fy="57.32" r="14.21" xlink:href="#uuid-00461cb8-d169-4a52-b7c2-d736e007da63"/>
+    <radialGradient id="uuid-abe2b3e4-4795-4388-bd32-2af6ef3260a5" cx="50.21" cy="37.48" fx="50.21" fy="37.48" r="11.47" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e4ebb8" stop-opacity="0"/>
+      <stop offset="0" stop-color="#e6ecbd" stop-opacity=".08"/>
+      <stop offset="0" stop-color="#ecf0cd" stop-opacity=".3"/>
+      <stop offset="0" stop-color="#f5f7e5" stop-opacity=".64"/>
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".13" stop-color="#e7e7e6" stop-opacity=".89"/>
+      <stop offset=".41" stop-color="#a9a9a9" stop-opacity=".62"/>
+      <stop offset=".82" stop-color="#484847" stop-opacity=".19"/>
+      <stop offset="1" stop-color="#1d1d1b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="uuid-dd161ac1-d7c1-4c6c-95b5-ff891a614d39" data-name="Layer 1"/>
+  <g id="uuid-4dff37ed-600f-4df9-aad7-3014026beea7" data-name="Layer 2">
+    <g id="uuid-382a2592-b183-4a03-9a85-350640122891" data-name="White icon">
+      <g id="uuid-b5b0ebb4-1ee8-4f2d-b654-317e2ac9a12d" data-name="white circle">
+        <circle class="uuid-db1035f2-5a7f-4825-bf92-17ba113a30a9" cx="49.5" cy="49.5" r="49"/>
+      </g>
+      <g id="uuid-5b5020af-14e8-479a-9da7-95c4b745dc43" data-name="Aperture">
+        <g id="uuid-2ec93726-3b7f-4c04-9c93-dfadc77ac9c6" data-name="inner aperture">
+          <path class="uuid-933f9b4b-2cd7-4dbe-b633-e409c8947dfe" d="M66.14,83.89l12.63,.04c8.04-6.91,13.59-16.63,15.13-27.64l-27.76,27.61Z"/>
+          <path class="uuid-a638e621-9f7c-4572-a379-96147f0e86b4" d="M33.15,16.16l-12.63-.04c-8.04,6.91-13.59,16.63-15.13,27.64l27.76-27.61Z"/>
+          <path class="uuid-5968a5a3-6a68-4cda-be29-d96d750ebd5e" d="M15.78,66.52l-.04,12.63c6.91,8.04,16.63,13.59,27.64,15.13l-27.61-27.76Z"/>
+          <path class="uuid-eba884c0-4b58-4965-b979-0d6b1ad37ba5" d="M83.51,33.53l.04-12.63c-6.91-8.04-16.63-13.59-27.64-15.13l27.61,27.76Z"/>
+        </g>
+        <g id="uuid-d53c814d-9e21-4669-95f8-9303d1157b37" data-name="Aperture reflection">
+          <path class="uuid-bc251dde-8e76-4d7f-8226-d53366b3c607" d="M66.14,83.89l12.63,.04c8.04-6.91,13.59-16.63,15.13-27.64l-27.76,27.61Z"/>
+          <path class="uuid-3504c2ab-3ce4-471e-bf0c-1613ae857054" d="M33.15,16.16l-12.63-.04c-8.04,6.91-13.59,16.63-15.13,27.64l27.76-27.61Z"/>
+          <path class="uuid-0aad86e7-8d2d-4e91-b68f-129586fd23bd" d="M15.78,66.52l-.04,12.63c6.91,8.04,16.63,13.59,27.64,15.13l-27.61-27.76Z"/>
+          <path class="uuid-c5efea0e-7d94-4b89-bc33-0346bb779e22" d="M83.51,33.53l.04-12.63c-6.91-8.04-16.63-13.59-27.64-15.13l27.61,27.76Z"/>
+        </g>
+        <g id="uuid-1fe57b02-097a-424e-bcba-a03aceca922e" data-name="Inner aperture 3">
+          <path class="uuid-4dde0ba0-a6ef-445f-8087-3ea2f5df8b7d" d="M77.44,84.02s-7.04,9.68-28.46,10.71c0,0-8.75-5.84-18.47-19.45,2.54,1.26,20.73,12.34,46.93,8.74Z"/>
+          <path class="uuid-163e0788-3bb1-4c79-bce9-1cc3f26bd110" d="M45.41,93.96s-11.83,1.87-27.7-12.55c0,0-2.06-10.32,.69-26.81,.91,2.69,5.94,23.39,27,39.36Z"/>
+          <path class="uuid-ca240572-acc5-4d7e-8ce3-59ecef6094fc" d="M15.73,78.35s-9.68-7.04-10.71-28.46c0,0,5.84-8.75,19.45-18.47-1.26,2.54-12.34,20.73-8.74,46.93Z"/>
+          <path class="uuid-80677850-913d-49d0-bfc1-319377bec0fa" d="M5.78,46.32s-1.87-11.83,12.55-27.7c0,0,10.32-2.06,26.81,.69-2.69,.91-23.39,5.94-39.36,27Z"/>
+          <path class="uuid-a2996b53-ba1c-4e71-94e2-ded48ac85d08" d="M21.4,16.64s7.04-9.68,28.46-10.71c0,0,8.75,5.84,18.47,19.45-2.54-1.26-20.73-12.34-46.93-8.74Z"/>
+          <path class="uuid-66a88e14-91e6-4f92-9291-fad91aba8f66" d="M53.43,6.69s11.83-1.87,27.7,12.55c0,0,2.06,10.32-.69,26.81-.91-2.69-5.94-23.39-27-39.36Z"/>
+          <path class="uuid-3d9129c8-c088-4520-bf88-2de81a054f3c" d="M83.11,22.31s9.68,7.04,10.71,28.46c0,0-5.84,8.75-19.45,18.47,1.26-2.54,12.34-20.73,8.74-46.93Z"/>
+          <path class="uuid-69052e38-9bc8-42b1-a17c-be9f56e36583" d="M93.05,54.34s1.87,11.83-12.55,27.7c0,0-10.32,2.06-26.81-.69,2.69-.91,23.39-5.94,39.36-27Z"/>
+        </g>
+        <g id="uuid-3623b9a7-9e14-4275-a004-5b0eb758b033" data-name="Aperture 2">
+          <path id="uuid-bd2b29da-71fe-4a25-9305-fbf6a64cdd7a" data-name="20" class="uuid-a62bb6ef-8fa4-4d5e-a3f7-7f5e9aac01dd" d="M37.36,85.63l8.91,8.96c1.12,.08,2.24,.14,3.38,.14,10.09,0,19.4-3.35,26.88-8.99l-39.16-.11Z"/>
+          <path class="uuid-2c754308-57bc-4840-8009-2c6a76cad4c5" d="M53.02,5.46c-1.12-.08-2.24-.14-3.38-.14-10.09,0-19.4,3.35-26.88,8.98l39.16,.11-8.91-8.96Z"/>
+          <path class="uuid-98aad8d2-9df8-45e5-9197-9a11a729e9d3" d="M85.25,62.31l8.96-8.91c.08-1.12,.14-2.24,.14-3.38,0-10.09-3.35-19.4-8.99-26.88l-.11,39.16Z"/>
+          <path class="uuid-875339f5-c3de-40aa-bcd6-9171040f199d" d="M14.03,37.74l-8.96,8.91c-.08,1.12-.14,2.24-.14,3.38,0,10.09,3.35,19.4,8.99,26.88l.11-39.16Z"/>
+        </g>
+      </g>
+      <path class="uuid-db1035f2-5a7f-4825-bf92-17ba113a30a9" d="M47.58,70.81l.33-10.44-6.25-22.08s6.63-.19,6.25-1.15-1.95,.16-.96,1.07,8.28,.41,7.87-.74-2.41,.71-1.32,1.32,5.26-.49,5.26-.49l-6.17,21.67,.62,11.1"/>
+      <polyline class="uuid-db1035f2-5a7f-4825-bf92-17ba113a30a9" points="49.02 70.93 48.85 63.53 47.74 62.58 49.84 60.04 49.76 49.59 49.14 48.56 50.21 47.9 51.24 48.69 50.37 49.67 50.5 60.04 52.68 62.79 51.53 63.57 51.61 70.89"/>
+      <line class="uuid-db1035f2-5a7f-4825-bf92-17ba113a30a9" x1="49.14" y1="48.56" x2="46.63" y2="38.04"/>
+      <line class="uuid-db1035f2-5a7f-4825-bf92-17ba113a30a9" x1="51.24" y1="48.69" x2="53.5" y2="38.78"/>
+      <path class="uuid-db1035f2-5a7f-4825-bf92-17ba113a30a9" d="M61.03,27.03c-.22-.17-.44-.34-.67-.51-5.31-3.82-12.76-4.23-18.54-1.18-.09,.05-.19,.1-.28,.15-.78,.43-1.53,.92-2.23,1.47-5.43,4.26-8.14,11.71-6.1,18.31,.53,1.71,1.26,3.36,2.13,4.92,.95,1.71,2.06,3.33,3.27,4.88,1.19,1.53,2.39,2.84,3.14,4.65,.73,1.77,1.08,3.67,1.22,5.57,.03,.43,.12,4.31,.07,5.35,0,.14,.11,.25,.25,.26,4.56,.09,9.11,0,13.67,0,.14,0,.26-.11,.25-.25-.04-1.04,.04-4.92,.07-5.35,.14-1.9,.49-3.8,1.22-5.57,.75-1.81,1.95-3.12,3.14-4.65,1.21-1.55,2.32-3.17,3.27-4.88,.87-1.57,1.6-3.21,2.13-4.92,1.98-6.42-.76-14.02-6.03-18.25Z"/>
+      <line class="uuid-4acae139-4ce5-4c9f-8120-a1bde9cb2d72" x1="43.17" y1="72.63" x2="57.2" y2="72.63"/>
+      <line class="uuid-4acae139-4ce5-4c9f-8120-a1bde9cb2d72" x1="43.17" y1="74.37" x2="57.2" y2="74.37"/>
+      <line class="uuid-4acae139-4ce5-4c9f-8120-a1bde9cb2d72" x1="43.17" y1="76.12" x2="57.2" y2="76.12"/>
+      <line class="uuid-4acae139-4ce5-4c9f-8120-a1bde9cb2d72" x1="44.48" y1="77.86" x2="55.89" y2="77.86"/>
+      <line class="uuid-4acae139-4ce5-4c9f-8120-a1bde9cb2d72" x1="45.19" y1="79.6" x2="55.18" y2="79.6"/>
+      <circle class="uuid-73b74b07-ea13-4751-b80e-a2203778f501" cx="50.21" cy="37.48" r="11.47"/>
+    </g>
+  </g>
+</svg>
